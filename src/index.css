@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: 'Lora';
+    src: url('./assets/Fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/Fonts/OpenSans-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/Fonts/Poppins-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Public Sans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/Fonts/PublicSans-Regular.ttf') format('truetype');
+  }
+}
+
+body{
+  background-color: #F8F8FF;
+}
