@@ -30,46 +30,47 @@ const Grid = [
 const why = () => {
     return (
         <div className='px-[5vw] my-[2vw]'>
-
-            {/* Header section */}
-            <div className='flex flex-col justify-center items-center'>
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="100"
-                    className='font-Lora md:text-[2.5vw] text-lightTextColor font-bold'>Why Choose Green Remedies</h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="200"
-                    className='md:text-center md:w-[50vw] md:mt-[0.5vw] text-[1.2vw] text-lightTextColor'>Our
-                    safe and effective herbal remedies are distinguished by sensory evaluation
-                    techniques and the Organoleptic Method for quality and potency.</p>
-            </div>
-
-            {/* Body */}
-
-            <div className="mt-[5vw]">
-                <div
-                    className="md:grid md:grid-cols-3 gap-[1vw]"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="100">
-                    {
-                        Grid.map((data) => (
-                            <div key={data.id} className="bg-darkGreen py-[4vw] px-[1.5vw] rounded-[1.2vw]">
-                                <div
-                                    className='w-[5vw] h-[5vw] bg-white rounded-full flex flex-col justify-center items-center'>
-                                    <img src={data.image} className="w-[2.5vw] h-[2.5vw]"></img>
-                                </div>
-                                <h1 className='mt-[1.3vw] text-white font-Lora font-semibold text-[1.5vw]'>{data.heading}</h1>
-                                <p className='mt-[1.3vw] text-white font-OpenSans text-[1vw]'>{data.paragraph}</p>
+        {/* Header section */}
+        <div className='flex flex-col justify-center items-center'>
+            <h1
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                className='font-Lora text-[7vw] xs:text-[5vw] sm:text-[4vw] md:text-[2.5vw] text-lightTextColor font-bold'>
+                Why Choose Green Remedies
+            </h1>
+            <p
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor'>
+                Our safe and effective herbal remedies are distinguished by sensory evaluation techniques and the Organoleptic Method for quality and potency.
+            </p>
+        </div>
+    
+        {/* Body */}
+        <div className="mt-[5vw]">
+            <div
+                className="grid xs:gap-[3vw] xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-[2vw] lg:grid-cols-3"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="100">
+                {
+                    Grid.map((data) => (
+                        <div key={data.id} className="bg-darkGreen py-[4vw] xs:px-[4vw] rounded-[1.2vw] xs:w-[80vw] xs:mx-auto md:w-full md:px-[2vw]">
+                            <div
+                                className='w-[6vw] xs:w-[8vw] sm:w-[7vw] md:w-[5vw] h-[6vw] xs:h-[8vw] sm:h-[7vw] md:h-[5vw] bg-white rounded-full flex flex-col justify-center items-center'>
+                                <img src={data.image} className="w-[3vw] xs:w-[4vw] sm:w-[3.5vw] md:w-[2.5vw] h-[3vw] xs:h-[4vw] sm:h-[3.5vw] md:h-[2.5vw]" alt="Icon"/>
                             </div>
-                        ))
-                    }
-                </div>
+                            <h1 className='mt-[1.3vw] text-white font-Lora font-semibold text-[2vw] xs:text-[3.5vw] sm:text-[2.2vw] md:text-[1.5vw]'>{data.heading}</h1>
+                            <p className='mt-[1.3vw] text-white font-OpenSans text-[1vw] xs:text-[2.5vw] sm:text-[1.1vw] md:text-[1vw]'>{data.paragraph}</p>
+                        </div>
+                    ))
+                }
             </div>
         </div>
+    </div>
+    
     )
 }
 
