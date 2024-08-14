@@ -11,12 +11,12 @@ const Video = () => {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="100"
-                className='text-center font-Lora md:text-[2.5vw] text-[5vw] sm:text-[4vw] text-lightTextColor font-bold'>How To Order Products On Our Website</h2>
+                className='font-Lora text-[7vw] xs:text-[5vw] sm:text-[4vw] md:text-[2.5vw] text-lightTextColor font-bold text-center'>How To Order Products On Our Website</h2>
             <p
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="200"
-                className='text-center w-full sm:w-[70vw] md:w-[50vw] md:mt-[0.5vw] text-[3vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor'>Watch
+                className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor'>Watch
                 this quick tutorial to learn how to easily purchase your favorite herbal
                 products on our website.</p>
         </div>
