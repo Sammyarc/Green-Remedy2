@@ -115,7 +115,7 @@ const Navbar = () => {
                             <li key={data.id} className="my-4 mx-4 md:my-0 md:mx-0">
                                 <Link
                                     to={data.link}
-                                    className="block text-[4vw] font-semibold md:text-[1.3vw] text-lightTextColor hover:text-darkGreen transition md:font-medium"
+                                    className="block text-[4vw] font-semibold md:text-[1.3vw] text-lightTextColor hover:text-darkGreen transition md:font-medium font-OpenSans"
                                     onClick={() => setIsOpen(false)}>
                                     {data.name}
                                 </Link>

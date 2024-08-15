@@ -31,7 +31,7 @@ const Values = () => {
         {/* Header section */}
         <div className='flex flex-col justify-center items-center'>
             <h1 className='font-Lora text-[5vw] md:text-[3vw] text-white font-bold'>Our Values</h1>
-            <p className='text-center w-[80vw] md:w-[50vw] lg:w-[40vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-white'>
+            <p className='text-center w-[80vw] md:w-[50vw] lg:w-[40vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-white font-OpenSans'>
                 We believe in the power of nature to heal and nurture, and we are dedicated to providing you with the best natural health solutions.
             </p>
         </div>

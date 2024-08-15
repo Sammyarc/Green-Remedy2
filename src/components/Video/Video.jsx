@@ -10,7 +10,7 @@ const Video = () => {
                 <h2
                     className='font-Lora xs:text-[5vw] sm:text-[4vw] md:text-[2.5vw] text-lightTextColor font-bold text-center'>How To Order Products On Our Website</h2>
                 <p
-                    className='text-center w-full md:w-[60vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] xs:text-[2.5vw] md:text-[1.4vw] text-lightTextColor'>Watch
+                    className='text-center w-full md:w-[60vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] xs:text-[2.5vw] md:text-[1.4vw] text-lightTextColor font-OpenSans'>Watch
                     this quick tutorial to learn how to easily purchase your favorite herbal
                     products on our website.</p>
             </div>
