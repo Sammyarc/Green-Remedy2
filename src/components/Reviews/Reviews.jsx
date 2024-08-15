@@ -81,14 +81,14 @@ const Reviews = () => {
             {/* Header section */}
             <div className='flex flex-col justify-center items-center'>
                 <h1
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="100"
+                    
+                    
+                    
                     className='font-Lora text-[7vw] xs:text-[5vw] sm:text-[4vw] md:text-[2.5vw] text-white font-bold text-center'>What Our Customers Say</h1>
                 <p
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="200"
+                    
+                    
+                    
                     className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-white'>Read
                     the experiences and success stories of those who have benefited from our
                     traditional herbs.
@@ -100,9 +100,9 @@ const Reviews = () => {
             <div className="mt-[8vw] xs:mt-[6vw] sm:mt-[5vw] md:mt-[4vw]">
     <div
         className="grid grid-cols-2 md:grid-cols-3 gap-[6vw] xs:gap-[4vw] sm:gap-[3vw] md:gap-[2vw]"
-        data-aos="fade-up"
-        data-aos-duration="500"
-        data-aos-delay="100">
+        
+        
+        >
         {
             reviewItems.map((data) => (
                 <div

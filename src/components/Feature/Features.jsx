@@ -4,9 +4,9 @@ import React from 'react'
 const Features = () => {
     return (
         <div
-        data-aos="fade-up"
-        data-aos-duration="500"
-        data-aos-delay="100"
+        
+        
+        
         className="mx-[5vw] my-[5vw] grid xs:grid-cols-2 gap-[2vw] md:grid-cols-4"
       >
         <div className="flex justify-center items-center flex-col p-[1.5vw] bg-darkGreen rounded-lg">
