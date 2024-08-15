@@ -13,7 +13,7 @@ const Banner = () => {
                 </h1>
                 <a
                     href='#'
-                    className='bg-milkWhite text-lightTextColor mt-[4vw] sm:mt-[3vw] md:mt-[2.5vw] w-[30vw] sm:w-[30vw] md:w-[12.5vw] h-[8vw] sm:h-[8vw] md:h-[4vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.5vw] lg:text-[1.2vw] flex justify-center items-center rounded-[3vw] lg:rounded-[1.5vw] font-bold'>
+                    className='bg-milkWhite text-lightTextColor font-OpenSans mt-[4vw] sm:mt-[3vw] md:mt-[2.5vw] w-[30vw] sm:w-[30vw] md:w-[12.5vw] h-[8vw] sm:h-[8vw] md:h-[4vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.5vw] lg:text-[1.2vw] flex justify-center items-center rounded-[3vw] lg:rounded-[1.5vw] font-bold'>
                     Buy Now
                 </a>
             </div>

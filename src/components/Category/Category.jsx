@@ -15,7 +15,7 @@ const Category = () => {
                     Explore Our Herbal Categories
                 </h1>
                 <p
-                    className="text-center w-full xs:w-[80vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] text-[3vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor">
+                    className="text-center w-full xs:w-[80vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] text-[3vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor font-OpenSans">
                     Discover a wide variety of herbal products tailored to support your health and
                     wellness needs. Browse through our categories to find the perfect remedies for
                     your lifestyle.
@@ -38,7 +38,7 @@ const Category = () => {
                         <h2
                             className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herbal Teas</h2>
                         <p
-                            className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor">Strengthen your bodys defences with our range of herbal teas.</p>
+                            className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Strengthen your bodys defences with our range of herbal teas.</p>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ const Category = () => {
                             <h2
                                 className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herb Seeds and Plants</h2>
                             <p
-                                className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor">Find peace and calm with our stress-relief herbs.</p>
+                                className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Find peace and calm with our stress-relief herbs.</p>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ const Category = () => {
                             <h2
                                 className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herbal Remedies</h2>
                             <p
-                                className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor">Support your digestive system with our natural remedies.</p>
+                                className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Support your digestive system with our natural remedies.</p>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const Category = () => {
                         <h2
                             className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herbal Bath Products</h2>
                         <p
-                            className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor">Enhance your natural beauty with our herbal skin care products.</p>
+                            className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Enhance your natural beauty with our herbal skin care products.</p>
                     </div>
                 </div>
             </div>

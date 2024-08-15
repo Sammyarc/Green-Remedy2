@@ -16,7 +16,7 @@ const Product = () => {
                     Our latest arrivals
                 </h1>
                 <p
-                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor'>
+                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor font-OpenSans'>
                     Explore our newest herbal products, carefully selected for quality and
                     effectiveness. Find fresh solutions for your health and wellness needs.
                 </p>

@@ -28,7 +28,7 @@ const Aboutbanner = () => {
                 </p>
                 <a
                     href='#'
-                    className='bg-white text-textColor mt-[2vw] xs:w-[25vw] xs:h-[6vw] xs:text-[2.5vw] md:w-[12vw] md:h-[3vw] md:text-[1.2vw] flex justify-center gap-[0.2vw] items-center border border-textColor rounded-full font-bold'>Learn more
+                    className='bg-white text-textColor mt-[2vw] xs:w-[25vw] xs:h-[6vw] xs:text-[2.5vw] md:w-[12vw] md:h-[3vw] md:text-[1.2vw] flex justify-center gap-[0.2vw] items-center border border-textColor rounded-full font-bold font-OpenSans'>Learn more
                     <img src={RightArrow} alt='Arrow Icon' className='xs:w-[3vw] md:w-[1.4vw]'/></a>
             </div>
         </div>

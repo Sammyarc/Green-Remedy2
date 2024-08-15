@@ -41,7 +41,7 @@ const Blog = () => {
                 <h1
                     className='font-Lora text-[7vw] xs:text-[5vw] sm:text-[4vw] md:text-[2.5vw] text-lightTextColor font-bold text-center'>Recent Blog Post</h1>
                 <p
-                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor'>Stay
+                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor font-OpenSans'>Stay
                     up to date with our recent blog posts, featuring insightful articles on health,
                     wellness, and natural remedies for your daily life.
                 </p>
@@ -86,7 +86,7 @@ const Blog = () => {
                 className='flex justify-center mt-[6vw] xs:mt-[5vw] sm:mt-[4vw] md:mt-[3vw]'>
                 <a
                     href='#'
-                    className='text-darkGreen xs:w-[45vw] sm:w-[30vw] md:w-[24vw] h-[10vw] xs:h-[8vw] sm:h-[6vw] md:h-[5vw] text-[4vw] xs:text-[3vw] sm:text-[2vw] md:text-[1.5vw] flex justify-center gap-[1vw] items-center border border-darkGreen rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-2xl font-bold'>
+                    className='text-darkGreen xs:w-[45vw] sm:w-[30vw] md:w-[24vw] h-[10vw] xs:h-[8vw] sm:h-[6vw] md:h-[5vw] text-[4vw] xs:text-[3vw] sm:text-[2vw] md:text-[1.5vw] flex justify-center gap-[1vw] items-center border border-darkGreen rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-2xl font-bold font-OpenSans'>
                     Explore more blog posts
                     <img
                         src={RightArrow}

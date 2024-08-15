@@ -12,12 +12,12 @@ const Newsletter = () => {
             Discover the latest health and wellness tips, exclusive discounts, and updates on our products and services by subscribing to our newsletter.
         </p>
     </div>
-    <div className='md:bg-white w-full md:w-[50vw] h-auto sm:h-[10vw] md:h-[35vw] flex flex-col xs:flex-row md:justify-center items-center gap-3 py-[4vw] xs:py-[3vw] sm:py-0'>
+    <div className='md:bg-white w-full md:w-[50vw] h-auto sm:h-[10vw] md:h-[35vw] flex flex-col xs:flex-row md:justify-center items-center gap-3 py-[4vw] xs:py-[3vw] sm:py-0 sm:mt-[2.2vw] md:mt-[0]'>
         <input 
             type='text' 
             placeholder='Enter your Email' 
-            className='xs:w-[50vw] md:w-[30vw] rounded-xl border-[0.15vw] border-darkGreen outline-none xs:py-[1.5vw] md:py-[1vw] xs:px-[3vw] text-[3vw] sm:text-[2vw] md:text-[1.5vw] placeholder:text-gray-400 placeholder:font-OpenSans'/>
-        <button className='xs:bg-white md:bg-darkGreen xs:text-darkGreen md:text-white rounded-xl border-2 border-darkGreen xs:w-[40vw] sm:w-[20vw] md:w-[12.5vw] xs:h-[8vw] sm:h-[6.5vw] md:h-[4.5vw] text-[3vw] sm:text-[2vw] md:text-[1.5vw] font-OpenSans font-bold'>
+            className='xs:w-[50vw] md:w-[30vw] font-OpenSans rounded-xl border-[0.15vw] border-darkGreen outline-none xs:py-[2.5vw] md:py-[1vw] xs:px-[3vw] text-[3vw] sm:text-[2.2vw] md:text-[1.5vw] placeholder:text-gray-400 placeholder:font-OpenSans'/>
+        <button className='xs:bg-white md:bg-darkGreen xs:text-darkGreen md:text-white rounded-xl border-2 border-darkGreen xs:w-[40vw] sm:w-[20vw] md:w-[12.5vw] xs:h-[10.5vw] sm:h-[8.5vw] md:h-[4.5vw] text-[3vw] sm:text-[2vw] md:text-[1.5vw] font-OpenSans font-bold'>
             Subscribe
         </button>
     </div>
