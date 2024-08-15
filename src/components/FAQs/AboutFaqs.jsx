@@ -52,62 +52,50 @@ const AboutFaqs = () => {
     };
 
     return (
-        <div className="px-4 py-8 md:px-[10vw] md:py-[5vw]">
-            {/* Header section */}
-            <div className="flex flex-col justify-center items-center">
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="100"
-                    className="font-Lora text-[5vw] xs:text-[4vw] sm:text-[3vw] md:text-[2.5vw] text-lightTextColor font-bold">
-                    Frequently asked questions
-                </h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="200"
-                    className="text-center w-full xs:w-[80vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] text-[3vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor">
-                    Stay up to date with our recent blog posts, featuring insightful articles on
-                    health, wellness, and natural remedies for your daily life.
-                </p>
-            </div>
+        <div className="px-[4vw] py-[8vw] md:px-[10vw] md:py-[5vw]">
 
-            {/* Body section */}
+        {/* Header section */}
 
-            <div
-                className="space-y-4 mt-[5vw] w-[60vw] mx-auto"
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="400">
-                {
-                    faqs.map((faq, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-md">
-                            <div
-                                className="flex justify-between items-center p-4 cursor-pointer"
-                                onClick={() => toggleFAQ(index)}>
-                                <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
-                                <div
-                                    className='w-[2vw] h-[2.4vw] flex justify-center items-center border border-darkGreen'>
-                                    <FaChevronDown
-                                        className={`transform transition-transform duration-300 text-lg text-textColor ${
-                                        activeIndex === index
-                                            ? 'rotate-180'
-                                            : ''}`}/>
-                                </div>
-
-                            </div>
-                            {
-                                activeIndex === index && (
-                                    <div className="p-4 text-gray-600">
-                                        {faq.answer}
-                                    </div>
-                                )
-                            }
-                        </div>
-                    ))
-                }
-            </div>
+        <div className="flex flex-col justify-center items-center">
+            <h1
+                className="font-Lora text-[5vw] md:text-[3vw] text-lightTextColor font-bold">
+                Frequently asked questions
+            </h1>
+            <p
+                className="text-center w-[90vw] xs:w-[80vw] md:w-[60vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-lightTextColor">
+                Stay up to date with our recent blog posts, featuring insightful articles on health, wellness, and natural remedies for your daily life.
+            </p>
         </div>
+    
+        {/* Body section */}
+
+        <div className="space-y-[2vw] mt-[4vw] w-[85vw] md:w-[70vw] mx-auto">
+            {
+                faqs.map((faq, index) => (
+                    <div key={index} className="bg-white rounded-lg shadow-md">
+                        <div
+                            className="flex justify-between items-center px-[3vw] py-[3vw] md:px-[1.5vw] md:py-[1.5vw] cursor-pointer"
+                            onClick={() => toggleFAQ(index)}>
+                            <h3 className="text-[3vw] md:text-[1.7vw] font-OpenSans font-semibold text-gray-800">{faq.question}</h3>
+                            <div className='w-[7vw] h-[7vw] md:w-[4vw] md:h-[3.5vw] flex justify-center items-center border border-darkGreen'>
+                                <FaChevronDown
+                                    className={`transform transition-transform duration-300 text-[3.5vw] md:text-[2vw] text-textColor ${
+                                        activeIndex === index ? 'rotate-180' : ''}`}/>
+                            </div>
+                        </div>
+                        {
+                            activeIndex === index && (
+                                <div className="xs:pb-[4vw] xs:px-[3vw] md:px-[1.5vw] md:pb-[1.5vw] text-[2.5vw] md:text-[1.4vw] text-gray-600 font-OpenSans">
+                                    {faq.answer}
+                                </div>
+                            )
+                        }
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+    
     );
 }
 

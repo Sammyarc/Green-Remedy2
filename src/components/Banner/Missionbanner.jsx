@@ -4,28 +4,20 @@ import BannerImage from '../../assets//Big.png'
 
 const Missionbanner = () => {
     return (
-        <div
-            className='flex justify-between gap-[1.6vw] items-center mx-[5vw] mt-[5vw] mb-[10vw]  border-2 border-textColor rounded-[1.5vw]'>
-            <div className='m-auto'>
-                <h1
-                    data-aos="zoom-out"
-                    data-aos-duration="500"
-                    className='text-[2.5vw] font-Lora font-bold leading-tight text-textColor'>
-                    Our Mission</h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-delay="100"
-                    className='mt-[1.3vw] text-[1vw] w-[30vw] text-textColor font-OpenSans'>At
-                    Green Remedies, our mission is to provide high-quality, natural herbal products
-                    that promote health and well-being. We believe in the power of nature to heal
-                    and enhance life, and we are committed to bringing you the best that nature has
-                    to offer.</p>
-            </div>
-            <div data-aos="zoom-in">
-                <img src={BannerImage} className='w-[40vw]' alt='An image of different herbs'/>
-            </div>
-        </div>
+        <div className='flex flex-col md:flex-row justify-between gap-[3vw] items-center mx-[5vw] mt-[5vw] mb-[10vw] border-2 border-textColor rounded-[1.5vw]'>
+    <div className='m-auto md:w-1/2 px-[4vw] py-[4vw] md:py-0'>
+        <h1 className='text-[5vw] text-center md:text-left md:text-[3vw] font-Lora font-bold leading-tight text-textColor'>
+            Our Mission
+        </h1>
+        <p className='mt-[2vw] text-[2.5vw] md:text-[1.3vw] text-textColor font-OpenSans'>
+            At Green Remedies, our mission is to provide high-quality, natural herbal products that promote health and well-being. We believe in the power of nature to heal and enhance life, and we are committed to bringing you the best that nature has to offer.
+        </p>
+    </div>
+    <div>
+        <img src={BannerImage} className='w-[100vw] h-[30vw] md:w-[40vw] object-cover rounded-[0] md:rounded-r-[1.5vw]' alt='An image of different herbs'/>
+    </div>
+</div>
+
     )
 }
 
