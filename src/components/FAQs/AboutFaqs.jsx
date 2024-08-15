@@ -62,7 +62,7 @@ const AboutFaqs = () => {
                 Frequently asked questions
             </h1>
             <p
-                className="text-center w-[90vw] xs:w-[80vw] md:w-[60vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-lightTextColor">
+                className="text-center w-[90vw] xs:w-[80vw] md:w-[60vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-lightTextColor font-OpenSans">
                 Stay up to date with our recent blog posts, featuring insightful articles on health, wellness, and natural remedies for your daily life.
             </p>
         </div>
