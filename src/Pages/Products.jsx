@@ -8,7 +8,12 @@ import Newsletter from '../components/Newsletter/Newsletter.jsx';
 
 
 
+
 const Products = () => {
+  React.useEffect(() => {
+    AOS.init({offset: 100, duration: 800, easing: 'ease', delay: 100});
+    AOS.refresh();
+}, []);
   return (
     <div>
       <Navbar />

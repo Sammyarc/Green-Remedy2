@@ -38,6 +38,7 @@ const Newsletter = ({ onSubmit }) => {
   };
 
   return (
+
     <div className="w-full md:h-[380px] flex flex-col md:flex-row overflow-hidden border-darkGreen border-4 mt-5 mb-10">
       {/* Description */}
       <div className="flex-1 md:flex-[2] bg-darkGreen text-white p-6 mb-6 md:mb-0 flex flex-col justify-center text-center items-center">
@@ -77,5 +78,6 @@ const Newsletter = ({ onSubmit }) => {
     </div>
   );
 };
+
 
 export default Newsletter;
