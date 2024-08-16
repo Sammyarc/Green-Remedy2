@@ -32,6 +32,7 @@ export default {
         lightTextColor: '#2F4F38',
         darkTextColor: '#2F4F4F',
         milkWhite: '#F8F8FF',
+        productBg: '#F8F8F8',
       },
     },
    

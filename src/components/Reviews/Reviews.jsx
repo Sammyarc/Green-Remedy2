@@ -1,14 +1,14 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import Quotes from '../../assets/Icons/quotes.svg'
-import Starfilled from '../../assets/Icons/star-filled.svg'
-import Starempty from '../../assets/Icons/star-empty.svg'
-import Review1 from '../../assets/jake-nackos-IF9TK5Uy-KI-unsplash (2).jpg'
-import Review2 from '../../assets/michael-dam-mEZ3PoFGs_k-unsplash (2).jpg'
-import Review3 from '../../assets/oluwaferanmi-caleb-Q1QRTSeZIxI-unsplash (2).jpg'
-import Review4 from '../../assets/pexels-photo-1222271.jpeg'
-import Review5 from '../../assets/christopher-campbell-rDEOVtE7vOs-unsplash (2).jpg'
-import Review6 from '../../assets/cody-scott-milewski-vXgV5XUlTog-unsplash (2).jpg'
+import React from "react";
+import Quotes from "../../assets/Icons/quotes.svg";
+import Starfilled from "../../assets/Icons/star-filled.svg";
+import Starempty from "../../assets/Icons/star-empty.svg";
+import Review1 from "../../assets/jake-nackos-IF9TK5Uy-KI-unsplash (2).jpg";
+import Review2 from "../../assets/michael-dam-mEZ3PoFGs_k-unsplash (2).jpg";
+import Review3 from "../../assets/oluwaferanmi-caleb-Q1QRTSeZIxI-unsplash (2).jpg";
+import Review4 from "../../assets/pexels-photo-1222271.jpeg";
+import Review5 from "../../assets/christopher-campbell-rDEOVtE7vOs-unsplash (2).jpg";
+import Review6 from "../../assets/cody-scott-milewski-vXgV5XUlTog-unsplash (2).jpg";
 
 const reviewItems = [
     {
@@ -75,8 +75,8 @@ const reviewItems = [
 ]
 
 const Reviews = () => {
-    return (
-        <div className='px-[5vw] pt-[8vw] pb-[5vw] bg-darkGreen'>
+  return (
+    <div className="px-[5vw] pt-[8vw] pb-[5vw] bg-darkGreen">
 
             {/* Header section */}
             <div className='flex flex-col justify-center items-center'>
@@ -132,10 +132,13 @@ const Reviews = () => {
                         ))
                     }
                 </div>
+              </div>
             </div>
 
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Reviews
+export default Reviews;
