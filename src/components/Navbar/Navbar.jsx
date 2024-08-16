@@ -1,7 +1,6 @@
-
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import {useState} from "react";
+import {Link} from "react-router-dom";
+import {MenuIcon, XIcon} from "@heroicons/react/outline";
 import Logo from "../../assets/logo/green remedies llogo-black.png";
 import Search from "../../assets/Icons/search.svg";
 import Signup from "../../assets/Icons/person.svg";
@@ -32,13 +31,7 @@ const Menu = [
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-
-  const isAuthRoute = () => {
-    return location.pathname === "/signin" || location.pathname === "/signup";
-  };
-
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className="xs:px-[2.5vw] bg-milkWhite">
@@ -149,80 +142,8 @@ const Navbar = () => {
                 </ul>
             </div>
 
-          </div>
-          {/* signup and cart button */}
-          <div className="hidden md:flex md:gap-[3vw] md:items-center">
-            {/* signup */}
-            <Link
-              // to="/signup"
-              to={isAuthRoute() ? "/account" : "/signup"}
-              className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer"
-            >
-              <div className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
-                <img src={Signup} alt="Signup Icon" className="w-[1.7vw]" />
-              </div>
-              <span className="md:text-[1.3vw] text-textColor">
-                {/* Sign-in/Sign-up */}
-                {isAuthRoute() ? "Account" : "Sign-in/Sign-up"}
-              </span>
-            </Link>
-            {/* cart button */}
-            <Link
-              to="/cart"
-              className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer"
-            >
-              <div className="md:w-[2.7vw] md:h-[2.7vw] rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
-                <img src={Cart} alt="Cart Icon" className="w-[1.7vw]" />
-              </div>
-              <span className="md:text-[1.3vw] text-textColor">Cart</span>
-            </Link>
-          </div>
-
         </div>
-      </div>
-      {/* lower Navbar */}
-      <div
-        className={`${
-          isOpen ? "block" : "hidden"
-        } md:flex md:justify-center md:items-center md:py-[2vw]`}
-      >
-        <ul className="md:flex md:justify-center md:items-center md:gap-[1.5vw]">
-          {Menu.map((data) => (
-            <li key={data.id} className="md:my-0 my-4">
-              <Link
-                to={data.link}
-                className="block md:text-[1.3vw] text-lightTextColor hover:text-darkGreen transition md:font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {data.name}
-              </Link>
-            </li>
-          ))}
-          {/* Signup and Cart links in mobile view */}
-          <li className="my-2 md:hidden">
-            <Link
-              // to="/signup"
-              to={isAuthRoute() ? "/account" : "/signup"}
-              className="flex items-center text-lightTextColor hover:text-darkGreen transition md:font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              {/* Sign-in/Sign-up */}
-              {isAuthRoute() ? "Account" : "Sign-in/Sign-up"}
-            </Link>
-          </li>
-          <li className="my-2 md:hidden">
-            <Link
-              to="/cart"
-              className="flex items-center text-lightTextColor hover:text-darkGreen transition md:font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Cart
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Navbar;
