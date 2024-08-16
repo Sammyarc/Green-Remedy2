@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -111,7 +112,7 @@ export default function Signin() {
           </div>
         </form>
         <p className="mt-4 text-center text-sm text-gray-600">
-          Don't have an account?
+          Don&apos;t have an account?
           <Link
             to="/signup"
             className="font-medium text-darkGreen hover:text-darkerGreen"
