@@ -9,6 +9,7 @@ import AboutUs from './Pages/AboutUs.jsx';
 import ContactUs from './Pages/ContactUs.jsx';
 import Signup from './Pages/Signup.jsx';
 import Signin from './Pages/Signin.jsx';
+import ProductDetail from'./Pages/ProductDetail.jsx';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/product/:name" element={<ProductDetail />} />
       </Routes>
     </Router>
   );

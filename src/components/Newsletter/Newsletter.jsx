@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from 'react';
 import useFormHook from "../../hooks/useFormHook";
 const initialState = {
   newsletterEmail: "",
 };
 
+// eslint-disable-next-line react/prop-types
 const Newsletter = ({ onSubmit }) => {
-    const [formData, handleChange, _, resetForm] = useFormHook(initialState);
+    const [formData, handleChange, resetForm] = useFormHook(initialState);
     // "_" skips the third return value
     const handleSubmit = (e) => {
       e.preventDefault();

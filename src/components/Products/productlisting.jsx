@@ -304,7 +304,6 @@ const Productlisting = () => {
                     </div>
                 </div>
 
-                {/* Product Grid */}
                 <div>
                     {/* Product Grid */}
 
@@ -313,7 +312,7 @@ const Productlisting = () => {
                         {
                             currentProducts.map(product => (
                                 <div key={product.id} className="bg-productBg ml-[1vw] p-[2vw] rounded-[1.5vw]">
-                                    <Link to={`/product/${product.id}`}>
+                                    <Link to={`/product/${product.name}`}>
                                         <img
                                             src={product.image}
                                             alt={product.name}
