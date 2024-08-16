@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Logo from "../../assets/logo/green remedies llogo-black.png";
 import Search from "../../assets/Icons/search.svg";
@@ -16,6 +16,11 @@ const Menu = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const isAuthRoute = () => {
+    return location.pathname === "/signin" || location.pathname === "/signup";
+  };
 
   return (
     <div className="xs:px-[5vw] bg-milkWhite">
@@ -50,14 +55,16 @@ const Navbar = () => {
           <div className="hidden md:flex md:gap-[3vw] md:items-center">
             {/* signup */}
             <Link
-              to="/signup"
+              // to="/signup"
+              to={isAuthRoute() ? "/account" : "/signup"}
               className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer"
             >
               <div className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
                 <img src={Signup} alt="Signup Icon" className="w-[1.7vw]" />
               </div>
               <span className="md:text-[1.3vw] text-textColor">
-                Sign-in/Sign-up
+                {/* Sign-in/Sign-up */}
+                {isAuthRoute() ? "Account" : "Sign-in/Sign-up"}
               </span>
             </Link>
             {/* cart button */}
@@ -105,11 +112,13 @@ const Navbar = () => {
           {/* Signup and Cart links in mobile view */}
           <li className="my-2 md:hidden">
             <Link
-              to="/signup"
+              // to="/signup"
+              to={isAuthRoute() ? "/account" : "/signup"}
               className="flex items-center text-lightTextColor hover:text-darkGreen transition md:font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Sign-in/Sign-up
+              {/* Sign-in/Sign-up */}
+              {isAuthRoute() ? "Account" : "Sign-in/Sign-up"}
             </Link>
           </li>
           <li className="my-2 md:hidden">
