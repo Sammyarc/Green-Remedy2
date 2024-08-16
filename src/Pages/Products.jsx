@@ -4,6 +4,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import Navbar from '../components/Navbar/Navbar.jsx';
 import Footer from '../components/Footer/Footer.jsx';
+import Productlisting from '../components/Products/productlisting.jsx';
 
 
 
@@ -15,6 +16,7 @@ const Products = () => {
   return (
     <div>
       <Navbar />
+      <Productlisting />
       <Footer />
     </div>
   )
