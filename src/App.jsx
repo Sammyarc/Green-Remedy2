@@ -7,6 +7,8 @@ import Products from './Pages/Products.jsx';
 import HealthResources from './Pages/HealthResources.jsx';
 import AboutUs from './Pages/AboutUs.jsx';
 import ContactUs from './Pages/ContactUs.jsx';
+import Signup from './Pages/Signup.jsx';
+import Signin from './Pages/Signin.jsx';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/health-resources" element={<HealthResources />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
     </Router>
   );
