@@ -1,38 +1,33 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-import Sentiment from "../../assets/Icons/sentiment_satisfied.svg";
-import Plant from "../../assets/Icons/Group 4.svg";
-import Library from "../../assets/Icons/local_library.svg";
+import React from 'react'
+import Sentiment from '../../assets/Icons/sentiment_satisfied.svg'
+import Plant from '../../assets/Icons/Group 4.svg'
+import Library from '../../assets/Icons/local_library.svg'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const Grid = [
-  {
-    id: 1,
-    image: Sentiment,
-    heading: "Customer Satisfaction",
-    paragraph:
-      "Your satisfaction is our priority. We offer a hassle-free return policy and ex" +
-      "cellent customer support to ensure you have the best experience.",
-  },
-  {
-    id: 2,
-    image: Plant,
-    heading: "Traditional Herbs",
-    paragraph:
-      "We source our herbs directly from trusted growers who follow traditional metho" +
-      "ds, ensuring you receive authentic and high-quality products.",
-  },
-  {
-    id: 3,
-    image: Library,
-    heading: "Educational Resources",
-    paragraph:
-      "Access detailed information and guidance on the benefits and uses of each herb" +
-      ", helping you make informed decisions about your health.",
-  },
-];
+    {
+        id: 1,
+        image: Sentiment,
+        heading: "Customer Satisfaction",
+        paragraph: "Your satisfaction is our priority. We offer a hassle-free return policy and ex" +
+                "cellent customer support to ensure you have the best experience."
+    }, {
+        id: 2,
+        image: Plant,
+        heading: "Traditional Herbs",
+        paragraph: "We source our herbs directly from trusted growers who follow traditional metho" +
+                "ds, ensuring you receive authentic and high-quality products."
+    }, {
+        id: 3,
+        image: Library,
+        heading: "Educational Resources",
+        paragraph: "Access detailed information and guidance on the benefits and uses of each herb" +
+                ", helping you make informed decisions about your health."
+    }
+]
 
-const why = () => {  
+const why = () => {
     return (
         <div className='px-[5vw] my-[2vw]'>
             {/* Header section */}
@@ -72,12 +67,10 @@ const why = () => {
                         ))
                     }
                 </div>
-
             </div>
-          ))}
         </div>
+
     )
 }
 
-
-export default why;
+export default why
