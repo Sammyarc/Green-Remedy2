@@ -30,8 +30,8 @@ const Aboutbanner = () => {
                     data-aos-duration="500"
                     data-aos-delay="200"
                     href='#'
-                    className='bg-white text-textColor mt-[2vw] w-[12vw] h-[3vw] text-[1.1vw] flex justify-center gap-[0.2vw] items-center border border-textColor rounded-full font-bold'>Learn more
-                    <img src={RightArrow} alt='Arrow Icon' className='w-[1.5vw]'/></a>
+                    className='bg-white text-textColor mt-[2vw] xs:w-[25vw] xs:h-[6vw] xs:text-[2.5vw] md:w-[12vw] md:h-[3vw] md:text-[1.2vw] flex justify-center gap-[0.2vw] items-center border border-textColor rounded-full font-bold font-OpenSans'>Learn more
+                    <img src={RightArrow} alt='Arrow Icon' className='xs:w-[3vw] md:w-[1.4vw]'/></a>
             </div>
         </div>
     )
