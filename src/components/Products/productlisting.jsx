@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import { useState, useEffect, useRef } from 'react';
+import {useState, useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom';
 import productsData from '../../assets/products.json';
 import {FaMinus, FaPlus} from 'react-icons/fa';
@@ -8,12 +8,9 @@ import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
 
 const Productlisting = () => {
     // State to track which checkboxes are checked in each filter category
-    const [checkedFilters, setCheckedFilters] = useState({
-        categories: [],
-        price: [],
-        herbalIngredients: [],
-        dietaryPreferences: []
-    });
+    const [checkedFilters, setCheckedFilters] = useState(
+        {categories: [], price: [], herbalIngredients: [], dietaryPreferences: []}
+    );
 
     // Sample options for the sake of example
     const categoryOptions = ['Sleep Aid', 'Detox', 'Digestive Health'];
@@ -29,15 +26,22 @@ const Productlisting = () => {
 
     const toggleCategory = () => setIsCategoryOpen(!isCategoryOpen);
     const togglePrice = () => setIsPriceOpen(!isPriceOpen);
-    const toggleHerbalIngredients = () => setIsHerbalIngredientsOpen(!isHerbalIngredientsOpen);
-    const toggleDietaryPreferences = () => setIsDietaryPreferencesOpen(!isDietaryPreferencesOpen);
+    const toggleHerbalIngredients = () => setIsHerbalIngredientsOpen(
+        !isHerbalIngredientsOpen
+    );
+    const toggleDietaryPreferences = () => setIsDietaryPreferencesOpen(
+        !isDietaryPreferencesOpen
+    );
 
     // Function to handle checkbox changes
     const handleCheckboxChange = (category, option) => {
         setCheckedFilters(prevState => {
             const updatedCategory = prevState[category].includes(option)
                 ? prevState[category].filter(item => item !== option)
-                : [...prevState[category], option];
+                : [
+                    ...prevState[category],
+                    option
+                ];
 
             return {
                 ...prevState,
@@ -48,12 +52,9 @@ const Productlisting = () => {
 
     // Function to clear all filters
     const clearFilters = () => {
-        setCheckedFilters({
-            categories: [],
-            price: [],
-            herbalIngredients: [],
-            dietaryPreferences: []
-        });
+        setCheckedFilters(
+            {categories: [], price: [], herbalIngredients: [], dietaryPreferences: []}
+        );
     };
 
     const [activeTab, setActiveTab] = useState('Shop All');
@@ -92,7 +93,7 @@ const Productlisting = () => {
         window.addEventListener('resize', updateProductsPerPage);
 
         // Cleanup the event listener on unmount
-        return () => window.removeEventListener('resize', updateProductsPerPage);
+        return() => window.removeEventListener('resize', updateProductsPerPage);
     }, []);
 
     // Calculate total pages
@@ -101,181 +102,205 @@ const Productlisting = () => {
     // Get current products
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-    const currentProducts = productsData.products.slice(indexOfFirstProduct, indexOfLastProduct);
+    const currentProducts = productsData
+        .products
+        .slice(indexOfFirstProduct, indexOfLastProduct);
 
     // Change page and scroll to top
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
         if (productListRef.current) {
-            productListRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
+            productListRef
+                .current
+                .scrollIntoView({behavior: 'auto', block: 'start'});
         }
     };
 
     return (
-        <div ref={productListRef} className='flex flex-col md:flex-row px-4 md:px-[5vw] mb-7'>
+        <div
+            ref={productListRef}
+            className='flex flex-col md:flex-row px-4 md:px-[5vw] mb-7'>
 
             {/* Filter Section */}
 
             <div className='w-full md:w-[15vw]'>
 
-            <div className='flex justify-between items-center gap-5'>
-                <h2 className='font-OpenSans font-semibold text-[5.5vw] md:text-[1.5vw] text-lightTextColor'>Filters</h2>
-                <button
-                    className='border-b-[0.15vw] text-[3.5vw] md:text-[1vw] border-lightTextColor text-lightTextColor font-PublicSans font-medium'
-                    onClick={clearFilters}>
-                    Clear filters
-                </button>
-            </div>
+                <div className='flex justify-between items-center gap-5'>
+                    <h2
+                        className='font-OpenSans font-semibold text-[5.5vw] md:text-[1.5vw] text-lightTextColor'>Filters</h2>
+                    <button
+                        className='border-b-[0.15vw] text-[3.5vw] md:text-[1vw] border-lightTextColor text-lightTextColor font-PublicSans font-medium'
+                        onClick={clearFilters}>
+                        Clear filters
+                    </button>
+                </div>
 
-            {/* Categories */}
-            <div className="py-[2.5vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+                {/* Categories */}
                 <div
-                    className="flex gap-2 items-center cursor-pointer"
-                    onClick={toggleCategory}>
+                    className="py-[2.5vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div
-                        className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
-                        {
-                            isCategoryOpen
-                                ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                                : <FaPlus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                        }
+                        className="flex gap-2 items-center cursor-pointer"
+                        onClick={toggleCategory}>
+                        <div
+                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            {
+                                isCategoryOpen
+                                    ? <FaMinus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    : <FaPlus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                            }
+                        </div>
+                        <h3
+                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Categories</h3>
                     </div>
-                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Categories</h3>
+                    {
+                        isCategoryOpen && (
+                            <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
+                                {
+                                    categoryOptions.map(option => (
+                                        <li key={option}>
+                                            <label className="flex items-center cursor-pointer">
+                                                <input
+                                                    type="checkbox"
+                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    checked={checkedFilters
+                                                        .categories
+                                                        .includes(option)}
+                                                    onChange={() => handleCheckboxChange('categories', option)}/>
+                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                            </label>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
                 </div>
-                {
-                    isCategoryOpen && (
-                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
-                            {categoryOptions.map(option => (
-                                <li key={option}>
-                                    <label className="flex items-center cursor-pointer">
-                                        <input
-                                            type="checkbox"
-                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
-                                            checked={checkedFilters.categories.includes(option)}
-                                            onChange={() => handleCheckboxChange('categories', option)}
-                                        />
-                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
-                                    </label>
-                                </li>
-                            ))}
-                        </ul>
-                    )
-                }
-            </div>
 
-            {/* Price */}
-            <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
-                <div className="flex gap-2 items-center cursor-pointer" onClick={togglePrice}>
-                    <div
-                        className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
-                        {
-                            isPriceOpen
-                                ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                                : <FaPlus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                        }
+                {/* Price */}
+                <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+                    <div className="flex gap-2 items-center cursor-pointer" onClick={togglePrice}>
+                        <div
+                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            {
+                                isPriceOpen
+                                    ? <FaMinus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    : <FaPlus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                            }
+                        </div>
+                        <h3
+                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Price</h3>
                     </div>
-                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Price</h3>
+                    {
+                        isPriceOpen && (
+                            <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
+                                {
+                                    priceOptions.map(option => (
+                                        <li key={option}>
+                                            <label className="flex items-center cursor-pointer">
+                                                <input
+                                                    type="checkbox"
+                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    checked={checkedFilters
+                                                        .price
+                                                        .includes(option)}
+                                                    onChange={() => handleCheckboxChange('price', option)}/>
+                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                            </label>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
                 </div>
-                {
-                    isPriceOpen && (
-                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
-                            {priceOptions.map(option => (
-                                <li key={option}>
-                                    <label className="flex items-center cursor-pointer">
-                                        <input
-                                            type="checkbox"
-                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
-                                            checked={checkedFilters.price.includes(option)}
-                                            onChange={() => handleCheckboxChange('price', option)}
-                                        />
-                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
-                                    </label>
-                                </li>
-                            ))}
-                        </ul>
-                    )
-                }
-            </div>
 
-            {/* Herbal Ingredients */}
-            <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
-                <div
-                    className="flex gap-2 items-center cursor-pointer"
-                    onClick={toggleHerbalIngredients}>
+                {/* Herbal Ingredients */}
+                <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div
-                        className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
-                        {
-                            isHerbalIngredientsOpen
-                                ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                                : <FaPlus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                        }
+                        className="flex gap-2 items-center cursor-pointer"
+                        onClick={toggleHerbalIngredients}>
+                        <div
+                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            {
+                                isHerbalIngredientsOpen
+                                    ? <FaMinus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    : <FaPlus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                            }
+                        </div>
+                        <h3
+                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Herbal Ingredients</h3>
                     </div>
-                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Herbal Ingredients</h3>
+                    {
+                        isHerbalIngredientsOpen && (
+                            <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
+                                {
+                                    herbalOptions.map(option => (
+                                        <li key={option}>
+                                            <label className="flex items-center cursor-pointer">
+                                                <input
+                                                    type="checkbox"
+                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    checked={checkedFilters
+                                                        .herbalIngredients
+                                                        .includes(option)}
+                                                    onChange={() => handleCheckboxChange('herbalIngredients', option)}/>
+                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                            </label>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
                 </div>
-                {
-                    isHerbalIngredientsOpen && (
-                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
-                            {herbalOptions.map(option => (
-                                <li key={option}>
-                                    <label className="flex items-center cursor-pointer">
-                                        <input
-                                            type="checkbox"
-                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
-                                            checked={checkedFilters.herbalIngredients.includes(option)}
-                                            onChange={() => handleCheckboxChange('herbalIngredients', option)}
-                                        />
-                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
-                                    </label>
-                                </li>
-                            ))}
-                        </ul>
-                    )
-                }
-            </div>
 
-            {/* Dietary Preferences */}
-            <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
-                <div
-                    className="flex gap-2 items-center cursor-pointer"
-                    onClick={toggleDietaryPreferences}>
+                {/* Dietary Preferences */}
+                <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div
-                        className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
-                        {
-                            isDietaryPreferencesOpen
-                                ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                                : <FaPlus
-                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
-                        }
+                        className="flex gap-2 items-center cursor-pointer"
+                        onClick={toggleDietaryPreferences}>
+                        <div
+                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            {
+                                isDietaryPreferencesOpen
+                                    ? <FaMinus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    : <FaPlus
+                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                            }
+                        </div>
+                        <h3
+                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Dietary Preferences</h3>
                     </div>
-                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Dietary Preferences</h3>
+                    {
+                        isDietaryPreferencesOpen && (
+                            <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
+                                {
+                                    dietaryOptions.map(option => (
+                                        <li key={option}>
+                                            <label className="flex items-center cursor-pointer">
+                                                <input
+                                                    type="checkbox"
+                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    checked={checkedFilters
+                                                        .dietaryPreferences
+                                                        .includes(option)}
+                                                    onChange={() => handleCheckboxChange('dietaryPreferences', option)}/>
+                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                            </label>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
                 </div>
-                {
-                    isDietaryPreferencesOpen && (
-                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
-                            {dietaryOptions.map(option => (
-                                <li key={option}>
-                                    <label className="flex items-center cursor-pointer">
-                                        <input
-                                            type="checkbox"
-                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
-                                            checked={checkedFilters.dietaryPreferences.includes(option)}
-                                            onChange={() => handleCheckboxChange('dietaryPreferences', option)}
-                                        />
-                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
-                                    </label>
-                                </li>
-                            ))}
-                        </ul>
-                    )
-                }
-            </div>
 
             </div>
 
@@ -284,7 +309,8 @@ const Productlisting = () => {
                 {/* Tab Section */}
 
                 <div className="flex justify-between items-center md:px-4 md:pl-10">
-                    <div className="grid grid-cols-3 gap-[1.5vw] md:gap-[0] md:flex md:space-x-[0.5vw]">
+                    <div
+                        className="grid grid-cols-3 gap-[1.5vw] md:gap-[0] md:flex md:space-x-[0.5vw]">
                         {
                             tabs.map((tab) => (
                                 <button
@@ -316,12 +342,17 @@ const Productlisting = () => {
                                 <div
                                     className="absolute right-0 mt-2 w-[40vw] md:w-[12vw] bg-white border border-gray-200 rounded-lg shadow-lg z-10">
                                     <ul className="text-lightTextColor">
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Price: Low to High</li>
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Price: High to Low</li>
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Newest Arrivals</li>
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Best Sellers</li>
+                                        <li
+                                            className="px-[2vw] py-[2vw] md:px-[1vw] md:py-[0.6vw] font-PublicSans text-[3.2vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer rounded-t-lg">Price: Low to High</li>
+                                        <li
+                                            className="px-[2vw] py-[2vw] md:px-[1vw] md:py-[0.6vw] font-PublicSans text-[3.2vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Price: High to Low</li>
+                                        <li
+                                            className="px-[2vw] py-[2vw] md:px-[1vw] md:py-[0.6vw] font-PublicSans text-[3.2vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Newest Arrivals</li>
+                                        <li
+                                            className="px-[2vw] py-[2vw] md:px-[1vw] md:py-[0.6vw] font-PublicSans text-[3.2vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer rounded-b-lg">Best Sellers</li>
                                     </ul>
                                 </div>
+
                             )
                         }
                     </div>
@@ -330,7 +361,7 @@ const Productlisting = () => {
                 <div>
                     {/* Product Grid */}
 
-                    <div 
+                    <div
                         className="grid grid-cols-2 md:grid-cols-3 gap-y-[3vw] gap-x-[1.5vw] mt-[2vw] pb-[2vw] border-b-[0.15vw] border-lightTextColor">
                         {
                             currentProducts.map(product => (
@@ -362,7 +393,8 @@ const Productlisting = () => {
                                             </div>
                                             <div className='font-OpenSans text-[3vw] md:text-[1vw] font-semibold'>({product.rating})</div>
                                         </div>
-                                        <p className="mt-[0.5vw] text-[4vw] md:text-[1.4vw] text-center font-bold text-darkGreen">{
+                                        <p
+                                            className="mt-[0.5vw] text-[4vw] md:text-[1.4vw] text-center font-bold text-darkGreen">{
                                                 new Intl
                                                     .NumberFormat('en-NG', {
                                                         style: 'currency',

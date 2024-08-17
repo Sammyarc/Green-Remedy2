@@ -72,12 +72,12 @@ const Navbar = () => {
                             // to="/signup"
                             to={isAuthRoute()
                                 ? "/account"
-                                : "/signup"} className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer">
+                                : "/signup"} className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer font-OpenSans">
                             <div
                                 className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
                                 <img src={Signup} alt="Signup Icon" className="w-[1.7vw]"/>
                             </div>
-                            <span className="md:text-[1.3vw] text-textColor">
+                            <span className="md:text-[1.3vw] text-textColor font-OpenSans">
                                 {/* Sign-in/Sign-up */}
                                 {
                                     isAuthRoute()
@@ -94,7 +94,7 @@ const Navbar = () => {
                                 className="md:w-[2.7vw] md:h-[2.7vw] rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
                                 <img src={Cart} alt="Cart Icon" className="w-[1.7vw]"/>
                             </div>
-                            <span className="md:text-[1.3vw] text-textColor">Cart</span>
+                            <span className="md:text-[1.3vw] text-textColor font-OpenSans">Cart</span>
                         </Link>
                     </div>
 
