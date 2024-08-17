@@ -9,27 +9,27 @@ const QuickLinks = [
     {
         id: 1,
         name: "Home",
-        link: "#",
+        link: "/"
     },
     {
         id: 2,
         name: "Products",
-        link: "#",
+        link: "/products"
     },
     {
         id: 3,
         name: "About us",
-        link: "#",
+        link: "/about"
     },
     {
         id: 4,
         name: "Contact us",
-        link: "#",
+        link: "/contact"
     },
     {
         id: 5,
         name: "Health resources",
-        link: "#",
+        link: "/health-resources"
     },
 
 ]
