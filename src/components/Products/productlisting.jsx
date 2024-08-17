@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, {useState} from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {Link} from 'react-router-dom';
 import productsData from '../../assets/products.json';
 import {FaMinus, FaPlus} from 'react-icons/fa';
@@ -73,7 +73,27 @@ const Productlisting = () => {
     };
 
     const [currentPage, setCurrentPage] = useState(1);
-    const productsPerPage = 9;
+    const [productsPerPage, setProductsPerPage] = useState(9);
+    const productListRef = useRef(null);
+
+    useEffect(() => {
+        const updateProductsPerPage = () => {
+            if (window.innerWidth < 768) { // Mobile screens
+                setProductsPerPage(10);
+            } else { // Tablets and laptops
+                setProductsPerPage(9);
+            }
+        };
+
+        // Set initial value
+        updateProductsPerPage();
+
+        // Update on resize
+        window.addEventListener('resize', updateProductsPerPage);
+
+        // Cleanup the event listener on unmount
+        return () => window.removeEventListener('resize', updateProductsPerPage);
+    }, []);
 
     // Calculate total pages
     const totalPages = Math.ceil(productsData.products.length / productsPerPage);
@@ -81,31 +101,34 @@ const Productlisting = () => {
     // Get current products
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-    const currentProducts = productsData
-        .products
-        .slice(indexOfFirstProduct, indexOfLastProduct);
+    const currentProducts = productsData.products.slice(indexOfFirstProduct, indexOfLastProduct);
 
-    // Change page
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+    // Change page and scroll to top
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+        if (productListRef.current) {
+            productListRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
 
     return (
-        <div className='flex px-4 md:px-[5vw] mb-7'>
+        <div ref={productListRef} className='flex flex-col md:flex-row px-4 md:px-[5vw] mb-7'>
 
             {/* Filter Section */}
 
-            <div className='w-[15vw]'>
+            <div className='w-full md:w-[15vw]'>
 
             <div className='flex justify-between items-center gap-5'>
-                <h2 className='font-OpenSans font-semibold text-[1.5vw] text-lightTextColor'>Filters</h2>
+                <h2 className='font-OpenSans font-semibold text-[5.5vw] md:text-[1.5vw] text-lightTextColor'>Filters</h2>
                 <button
-                    className='border-b-[0.15vw] border-lightTextColor text-lightTextColor font-PublicSans font-medium'
+                    className='border-b-[0.15vw] text-[3.5vw] md:text-[1vw] border-lightTextColor text-lightTextColor font-PublicSans font-medium'
                     onClick={clearFilters}>
                     Clear filters
                 </button>
             </div>
 
             {/* Categories */}
-            <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+            <div className="py-[2.5vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                 <div
                     className="flex gap-2 items-center cursor-pointer"
                     onClick={toggleCategory}>
@@ -114,26 +137,26 @@ const Productlisting = () => {
                         {
                             isCategoryOpen
                                 ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                                 : <FaPlus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                         }
                     </div>
-                    <h3 className="text-[1vw] font-bold text-lightTextColor font-OpenSans">Categories</h3>
+                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Categories</h3>
                 </div>
                 {
                     isCategoryOpen && (
-                        <ul className="pt-[1.3vw] space-y-3 ml-[1vw]">
+                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
                             {categoryOptions.map(option => (
                                 <li key={option}>
                                     <label className="flex items-center cursor-pointer">
                                         <input
                                             type="checkbox"
-                                            className="mr-2 w-[1.2vw] h-[1.2vw] accent-darkGreen"
+                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                             checked={checkedFilters.categories.includes(option)}
                                             onChange={() => handleCheckboxChange('categories', option)}
                                         />
-                                        <span className='font-PublicSans md:text-[0.9vw]'>{option}</span>
+                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
                                     </label>
                                 </li>
                             ))}
@@ -150,26 +173,26 @@ const Productlisting = () => {
                         {
                             isPriceOpen
                                 ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                                 : <FaPlus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                         }
                     </div>
-                    <h3 className="text-[1vw] font-bold text-lightTextColor font-OpenSans">Price</h3>
+                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Price</h3>
                 </div>
                 {
                     isPriceOpen && (
-                        <ul className="pt-[1.3vw] space-y-3 ml-[1vw]">
+                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
                             {priceOptions.map(option => (
                                 <li key={option}>
                                     <label className="flex items-center cursor-pointer">
                                         <input
                                             type="checkbox"
-                                            className="mr-2 w-[1.2vw] h-[1.2vw] accent-darkGreen"
+                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                             checked={checkedFilters.price.includes(option)}
                                             onChange={() => handleCheckboxChange('price', option)}
                                         />
-                                        <span className='font-PublicSans md:text-[0.9vw]'>{option}</span>
+                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
                                     </label>
                                 </li>
                             ))}
@@ -188,26 +211,26 @@ const Productlisting = () => {
                         {
                             isHerbalIngredientsOpen
                                 ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                                 : <FaPlus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                         }
                     </div>
-                    <h3 className="text-[1vw] font-bold text-lightTextColor font-OpenSans">Herbal Ingredients</h3>
+                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Herbal Ingredients</h3>
                 </div>
                 {
                     isHerbalIngredientsOpen && (
-                        <ul className="pt-[1.3vw] space-y-3 ml-[1vw]">
+                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
                             {herbalOptions.map(option => (
                                 <li key={option}>
                                     <label className="flex items-center cursor-pointer">
                                         <input
                                             type="checkbox"
-                                            className="mr-2 w-[1.2vw] h-[1.2vw] accent-darkGreen"
+                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                             checked={checkedFilters.herbalIngredients.includes(option)}
                                             onChange={() => handleCheckboxChange('herbalIngredients', option)}
                                         />
-                                        <span className='font-PublicSans md:text-[0.9vw]'>{option}</span>
+                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
                                     </label>
                                 </li>
                             ))}
@@ -226,26 +249,26 @@ const Productlisting = () => {
                         {
                             isDietaryPreferencesOpen
                                 ? <FaMinus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                                 : <FaPlus
-                                    className="transform transition-transform duration-300 text-[1.5vw] md:text-[1vw] text-lightTextColor"/>
+                                    className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
                         }
                     </div>
-                    <h3 className="text-[1vw] font-bold text-lightTextColor font-OpenSans">Dietary Preferences</h3>
+                    <h3 className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Dietary Preferences</h3>
                 </div>
                 {
                     isDietaryPreferencesOpen && (
-                        <ul className="pt-[1.3vw] space-y-3 ml-[1vw]">
+                        <ul className="pt-[3vw] md:pt-[1.3vw] space-y-3 ml-[1vw]">
                             {dietaryOptions.map(option => (
                                 <li key={option}>
                                     <label className="flex items-center cursor-pointer">
                                         <input
                                             type="checkbox"
-                                            className="mr-2 w-[1.2vw] h-[1.2vw] accent-darkGreen"
+                                            className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                             checked={checkedFilters.dietaryPreferences.includes(option)}
                                             onChange={() => handleCheckboxChange('dietaryPreferences', option)}
                                         />
-                                        <span className='font-PublicSans md:text-[0.9vw]'>{option}</span>
+                                        <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
                                     </label>
                                 </li>
                             ))}
@@ -254,20 +277,20 @@ const Productlisting = () => {
                 }
             </div>
 
-        </div>
+            </div>
 
-            <div className='w-full'>
+            <div className='w-full mt-[3vw] md:mt-[0]'>
 
                 {/* Tab Section */}
 
-                <div className="flex justify-between px-4 md:pl-10">
-                    <div className="flex space-x-4">
+                <div className="flex justify-between items-center md:px-4 md:pl-10">
+                    <div className="grid grid-cols-3 gap-[1.5vw] md:gap-[0] md:flex md:space-x-[0.5vw]">
                         {
                             tabs.map((tab) => (
                                 <button
                                     key={tab}
                                     onClick={() => setActiveTab(tab)}
-                                    className={`px-6 py-2 rounded-full border font-OpenSans ${
+                                    className={`px-[5vw] py-[1vw] md:px-[3vw] md:py-[0.7vw] text-[3vw] md:text-[0.9vw] flex justify-center items-center rounded-full border font-PublicSans ${
                                     activeTab === tab
                                         ? 'bg-darkGreen text-white border-darkGreen'
                                         : 'text-lightTextColor border-gray-300'} focus:outline-none transition duration-200`}>
@@ -279,10 +302,10 @@ const Productlisting = () => {
                     <div className="relative">
                         <button
                             onClick={toggleDropdown}
-                            className="flex items-center px-4 py-2 border-2 border-gray-300 rounded-full text-lightTextColor focus:outline-none transition duration-200">
+                            className="flex items-center px-[2.2vw] py-[1vw] md:px-[1.5vw] md:py-[0.7vw] text-[3vw] md:text-[0.9vw] border-2 border-gray-300 rounded-full text-lightTextColor font-PublicSans focus:outline-none transition duration-200">
                             Sort by
                             <FaChevronDown
-                                className={`ml-2 text-darkGreen transition-transform duration-200 ${
+                                className={`ml-1 md:ml-2 text-[3vw] md:text-[0.9vw] text-darkGreen transition-transform duration-200 ${
                                 isDropdownOpen
                                     ? 'rotate-180'
                                     : ''}`}/>
@@ -291,12 +314,12 @@ const Productlisting = () => {
                         {
                             isDropdownOpen && (
                                 <div
-                                    className="absolute right-0 mt-2 w-[12vw] bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                                    className="absolute right-0 mt-2 w-[40vw] md:w-[12vw] bg-white border border-gray-200 rounded-lg shadow-lg z-10">
                                     <ul className="text-lightTextColor">
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[1vw] hover:bg-gray-100 cursor-pointer">Price: Low to High</li>
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[1vw] hover:bg-gray-100 cursor-pointer">Price: High to Low</li>
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[1vw] hover:bg-gray-100 cursor-pointer">Newest Arrivals</li>
-                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[1vw] hover:bg-gray-100 cursor-pointer">Best Sellers</li>
+                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Price: Low to High</li>
+                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Price: High to Low</li>
+                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Newest Arrivals</li>
+                                        <li className="px-[1vw] py-[0.6vw] font-PublicSans text-[3vw] md:text-[1vw] hover:bg-gray-100 cursor-pointer">Best Sellers</li>
                                     </ul>
                                 </div>
                             )
@@ -307,8 +330,8 @@ const Productlisting = () => {
                 <div>
                     {/* Product Grid */}
 
-                    <div
-                        className="grid grid-cols-3 gap-y-[3vw] gap-x-[1.5vw] mt-[2vw] pb-[2vw] border-b-[0.15vw] border-lightTextColor">
+                    <div 
+                        className="grid grid-cols-2 md:grid-cols-3 gap-y-[3vw] gap-x-[1.5vw] mt-[2vw] pb-[2vw] border-b-[0.15vw] border-lightTextColor">
                         {
                             currentProducts.map(product => (
                                 <div key={product.id} className="bg-productBg ml-[1vw] p-[2vw] rounded-[1.5vw]">
@@ -316,30 +339,30 @@ const Productlisting = () => {
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-[20vw] object-cover rounded-[1vw]"/>
+                                            className="w-full h-[35vw] md:h-[20vw] object-cover rounded-[1vw]"/>
                                         <h3
-                                            className="mt-[1.2vw] text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
+                                            className="mt-[1.2vw] text-[3vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
                                             {product.name}
                                         </h3>
 
                                         <p
-                                            className="mt-[0.2vw] text-[1vw] text-center text-lightTextColor font-OpenSans">{product.tag}</p>
+                                            className="mt-[0.2vw] text-[2.2vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">{product.tag}</p>
                                         <div className="mt-[0.5vw] flex justify-center items-center gap-[0.2vw]">
                                             <div className="flex justify-center items-center gap-[0.4vw]">
                                                 <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[1.3vw] text-rating"/>
+                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
                                                 <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[1.3vw] text-rating"/>
+                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
                                                 <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[1.3vw] text-rating"/>
+                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
                                                 <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[1.3vw] text-rating"/>
+                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
                                                 <AiOutlineStar
-                                                    className="transform transition-transform duration-300 text-[1.3vw] text-rating"/>
+                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
                                             </div>
-                                            <div className='font-OpenSans font-semibold'>({product.rating})</div>
+                                            <div className='font-OpenSans text-[3vw] md:text-[1vw] font-semibold'>({product.rating})</div>
                                         </div>
-                                        <p className="mt-[0.5vw] text-[1.4vw] text-center font-bold text-darkGreen">{
+                                        <p className="mt-[0.5vw] text-[4vw] md:text-[1.4vw] text-center font-bold text-darkGreen">{
                                                 new Intl
                                                     .NumberFormat('en-NG', {
                                                         style: 'currency',
@@ -351,7 +374,7 @@ const Productlisting = () => {
                                     </Link>
 
                                     <button
-                                        className='w-full rounded-full mt-2 px-4 py-3 text-white text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase'>
+                                        className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase'>
                                         Add to cart
                                     </button>
                                 </div>
@@ -360,14 +383,14 @@ const Productlisting = () => {
                     </div>
 
                     {/* Pagination */}
-                    <div className="flex justify-end mt-[2vw]">
+                    <div className="flex justify-center md:justify-end mt-[2vw]">
                         <ul className="flex list-none">
                             {
                                 [...Array(totalPages)].map((_, index) => (
-                                    <li key={index} className="mx-[0.3vw]">
+                                    <li key={index} className="mx-[1vw] md:mx-[0.3vw]">
                                         <button
                                             onClick={() => paginate(index + 1)}
-                                            className={`px-[0.8vw] py-[0.4vw] border rounded-[0.4vw] ${
+                                            className={`px-[3vw] py-[1.5vw] md:px-[0.8vw] md:py-[0.4vw] text-[4vw] md:text-[1.4vw] border rounded-[0.4vw] ${
                                             currentPage === index + 1
                                                 ? 'bg-darkGreen text-white'
                                                 : 'bg-white text-darkGreen'}`}>

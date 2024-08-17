@@ -19,7 +19,7 @@ const Newsletter = ({ onSubmit }) => {
 
     return (
 
-        <div className="w-full md:h-[380px] flex flex-col md:flex-row overflow-hidden bg-darkGreen py-1 mt-5 mb-10">
+        <div className="w-full md:h-[380px] flex flex-col md:flex-row overflow-hidden bg-darkGreen py-1 my-[10vw]">
           {/* Description */}
           <div className="flex-1 md:flex-[2] text-white p-6 mb-6 md:mb-0 flex flex-col justify-center text-center items-center">
             <h2 className="md:text-4xl text-xl font-Lora font-bold mb-4">
