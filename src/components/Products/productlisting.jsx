@@ -107,7 +107,7 @@ const Productlisting = () => {
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
         if (productListRef.current) {
-            productListRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            productListRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
         }
     };
 
@@ -302,10 +302,10 @@ const Productlisting = () => {
                     <div className="relative">
                         <button
                             onClick={toggleDropdown}
-                            className="flex items-center px-[2.2vw] py-[1vw] md:px-[1.5vw] md:py-[0.7vw] text-[3vw] md:text-[0.9vw] border-2 border-gray-300 rounded-full text-lightTextColor font-PublicSans focus:outline-none transition duration-200">
+                            className="flex items-center px-[2vw] py-[1vw] md:px-[1.5vw] md:py-[0.7vw] text-[3vw] md:text-[0.9vw] border-2 border-gray-300 rounded-full text-lightTextColor font-PublicSans focus:outline-none transition duration-200">
                             Sort by
                             <FaChevronDown
-                                className={`ml-1 md:ml-2 text-[3vw] md:text-[0.9vw] text-darkGreen transition-transform duration-200 ${
+                                className={`ml-[0.3vw] md:ml-2 text-[3vw] md:text-[0.9vw] text-darkGreen transition-transform duration-200 ${
                                 isDropdownOpen
                                     ? 'rotate-180'
                                     : ''}`}/>
@@ -335,7 +335,7 @@ const Productlisting = () => {
                         {
                             currentProducts.map(product => (
                                 <div key={product.id} className="bg-productBg ml-[1vw] p-[2vw] rounded-[1.5vw]">
-                                    <Link to={`/product/${product.name}`}>
+                                    <Link to={`/product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
                                         <img
                                             src={product.image}
                                             alt={product.name}
@@ -374,7 +374,7 @@ const Productlisting = () => {
                                     </Link>
 
                                     <button
-                                        className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase'>
+                                        className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase hover:bg-green-600'>
                                         Add to cart
                                     </button>
                                 </div>

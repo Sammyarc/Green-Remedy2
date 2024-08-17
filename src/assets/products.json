@@ -1,12 +1,35 @@
 {
-    "categories": ["Shop All", "Herbs", "Oils", "Skincare", "Seeds", "Plants"],
     "products": [
       {
         "id": 1,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -15,7 +38,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -24,7 +71,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -33,7 +104,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -42,7 +137,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -51,7 +170,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -60,7 +203,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -69,7 +236,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -78,7 +269,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -87,7 +302,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -96,7 +335,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -105,7 +368,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -114,7 +401,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -123,7 +434,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -132,7 +467,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -141,7 +500,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -150,7 +533,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -159,7 +566,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -168,7 +599,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -177,7 +632,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -186,7 +665,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -195,7 +698,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -204,7 +731,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -213,7 +764,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -222,7 +797,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -231,7 +830,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -240,7 +863,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -249,7 +896,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -258,7 +929,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -267,7 +962,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -276,7 +995,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -285,7 +1028,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -294,7 +1061,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -303,7 +1094,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -312,7 +1127,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -321,7 +1160,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -330,7 +1193,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -339,7 +1226,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -348,7 +1259,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -357,7 +1292,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -366,7 +1325,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -375,7 +1358,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -384,7 +1391,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -393,7 +1424,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -402,7 +1457,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -411,7 +1490,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -420,7 +1523,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -429,7 +1556,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -438,7 +1589,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -447,7 +1622,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -456,7 +1655,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -465,7 +1688,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -474,7 +1721,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -483,7 +1754,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -492,7 +1787,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -501,7 +1820,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -510,7 +1853,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -519,7 +1886,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product4.png",
+        "image": "/assets/products/product4.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -528,7 +1919,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product5.png",
+        "image": "/assets/products/product5.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -537,7 +1952,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product6.png",
+        "image": "/assets/products/product6.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -546,7 +1985,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product7.png",
+        "image": "/assets/products/product7.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -555,7 +2018,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product8.png",
+        "image": "/assets/products/product8.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -564,7 +2051,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product9.png",
+        "image": "/assets/products/product9.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       },
@@ -573,7 +2084,31 @@
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product1.png",
+        "image": "/assets/products/product1.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Skincare",
         "rating": 4.7
       },
@@ -582,7 +2117,31 @@
         "name": "Tea Tree Oil",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product2.png",
+        "image": "/assets/products/product2.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Oils",
         "rating": 4.7
       },
@@ -591,7 +2150,31 @@
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
         "price": 20000,
-        "image": "assets/products/product3.png",
+        "image": "/assets/products/product3.png",
+        "additionalImages": [
+           "/assets/products/img1.png",
+           "/assets/products/img2.png",
+           "/assets/products/img3.png"
+        ],
+        "intro": "Introducing our premium Organic Ashwagandha Root Powder, a potent adaptogen revered in Ayurvedic medicine. Harvested from the finest organic farms, this herb supports stress relief, enhances vitality, and promotes overall well-being. Ideal for daily use.",
+        "additionalintro": [
+          "Blends seamlessly into smoothies, teas and recipes.",
+          "Offers a natural boost to your health routine. ",
+          "Pure, earthy flavor and experience"
+       ],
+       "title": "Rejuvenate Your Mind and Body",
+       "description": "Unlock the ancient wisdom of Ayurveda with our Organic Ashwagandha Powder. Known as the 'Indian Ginseng,' Ashwagandha has been treasured for centuries for its powerful adaptogenic properties, helping to enhance your overall well-being by managing stress and promoting a balanced lifestyle.",
+       "highlights": [
+          "Pure and Organic: Our Ashwagandha powder is 100% organic, free from pesticides and harmful chemicals, ensuring you get the highest quality product.",
+          "Adaptogenic Powerhouse: Renowned for its ability to combat stress, reduce anxiety, and improve mental clarity, making it a perfect addition to your daily routine.",
+          "Energy and Vitality: Boost your energy levels and support your immune system with this natural, nutrient-dense superfood.",
+          "Versatile Use: Easily incorporate into smoothies, teas, or your favorite recipes for a healthful boost."
+        ],
+        "usage": [
+          "In Smoothies: Add 1 teaspoon to your morning smoothie for an energizing start to your day.",
+          "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
+          "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
+        ],
         "category": "Herbs",
         "rating": 4.7
       }

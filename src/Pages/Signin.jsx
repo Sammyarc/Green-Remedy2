@@ -36,12 +36,12 @@ export default function Signin() {
       </header>
 
       <main className="flex-grow flex flex-col items-center justify-center my-6">
-        <h3 className="font-Lora font-bold text-[38px] text-lightTextColor text-center">
+        <h3 className="font-Lora font-bold text-[8vw] md:text-[3vw] text-lightTextColor text-center">
           Log In
         </h3>
 
         <form onSubmit={handleLogin}>
-          <div className="flex flex-col justify-center text-center gap-3">
+          <div className="flex flex-col justify-center text-center gap-3 mt-5">
             <input
               placeholder="Email"
               type="email"
@@ -49,8 +49,8 @@ export default function Signin() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-3 py-2 border border-lightTextColor rounded-full focus:outline-none focus:ring-2 focus:ring-lightTextColor 
-              xs:w-[280px] sm:w-[320px] md:w-[472px] lg:w-[520px] xl:w-[600px]"
+              className="w-full px-3 py-2 border border-lightTextColor rounded-full font-OpenSans focus:outline-none focus:ring-2 focus:ring-lightTextColor 
+              xs:w-[290px] sm:w-[320px] md:w-[472px] lg:w-[520px] xl:w-[600px]"
             />
 
             {/* password */}
@@ -64,7 +64,7 @@ export default function Signin() {
                 required
                 autoComplete="off"
                 autoCorrect="off"
-                className="w-full px-3 py-2 border border-lightTextColor rounded-full focus:outline-none focus:ring-2 focus:ring-lightTextColor 
+                className="w-full px-3 py-2 border border-lightTextColor rounded-full font-OpenSans focus:outline-none focus:ring-2 focus:ring-lightTextColor 
                 xs:w-[280px] sm:w-[320px] md:w-[472px] lg:w-[520px] xl:w-[600px] pr-10"
               />
               <button
@@ -93,25 +93,25 @@ export default function Signin() {
                 />
                 <label
                   htmlFor="rememberMe"
-                  className="ml-2 block text-sm text-lightTextColor"
+                  className="ml-2 block text-sm font-OpenSans text-lightTextColor"
                 >
                   Remember me
                 </label>
               </div>
               <div>
-                <p className="text-lightTextColor">forgot password</p>
+                <p className="text-lightTextColor font-OpenSans">forgot password</p>
               </div>
             </div>
 
             <button
               type="submit"
-              className="w-full py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-darkGreen hover:bg-darkerGreen focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+              className="w-full py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-darkGreen hover:bg-darkerGreen font-OpenSans focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
               Log In
             </button>
           </div>
         </form>
-        <p className="mt-4 text-center text-sm text-gray-600">
+        <p className="mt-4 text-center text-base text-gray-600 font-OpenSans">
           Don&apos;t have an account?
           <Link
             to="/signup"

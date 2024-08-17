@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import {Link} from 'react-router-dom';
 import First from '../../assets/First-card image.jpg'
 import Second from '../../assets/Second-card image.jpg'
 import Third from '../../assets/Third-card image.jpg'
@@ -20,11 +21,11 @@ const Product = () => {
                     Explore our newest herbal products, carefully selected for quality and
                     effectiveness. Find fresh solutions for your health and wellness needs.
                 </p>
-                <a
-                    href='#'
-                    className='mt-[4vw] xs:mt-[3vw] sm:mt-[2.5vw] md:mt-[2vw] w-[30vw] xs:w-[25vw] sm:w-[18vw] md:w-[12vw] h-[10vw] xs:h-[8vw] sm:h-[6vw] md:h-[3.5vw] flex justify-center items-center bg-darkGreen text-white rounded-2xl font-PublicSans font-semibold xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw]'>
+                <Link
+                    to="/products" onClick={() => window.scrollTo(0, 0)}
+                    className='mt-[4vw] xs:mt-[3vw] sm:mt-[2.5vw] md:mt-[2vw] w-[30vw] xs:w-[25vw] sm:w-[18vw] md:w-[12vw] h-[10vw] xs:h-[8vw] sm:h-[6vw] md:h-[3.5vw] flex justify-center items-center bg-darkGreen hover:bg-green-600 text-white rounded-2xl font-PublicSans font-semibold xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw]'>
                     Shop All
-                </a>
+                </Link>
             </div>
 
             {/* Body */}

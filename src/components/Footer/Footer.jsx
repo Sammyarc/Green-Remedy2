@@ -94,18 +94,18 @@ const Footer = () => {
                     Green Remedies offers a curated selection of high-quality traditional herbs to enhance your well-being naturally. Trust in our expertise and commitment to purity.
                 </p>
                 <div className='flex items-center mt-[3vw] xs:mt-[3vw] md:mt-[1.3vw] gap-[2vw] xs:gap-[1.5vw] sm:gap-[1vw]'>
-                    <a href='#' className='xs:w-[6.5vw] md:w-[3vw] xs:h-[6.5vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
-                        <img src={Instagram} alt='Instagram Profile Link' className='xs:w-[3vw] md:w-[1.5vw]'/>
+                    <a href='#' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
+                        <img src={Instagram} alt='Instagram Profile Link' className='xs:w-[5vw] md:w-[1.5vw]'/>
                     </a>
-                    <a href='#' className='xs:w-[6.5vw] md:w-[3vw] xs:h-[6.5vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
-                        <img src={Facebook} alt='Facebook Profile Link' className='xs:w-[3vw] md:w-[1.5vw]'/>
+                    <a href='#' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
+                        <img src={Facebook} alt='Facebook Profile Link' className='xs:w-[5vw] md:w-[1.5vw]'/>
                     </a>
-                    <a href='#' className='xs:w-[6.5vw] md:w-[3vw] xs:h-[6.5vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
-                        <img src={Twitter} alt='Twitter Profile Link' className='xs:w-[3vw] md:w-[1.5vw]'/>
+                    <a href='#' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
+                        <img src={Twitter} alt='Twitter Profile Link' className='xs:w-[5vw] md:w-[1.5vw]'/>
                     </a>
                 </div>
             </div>
-            <div className='flex flex-col sm:flex-row justify-between gap-[3.5vw] sm:gap-[1.4vw] w-full md:w-3/5 mt-[5vw] md:mt-0'>
+            <div className='grid grid-cols-2 sm:flex sm:flex-row justify-between gap-[3.5vw] sm:gap-[1.4vw] w-full md:w-3/5 mt-[5vw] md:mt-0'>
                 <div>
                     <h2 className='font-Lora font-semibold text-white text-[4vw] xs:text-[4vw] sm:text-[2.5vw] md:text-[1.4vw]'>Quick Links</h2>
                     <ul className='xs:mt-[1.5vw] sm:mt-[0.1vw] md:mt-[0.5vw]'>
