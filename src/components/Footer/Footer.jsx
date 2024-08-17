@@ -110,7 +110,7 @@ const Footer = () => {
                         <ul className='xs:mt-[1.5vw] sm:mt-[0.1vw] md:mt-[0.5vw]'>
                             {QuickLinks.map((data) => (
                                 <li key={data.id} className='xs:py-[0.8vw] sm:py-[0.2vw] md:py-[0.3vw]'>
-                                    <Link to={data.link} className="text-milkWhite hover:text-gray-300 font-OpenSans text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1vw]">
+                                    <Link to={data.link} onClick={() => window.scrollTo(0, 0)} className="text-milkWhite hover:text-gray-300 font-OpenSans text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1vw]">
                                         {data.name}
                                     </Link>
                                 </li>
@@ -123,7 +123,7 @@ const Footer = () => {
                         <ul className='xs:mt-[1.5vw] sm:mt-[0.1vw] md:mt-[0.5vw]'>
                             {CustomerService.map((data) => (
                                 <li key={data.id} className='xs:py-[0.8vw] sm:py-[0.2vw] md:py-[0.3vw]'>
-                                    <Link to={data.link} className="text-milkWhite hover:text-gray-300 font-OpenSans text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1vw]">
+                                    <Link to={data.link} onClick={() => window.scrollTo(0, 0)} className="text-milkWhite hover:text-gray-300 font-OpenSans text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1vw]">
                                         {data.name}
                                     </Link>
                                 </li>
@@ -136,7 +136,7 @@ const Footer = () => {
                         <ul className='xs:mt-[1.5vw] sm:mt-[0.1vw] md:mt-[0.5vw]'>
                             {Account.map((data) => (
                                 <li key={data.id} className='xs:py-[0.8vw] sm:py-[0.2vw] md:py-[0.3vw]'>
-                                    <Link to={data.link} className="text-milkWhite hover:text-gray-300 font-OpenSans text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1vw]">
+                                    <Link to={data.link} onClick={() => window.scrollTo(0, 0)} className="text-milkWhite hover:text-gray-300 font-OpenSans text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1vw]">
                                         {data.name}
                                     </Link>
                                 </li>
