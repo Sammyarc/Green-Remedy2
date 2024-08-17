@@ -142,7 +142,7 @@ export default function Signup() {
                 name="acceptTerms"
                 checked={formData.acceptTerms}
                 onChange={handleChange}
-                className="h-4 w-4 text-lightTextColor focus:ring-lightTextColor border-lightTextColor rounded"
+                className="h-4 w-4 text-lightTextColor focus:ring-lightTextColor border-lightTextColor rounded accent-darkGreen"
               />
               <label
                 htmlFor="acceptTerms"

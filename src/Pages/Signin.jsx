@@ -89,7 +89,7 @@ export default function Signin() {
                   name="rememberMe"
                   checked={formData.rememberMe}
                   onChange={handleChange}
-                  className="h-4 w-4 text-lightTextColor focus:ring-lightTextColor border-lightTextColor rounded"
+                  className="h-4 w-4 text-lightTextColor focus:ring-lightTextColor border-lightTextColor rounded accent-darkGreen"
                 />
                 <label
                   htmlFor="rememberMe"
