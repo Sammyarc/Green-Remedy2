@@ -44,10 +44,10 @@ export default function Signup() {
   };
 
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='flex flex-col'>
       <header className='border-b'></header>
 
-      <main className='flex-grow flex flex-col items-center justify-center my-6'>
+      <main className='flex-grow flex flex-col items-center justify-center my-20'>
         <h3 className='font-Lora font-bold text-[8vw] md:text-[3vw] text-lightTextColor text-center'>
           Create Account
         </h3>
