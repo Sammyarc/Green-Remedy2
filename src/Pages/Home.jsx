@@ -1,11 +1,9 @@
 import { useEffect } from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
 import Feature from '../components/Feature/Feature';
 import AOS from 'aos';
-import "aos/dist/aos.css";
+import 'aos/dist/aos.css';
 import Category from '../components/Category/Category';
-import Footer from '../components/Footer/Footer';
 import Product from '../components/Products/Product';
 import Features from '../components/Feature/Features';
 import Video from '../components/Video/Video';
@@ -14,7 +12,6 @@ import Banner from '../components/Banner/Banner';
 import Aboutbanner from '../components/Banner/Aboutbanner';
 import Reviews from '../components/Reviews/Reviews';
 import Blog from '../components/Blog/Blog';
-import Newsletter from '../components/Newsletter/Newsletter';
 
 const Home = () => {
   useEffect(() => {
@@ -29,7 +26,6 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
       <Hero />
       <Feature />
       <Category />
@@ -41,8 +37,6 @@ const Home = () => {
       <Aboutbanner />
       <Reviews />
       <Blog />
-      <Newsletter />
-      <Footer />
     </div>
   );
 };
