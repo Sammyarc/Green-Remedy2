@@ -4,7 +4,7 @@
         "id": 1,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -30,8 +30,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 2,
@@ -63,14 +66,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 3,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -96,14 +102,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 4,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -129,8 +138,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 5,
@@ -162,14 +174,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 6,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -195,14 +210,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 7,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -228,8 +246,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 8,
@@ -261,14 +282,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 9,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -294,14 +318,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 10,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -327,8 +354,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 11,
@@ -360,14 +390,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 12,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -393,14 +426,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 13,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -426,8 +462,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 14,
@@ -459,14 +498,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 15,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -492,14 +534,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 16,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -525,8 +570,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 17,
@@ -558,14 +606,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 18,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -591,14 +642,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 19,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -624,8 +678,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 20,
@@ -657,14 +714,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 21,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -690,14 +750,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 22,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -723,8 +786,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 23,
@@ -756,14 +822,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 24,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -789,14 +858,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 25,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -822,8 +894,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 26,
@@ -855,14 +930,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 27,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -888,14 +966,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 28,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -921,8 +1002,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 29,
@@ -954,14 +1038,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 30,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -987,14 +1074,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 31,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1020,8 +1110,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 32,
@@ -1053,14 +1146,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 33,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1086,14 +1182,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 34,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1119,8 +1218,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+       "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 35,
@@ -1152,14 +1254,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 36,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1185,14 +1290,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 37,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1218,8 +1326,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 38,
@@ -1251,14 +1362,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 39,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1284,14 +1398,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 40,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1317,8 +1434,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 41,
@@ -1350,14 +1470,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 42,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1383,14 +1506,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 43,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1416,8 +1542,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 44,
@@ -1449,14 +1578,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 45,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1482,14 +1614,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 46,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1515,8 +1650,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 47,
@@ -1548,14 +1686,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 48,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1581,14 +1722,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 49,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1614,8 +1758,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 50,
@@ -1647,14 +1794,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 51,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1680,14 +1830,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 52,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1713,8 +1866,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 53,
@@ -1746,14 +1902,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 54,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1779,14 +1938,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 55,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1812,8 +1974,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 56,
@@ -1845,14 +2010,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 57,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1878,14 +2046,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 58,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product4.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1911,8 +2082,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 59,
@@ -1944,14 +2118,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 60,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product6.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -1977,14 +2154,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 61,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product7.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -2010,8 +2190,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 62,
@@ -2043,14 +2226,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 63,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product9.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -2076,14 +2262,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       },
       {
         "id": 64,
         "name": "St. John’s Wort Tincture",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 15000,
         "image": "/assets/products/product1.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -2109,8 +2298,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Skincare",
-        "rating": 4.7
+        "tab": "Skincare",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginger"],
+        "categories": ["Detox", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 65,
@@ -2142,14 +2334,17 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Oils",
-        "rating": 4.7
+        "tab": "Oils",
+        "rating": 4.7,
+        "herbalIngredients" : ["Chamomile", "Ginseng"],
+        "categories": ["Sleep Aid", "Digestive Health"],
+        "dietaryPreferences": ["Vegan", "Keto"]
       },
       {
         "id": 66,
         "name": "Gandha Powder",
         "tag": "Herbal Remedy",
-        "price": 20000,
+        "price": 10000,
         "image": "/assets/products/product3.png",
         "additionalImages": [
            "/assets/products/img1.png",
@@ -2175,8 +2370,11 @@
           "In Teas: Stir into warm water or your favorite herbal tea for a calming evening drink.",
           "In Recipes: Sprinkle into soups, sauces, or baked goods for an extra dose of wellness."
         ],
-        "category": "Herbs",
-        "rating": 4.7
+        "tab": "Herbs",
+        "rating": 4.7,
+        "herbalIngredients" : ["Ginger", "Tumeric"],
+        "categories": ["Detox", "Sleep Aid"],
+        "dietaryPreferences": ["Vegan", "Vegetarian"]
       }
     ]
   }
