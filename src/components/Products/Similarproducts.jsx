@@ -3,8 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import productsData from '../../assets/products.json';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import {useCart} from '../../context/CartContext';
 
 const SimilarProducts = () => {
+    const {addToCart} = useCart();
 
     const similarProducts = productsData.products.slice(0, 4);
 
@@ -28,12 +30,12 @@ const SimilarProducts = () => {
                                     className="w-full h-[35vw] md:h-[20vw] object-cover rounded-[1vw]"
                                 />
                                 <h3
-                                    className="mt-[1.2vw] text-[3vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
+                                    className="mt-[2vw] text-[3.5vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
                                     {product.name}
                                 </h3>
 
                                 <p
-                                    className="mt-[0.2vw] text-[2.2vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">
+                                    className="mt-[0.2vw] text-[2.5vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">
                                     {product.tag}
                                 </p>
                                 <div className="mt-[0.5vw] flex justify-center items-center gap-[0.2vw]">
@@ -57,7 +59,7 @@ const SimilarProducts = () => {
                                 </p>
                             </Link>
 
-                            <button className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase'>
+                            <button onClick={() => addToCart(product)} className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase'>
                                 Add to cart
                             </button>
                         </div>

@@ -79,7 +79,7 @@ const Productdesc = () => {
 
                 {/* Product description */}
 
-                <div className='w-full mt-[5vw] md:mt-[0] md:w-[50vw]'>
+                <div className='w-full mt-[7vw] md:mt-[0] md:w-[50vw]'>
                     <div className='flex justify-between items-center'>
                         <h1 className='font-Lora font-bold text-textColor text-[6vw] md:text-[2vw]'>{product.name}</h1>
                         <HiOutlineHeart className='text-[7vw] md:text-[1.5vw]'/>
@@ -120,9 +120,9 @@ const Productdesc = () => {
                     </div>
 
                     <p
-                        className='mt-[1.5vw] text-[4vw] md:text-[1vw] font-PublicSans text-textColor'>{product.intro}</p>
+                        className='mt-[5vw] text-[4vw] md:text-[1vw] font-PublicSans text-textColor'>{product.intro}</p>
 
-                    <ul className='list-disc my-[1.5vw] pl-[6vw] md:pl-[2vw] space-y-2'>
+                    <ul className='list-disc my-[5vw] pl-[6vw] md:pl-[2vw] space-y-2'>
                         {
                             product
                                 .additionalintro
@@ -137,10 +137,10 @@ const Productdesc = () => {
                     <div className="mt-[5vw] md:mt-[0] flex items-center space-x-2 w-full">
                         {/* Quantity Selector */}
                         <div
-                            className="flex items-center justify-between bg-white border border-gray-300 rounded-full w-[40%] md:w-[30%]">
+                            className="flex items-center justify-between bg-white border border-gray-300 rounded-full w-[40%] md:w-[30%] px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw]">
                             <FaMinus
                                 onClick={handleDecrement}
-                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[7vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
+                                className="text-[5vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
                             <input
                                 className="text-[5vw] md:text-[1.2vw] md:px-[0.25vw] font-medium font-OpenSans bg-transparent w-5 outline-none text-textColor"
                                 value={quantity}
@@ -148,13 +148,13 @@ const Productdesc = () => {
                                 min="1"/>
                             <FaPlus
                                 onClick={handleIncrement}
-                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[7vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
+                                className="text-[5vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
                         </div>
 
                         {/* Add to Cart Button */}
                         <button
                             onClick={() => addToCart(product)}
-                            className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.7vw] text-white text-[4vw] md:text-[1vw] bg-darkGreen font-OpenSans font-bold rounded-full hover:bg-green-600 w-[60%] md:w-[70%]">
+                            className="px-[1.5vw] py-[2vw] md:px-[1vw] md:py-[0.8vw] text-white text-[4vw] md:text-[1vw] bg-darkGreen font-OpenSans font-bold rounded-full hover:bg-green-600 w-[60%] md:w-[70%]">
                             Add to Cart
                         </button>
                     </div>
@@ -188,12 +188,12 @@ const Productdesc = () => {
                 </div>
 
                 <h3
-                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">{product.title}</h3>
+                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[5vw] md:mt-[1.2vw] text-white">{product.title}</h3>
                 <p
-                    className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{product.description}</p>
+                    className="mt-[3vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] font-OpenSans text-productBg">{product.description}</p>
 
                 <h3
-                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">Product Highlights:</h3>
+                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[7vw] md:mt-[1.2vw] text-white">Product Highlights:</h3>
                 <ul className="list-disc list-inside mb-[1.5vw] ml-[1vw]">
                     {
                         product
@@ -201,13 +201,13 @@ const Productdesc = () => {
                             .map((highlight, index) => (
                                 <li
                                     key={index}
-                                    className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{highlight}</li>
+                                    className="mt-[3vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] font-OpenSans text-productBg">{highlight}</li>
                             ))
                     }
                 </ul>
 
                 <h3
-                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">How to Use:</h3>
+                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[7vw] md:mt-[1.2vw] text-white">How to Use:</h3>
                 <ul className="list-disc list-inside mb-[1.5vw] ml-[1vw]">
                     {
                         product
@@ -215,7 +215,7 @@ const Productdesc = () => {
                             .map((use, index) => (
                                 <li
                                     key={index}
-                                    className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{use}</li>
+                                    className="mt-[3vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] font-OpenSans text-productBg">{use}</li>
                             ))
                     }
                 </ul>

@@ -2,6 +2,7 @@
 import React from 'react'
 import BannerImage from '../../assets/about-banner.png'
 import RightArrow from '../../assets/Icons/right arrow.svg'
+import { Link } from 'react-router-dom';
 
 const Aboutbanner = () => {
     return (
@@ -26,10 +27,11 @@ const Aboutbanner = () => {
                     to enhance your well-being naturally. Discover our curated selection and embrace
                     a healthier lifestyle.
                 </p>
-                <a
-                    href='#'
+                <Link
+                      to='/about' 
+                      onClick={() => window.scrollTo(0, 0)}
                     className='bg-white text-textColor mt-[2vw] xs:w-[25vw] xs:h-[6vw] xs:text-[2.5vw] md:w-[12vw] md:h-[3vw] md:text-[1.2vw] flex justify-center gap-[0.2vw] items-center border border-textColor rounded-full font-bold font-OpenSans'>Learn more
-                    <img src={RightArrow} alt='Arrow Icon' className='xs:w-[3vw] md:w-[1.4vw]'/></a>
+                    <img src={RightArrow} alt='Arrow Icon' className='xs:w-[3vw] md:w-[1.4vw]'/></Link>
             </div>
         </div>
 
