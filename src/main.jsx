@@ -16,7 +16,9 @@ import ContactUs from './Pages/ContactUs.jsx';
 import Signup from './Pages/Signup.jsx';
 import Signin from './Pages/Signin.jsx';
 import ProductDetail from './Pages/ProductDetail.jsx';
+import Cart from './Pages/Cart.jsx';
 import Errorpage from './Pages/ErrorPage.jsx';
+import { CartProvider } from './context/CartContext.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,12 +31,15 @@ const router = createBrowserRouter(
       <Route path='/signup' element={<Signup />} />
       <Route path='/signin' element={<Signin />} />
       <Route path='/product/:id' element={<ProductDetail />} />
+      <Route path='/cart' element={<Cart />} />
     </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </React.StrictMode>
 );

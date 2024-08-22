@@ -5,8 +5,11 @@ import productsData from '../../assets/products.json';
 import {FaMinus, FaPlus} from 'react-icons/fa';
 import {FaChevronDown} from 'react-icons/fa';
 import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
+import {useCart} from '../../context/CartContext';
 
 const Productlisting = () => {
+    const {addToCart} = useCart();
+
     // State to track which checkboxes are checked in each filter category
     const [checkedFilters, setCheckedFilters] = useState(
         {categories: [], price: [], herbalIngredients: [], dietaryPreferences: []}
@@ -476,6 +479,7 @@ const Productlisting = () => {
                                                 </Link>
 
                                                 <button
+                                                    onClick={() => addToCart(product)}
                                                     className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase hover:bg-green-600'>
                                                     Add to cart
                                                 </button>

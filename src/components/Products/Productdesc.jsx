@@ -7,12 +7,14 @@ import {FaMinus, FaPlus} from 'react-icons/fa';
 import Truck from '../../assets/Icons/group.svg';
 import Rotate from '../../assets/Icons/3d-rotate.svg';
 import productsData from '../../assets/products.json';
+import {useCart} from '../../context/CartContext';
 
 const Productdesc = () => {
     const {id} = useParams();
     const [product, setProduct] = useState(null);
     const [selectedImage, setSelectedImage] = useState('');
 
+    const {addToCart} = useCart();
     const [quantity, setQuantity] = useState(1);
 
     const handleIncrement = () => {
@@ -50,7 +52,8 @@ const Productdesc = () => {
                 {/* Product Images */}
                 <div className='flex flex-col-reverse md:flex-row w-full md:w-[50vw]'>
                     {/* Thumbnails */}
-                    <div className='flex flex-row mt-[4vw] space-x-[2vw] md:flex-col md:w-[15vw] md:space-y-[0.3vw] md:space-x-[0] md:mt-[0]'>
+                    <div
+                        className='flex flex-row mt-[4vw] space-x-[2vw] md:flex-col md:w-[15vw] md:space-y-[0.3vw] md:space-x-[0] md:mt-[0]'>
                         {
                             product
                                 .additionalImages
@@ -95,7 +98,8 @@ const Productdesc = () => {
                                     .format(product.price)
                             }
                         </span>
-                        <span className='ml-[1vw] space-x-[1vw] md:ml-[0.5vw] md:space-x-[0.2vw] text-yellow-500 flex items-center'>
+                        <span
+                            className='ml-[1vw] space-x-[1vw] md:ml-[0.5vw] md:space-x-[0.2vw] text-yellow-500 flex items-center'>
                             {
                                 [...Array(5)].map((_, index) => {
                                     const isFilled = index < product.rating - 1; // Last star will not be filled
@@ -109,19 +113,23 @@ const Productdesc = () => {
                                 })
                             }
 
-                            <span className='ml-[1vw] text-[3vw] md:ml-[0.5vw] md:text-[1vw] text-textColor font-OpenSans'>(32 reviews)</span>
+                            <span
+                                className='ml-[1vw] text-[3vw] md:ml-[0.5vw] md:text-[1vw] text-textColor font-OpenSans'>(32 reviews)</span>
                         </span>
 
                     </div>
 
-                    <p className='mt-[1.5vw] text-[4vw] md:text-[1vw] font-PublicSans text-textColor'>{product.intro}</p>
+                    <p
+                        className='mt-[1.5vw] text-[4vw] md:text-[1vw] font-PublicSans text-textColor'>{product.intro}</p>
 
                     <ul className='list-disc my-[1.5vw] pl-[6vw] md:pl-[2vw] space-y-2'>
                         {
                             product
                                 .additionalintro
                                 .map((intro, index) => (
-                                    <li key={index} className='text-textColor font-PublicSans text-[4vw] md:text-[1vw]'>{intro}</li>
+                                    <li
+                                        key={index}
+                                        className='text-textColor font-PublicSans text-[4vw] md:text-[1vw]'>{intro}</li>
                                 ))
                         }
                     </ul>
@@ -130,29 +138,39 @@ const Productdesc = () => {
                         {/* Quantity Selector */}
                         <div
                             className="flex items-center justify-between bg-white border border-gray-300 rounded-full w-[40%] md:w-[30%]">
-                                <FaMinus  onClick={handleDecrement}
-                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[7vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer" />
-                            <span
-                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[5vw] md:text-[1.2vw] font-medium font-OpenSans text-textColor">{quantity}</span>
-                             <FaPlus  onClick={handleIncrement}
-                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[7vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer" />
+                            <FaMinus
+                                onClick={handleDecrement}
+                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[7vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
+                            <input
+                                className="text-[5vw] md:text-[1.2vw] md:px-[0.25vw] font-medium font-OpenSans bg-transparent w-5 outline-none text-textColor"
+                                value={quantity}
+                                onChange={(e) => setQuantity(parseInt(e.target.value))}
+                                min="1"/>
+                            <FaPlus
+                                onClick={handleIncrement}
+                                className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw] text-[7vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
                         </div>
 
                         {/* Add to Cart Button */}
                         <button
+                            onClick={() => addToCart(product)}
                             className="px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.7vw] text-white text-[4vw] md:text-[1vw] bg-darkGreen font-OpenSans font-bold rounded-full hover:bg-green-600 w-[60%] md:w-[70%]">
                             Add to Cart
                         </button>
                     </div>
 
-                    <div className='flex items-center space-x-[1.5vw] md:space-x-[0.5vw] mt-[5vw] md:mt-[1.5vw]'>
+                    <div
+                        className='flex items-center space-x-[1.5vw] md:space-x-[0.5vw] mt-[5vw] md:mt-[1.5vw]'>
                         <img src={Truck} className=''/>
-                        <span className='text-[3.2vw] md:text-[1vw] font-medium font-OpenSans text-textColor'>Free worldwide shipping on all orders over N10,000</span>
+                        <span
+                            className='text-[3.2vw] md:text-[1vw] font-medium font-OpenSans text-textColor'>Free worldwide shipping on all orders over N10,000</span>
                     </div>
 
-                    <div className='flex items-center space-x-[1.5vw] md:space-x-[0.5vw] mt-[3vw] md:mt-[1vw]'>
+                    <div
+                        className='flex items-center space-x-[1.5vw] md:space-x-[0.5vw] mt-[3vw] md:mt-[1vw]'>
                         <img src={Rotate} className=''/>
-                        <span className='text-[3.2vw] md:text-[1vw] font-medium font-OpenSans text-textColor'>Delivers in: 3-7 Working Days Shipping & Return</span>
+                        <span
+                            className='text-[3.2vw] md:text-[1vw] font-medium font-OpenSans text-textColor'>Delivers in: 3-7 Working Days Shipping & Return</span>
                     </div>
 
                 </div>
@@ -165,30 +183,39 @@ const Productdesc = () => {
                 <div className='flex items-center'>
                     <h2
                         className='pr-[2vw] md:pr-[1vw] border-r-2 border-gray-100 text-[7vw] md:text-[2vw] font-Lora font-medium text-white'>Description</h2>
-                    <span className='pl-[2vw] md:pl-[1vw] text-[6vw] md:text-[1.5vw] font-Lora text-white'>Reviews</span>
+                    <span
+                        className='pl-[2vw] md:pl-[1vw] text-[6vw] md:text-[1.5vw] font-Lora text-white'>Reviews</span>
                 </div>
 
-                <h3 className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">{product.title}</h3>
-                <p className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{product.description}</p>
+                <h3
+                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">{product.title}</h3>
+                <p
+                    className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{product.description}</p>
 
-                <h3 className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">Product Highlights:</h3>
+                <h3
+                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">Product Highlights:</h3>
                 <ul className="list-disc list-inside mb-[1.5vw] ml-[1vw]">
                     {
                         product
                             .highlights
                             .map((highlight, index) => (
-                                <li key={index} className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{highlight}</li>
+                                <li
+                                    key={index}
+                                    className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{highlight}</li>
                             ))
                     }
                 </ul>
 
-                <h3 className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">How to Use:</h3>
+                <h3
+                    className="text-[4vw] md:text-[1vw] font-semibold font-OpenSans mt-[2.5vw] md:mt-[1.2vw] text-white">How to Use:</h3>
                 <ul className="list-disc list-inside mb-[1.5vw] ml-[1vw]">
                     {
                         product
                             .usage
                             .map((use, index) => (
-                                <li key={index} className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{use}</li>
+                                <li
+                                    key={index}
+                                    className="mt-[1.5vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] font-OpenSans text-productBg">{use}</li>
                             ))
                     }
                 </ul>
