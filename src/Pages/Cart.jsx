@@ -7,6 +7,7 @@ import Newsletter from '../components/Newsletter/Newsletter.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import SimilarProducts from '../components/Products/Similarproducts.jsx';
 import Productsfeature from '../components/Feature/Productsfeature.jsx';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const {cart, removeFromCart, updateQuantity} = useCart();
@@ -120,13 +121,14 @@ const Cart = () => {
                                     <div key={index} className="flex flex-col border-gray-200 mb-4 px-4 py-2">
                                         <div className="flex justify-between items-center mb-1 space-x-1">
                                             <div>
-                                            <div className="w-[20vw] h-[20vw] bg-gray-200 mr-4">
-                                                <img
-                                                    src={item.image}
-                                                    alt="Item"
-                                                    className="w-full h-full object-cover rounded-[2vw]"/>
-                                            </div>
-                                                <p className='text-[4vw] w-[45vw] font-OpenSans font-bold text-textColor mt-[2vw]'>{item.name}</p>
+                                                <div className="w-[20vw] h-[20vw] bg-gray-200 mr-4">
+                                                    <img
+                                                        src={item.image}
+                                                        alt="Item"
+                                                        className="w-full h-full object-cover rounded-[2vw]"/>
+                                                </div>
+                                                <p
+                                                    className='text-[4vw] w-[45vw] font-OpenSans font-bold text-textColor mt-[2vw]'>{item.name}</p>
                                                 <p className='text-[4vw] font-OpenSans mt-[1vw] font-medium text-textColor'>{`₦${ (item.price * item.quantity).toLocaleString()}`}</p>
                                             </div>
                                             <div
@@ -177,10 +179,12 @@ const Cart = () => {
                                 {`₦${calculateTotal().toLocaleString()}`}
                             </span>
                         </div>
-                        <button
-                            className="w-full bg-darkGreen text-white text-[4vw] md:text-[1vw] font-OpenSans py-4 rounded-b-lg hover:bg-green-600">
+                        <Link
+                            to='/checkout'
+                            onClick={() => window.scrollTo(0, 0)}
+                            className="text-[4vw] md:text-[1vw] text-white font-OpenSans bg-darkGreen flex justify-center items-center py-4 rounded-b-lg hover:bg-green-600">
                             Proceed To Checkout
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

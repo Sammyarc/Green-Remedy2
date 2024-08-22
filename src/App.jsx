@@ -12,6 +12,8 @@ import Signin from './Pages/Signin.jsx';
 import ProductDetail from'./Pages/ProductDetail.jsx';
 import Cart from './Pages/Cart.jsx';
 import Errorpage from './Pages/ErrorPage.jsx';
+import Checkout from './Pages/Checkout.jsx';
+import OrderHistory from './Pages/OrderHistory.jsx';
 
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/signin" element={<Signin />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/orderhistory' element={<OrderHistory />} />
       </Routes>
     </Router>
   );
