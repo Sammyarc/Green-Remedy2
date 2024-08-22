@@ -34,7 +34,7 @@ const blogItems = [
 
 const Blog = () => {
     return (
-        <div className='px-[5vw] py-[10vw]'>
+        <div className='px-[5vw] pt-[10vw]'>
 
             {/* Header section */}
             <div className='flex flex-col justify-center items-center'>
