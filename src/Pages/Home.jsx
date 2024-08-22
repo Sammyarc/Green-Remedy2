@@ -12,6 +12,9 @@ import Banner from '../components/Banner/Banner';
 import Aboutbanner from '../components/Banner/Aboutbanner';
 import Reviews from '../components/Reviews/Reviews';
 import Blog from '../components/Blog/Blog';
+import Navbar from '../components/Navbar/Navbar';
+import Newsletter from '../components/Newsletter/Newsletter';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   useEffect(() => {
@@ -26,6 +29,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
       <Hero />
       <Feature />
       <Category />
@@ -37,6 +41,8 @@ const Home = () => {
       <Aboutbanner />
       <Reviews />
       <Blog />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };

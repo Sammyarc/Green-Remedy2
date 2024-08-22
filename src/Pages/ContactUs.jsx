@@ -8,6 +8,9 @@ import instagram from "../assets/Icons/instagram-green-icon.svg";
 import facebook from "../assets/Icons/facebook-green-icon.svg";
 import twitter from "../assets/Icons/twitter-green-icon.svg";
 import useFormHook from "../hooks/useFormHook";
+import Navbar from "../components/Navbar/Navbar";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Footer from "../components/Footer/Footer";
 
 const initialState = {
   name: "",
@@ -25,7 +28,9 @@ const ContactUs = () => {
   };
   return (
     <div className="min-h-screen flex flex-col">
-
+      <header>
+        <Navbar />
+      </header>
       <main>
         <section className="flex flex-col justify-center text-center bg-darkGreen h-[455px]">
           <p className="text-white text-lg font-Lora">We&apos;d love to help!</p>
@@ -190,7 +195,15 @@ const ContactUs = () => {
             </div>
           </div>
         </section>
+
+        <section>
+          <Newsletter />
+        </section>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

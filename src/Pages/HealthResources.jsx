@@ -9,6 +9,9 @@ import Articles from '../components/HealthResources/Articles';
 import BlogPost from '../components/HealthResources/BlogPost';
 import WatchAndLearn from '../components/HealthResources/WatchAndLearn';
 import Faqs from '../components/HealthResources/Faqs';
+import Navbar from '../components/Navbar/Navbar';
+import Newsletter from '../components/Newsletter/Newsletter';
+import Footer from '../components/Footer/Footer';
 
 const HealthResources = () => {
   useEffect(() => {
@@ -17,7 +20,8 @@ const HealthResources = () => {
   }, []);
 
   return (
-    <div data-aos='zoom-in'>
+    <div>
+      <Navbar />
       <HealthHero />
       <Benefits />
       <Remedies />
@@ -26,6 +30,8 @@ const HealthResources = () => {
       <BlogPost />
       <WatchAndLearn />
       <Faqs />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };
