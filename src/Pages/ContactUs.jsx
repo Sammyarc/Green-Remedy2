@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
 // icons from assests
 import location from "../assets/Icons/location-icon.svg";
 import phone from "../assets/Icons/phone-icon.svg";
@@ -9,8 +8,6 @@ import instagram from "../assets/Icons/instagram-green-icon.svg";
 import facebook from "../assets/Icons/facebook-green-icon.svg";
 import twitter from "../assets/Icons/twitter-green-icon.svg";
 import useFormHook from "../hooks/useFormHook";
-import Newsletter from "../components/Newsletter/Newsletter";
-import Footer from "../components/Footer/Footer";
 
 const initialState = {
   name: "",
@@ -26,27 +23,19 @@ const ContactUs = () => {
     console.log("contact details", formData);
     resetForm();
   };
-
-  const handleSubscribe = (email) => {
-    // e.preventDefault();
-    console.log("Newsletter subscription submitted:", email);
-  };
   return (
     <div className="min-h-screen flex flex-col">
-      <header>
-        <Navbar />
-      </header>
 
       <main>
         <section className="flex flex-col justify-center text-center bg-darkGreen h-[455px]">
-          <p className="text-white text-lg font-Lora">We'd love to help!</p>
+          <p className="text-white text-lg font-Lora">We&apos;d love to help!</p>
           <p className="text-white text-6xl font-Lora font-bold">
             Get in touch with us
           </p>
         </section>
         <section className="flex xs:flex-col md:flex-row gap-5 justify-around py-20">
-          <div className="flex justify-center border-2 border-darkGreen  md:w-[397px] md:h-[867px] rounded-lg bg-milkWhite text-lightTextColor">
-            <div className="border border-black md:w-[269px] flex flex-col items-center md:gap-32 md:pt-10">
+          <div className="flex justify-center border-2 border-darkGreen  md:w-[397px] md:h-[700px] rounded-lg bg-productBg text-lightTextColor">
+            <div className="md:w-[269px] flex flex-col items-center md:gap-12 md:pt-10">
               <div>
                 <h1 className="font-Lora md:text-4xl text-lg font-bold ">
                   Contact Details
@@ -119,9 +108,9 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center border border-darkGreen md:w-[693px] md:h-[867px] rounded-lg bg-darkGreen text-white">
-            <div className="border border-black md:w-[472px] flex flex-col md:pt-10">
-              <div className="flex flex-col md:gap-10 p-2">
+          <div className="flex justify-center border border-darkGreen md:w-[693px] md:h-[700px] rounded-lg bg-darkGreen text-white">
+            <div className="md:w-[472px] flex flex-col md:pt-10">
+              <div className="flex flex-col md:gap-5 p-2">
                 <h1 className="font-Lora md:text-4xl text-lg font-bold ">
                   Fill in the details
                 </h1>
@@ -139,7 +128,7 @@ const ContactUs = () => {
                       className="block text-white text-sm font-bold mb-2"
                       htmlFor="name"
                     >
-                      name
+                      Name
                     </label>
                     <input
                       type="text"
@@ -159,7 +148,7 @@ const ContactUs = () => {
                       className="block text-white text-sm font-bold mb-2"
                       htmlFor="email"
                     >
-                      email
+                      Email
                     </label>
                     <input
                       type="email"
@@ -179,7 +168,7 @@ const ContactUs = () => {
                       className="block text-white text-sm font-bold mb-2"
                       htmlFor="name"
                     >
-                      message
+                      Message
                     </label>
                     <textarea
                       name="message"
@@ -200,12 +189,6 @@ const ContactUs = () => {
               </form>
             </div>
           </div>
-        </section>
-        <section>
-          <Newsletter onSubmit={handleSubscribe} />
-        </section>
-        <section>
-          <Footer />
         </section>
       </main>
     </div>
