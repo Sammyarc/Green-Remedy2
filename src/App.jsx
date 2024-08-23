@@ -14,6 +14,7 @@ import Cart from './Pages/Cart.jsx';
 import Errorpage from './Pages/ErrorPage.jsx';
 import Checkout from './Pages/Checkout.jsx';
 import OrderHistory from './Pages/OrderHistory.jsx';
+import UserInfo from './Pages/UserInfo.jsx';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/orderhistory' element={<OrderHistory />} />
+        <Route path='/userinfo' element={<UserInfo />} />
       </Routes>
     </Router>
   );
