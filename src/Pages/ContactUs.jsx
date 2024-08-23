@@ -33,7 +33,9 @@ const ContactUs = () => {
       </header>
       <main>
         <section className="flex flex-col justify-center text-center bg-darkGreen h-[455px]">
-          <p className="text-white text-lg font-Lora">We&apos;d love to help!</p>
+          <p className="text-white text-lg font-Lora">
+            We&apos;d love to help!
+          </p>
           <p className="text-white text-6xl font-Lora font-bold">
             Get in touch with us
           </p>
