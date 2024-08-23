@@ -7,12 +7,12 @@ const Remedies = () => {
         Remedies for Common Health Conditions
       </header>
 
-      <section className='grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-x-3 md:gap-x-5 xl:gap-x-10 xl:gap-y-28 w-full xl:w-3/4 text-white mx-auto'>
+      <section className='grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-x-3 md:gap-x-5 xl:gap-y-10 w-full xl:w-3/4 text-white mx-auto'>
         {remedies.map((remedy) => {
           return (
             <div
               key={remedy.title}
-              className='flex flex-col gap-4 p-8 sm:p-5 md:p-10 bg-darkGreen rounded-lg'
+              className='flex flex-col gap-4 p-8 sm:p-5 md:py-8 bg-darkGreen rounded-lg'
             >
               <div>
                 <img src={remedy.img} alt={remedy.title} />

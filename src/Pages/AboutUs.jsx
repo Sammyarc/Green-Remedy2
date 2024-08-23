@@ -8,6 +8,9 @@ import Missionbanner from '../components/Banner/Missionbanner.jsx';
 import AboutFaqs from '../components/FAQs/AboutFaqs.jsx';
 import Values from '../components/Feature/Values.jsx';
 import { useEffect } from 'react';
+import Navbar from '../components/Navbar/Navbar.jsx';
+import Newsletter from '../components/Newsletter/Newsletter.jsx';
+import Footer from '../components/Footer/Footer.jsx';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -16,6 +19,7 @@ const AboutUs = () => {
   }, []);
   return (
     <div>
+      <Navbar />
       <AboutHero />
       <Feature />
       <Missionbanner />
@@ -23,6 +27,8 @@ const AboutUs = () => {
       <Video />
       <Values />
       <AboutFaqs />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };

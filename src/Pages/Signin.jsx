@@ -3,6 +3,9 @@
 import { HiOutlineEye, HiOutlineEyeSlash } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 import useFormHook from '../hooks/useFormHook';
+import Navbar from '../components/Navbar/Navbar';
+import Newsletter from '../components/Newsletter/Newsletter';
+import Footer from '../components/Footer/Footer';
 
 const initialState = {
   email: '',
@@ -23,7 +26,9 @@ export default function Signin() {
 
   return (
     <div className='flex flex-col'>
-      <header className='border-b'></header>
+      <header className='border-b'>
+        <Navbar />
+      </header>
 
       <main className='flex-grow flex flex-col items-center justify-center my-20'>
         <h3 className='font-Lora font-bold text-[8vw] md:text-[3vw] text-lightTextColor text-center'>
@@ -114,7 +119,12 @@ export default function Signin() {
         </p>
 
         {/* newsletter */}
+        <Newsletter />
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
 
       <style>{`
         /* Hide the default show password icon in Edge/IE */

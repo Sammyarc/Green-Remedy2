@@ -5,14 +5,16 @@ import productsData from '../../assets/products.json';
 import {FaMinus, FaPlus} from 'react-icons/fa';
 import {FaChevronDown} from 'react-icons/fa';
 import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
+import {useCart} from '../../context/CartContext';
 
 const Productlisting = () => {
+    const {addToCart} = useCart();
+
     // State to track which checkboxes are checked in each filter category
     const [checkedFilters, setCheckedFilters] = useState(
         {categories: [], price: [], herbalIngredients: [], dietaryPreferences: []}
     );
 
-    // Sample options for the sake of example
     const categoryOptions = ['Sleep Aid', 'Detox', 'Digestive Health'];
     const priceOptions = ['N20,000', 'N15,000', 'N10,000'];
     const herbalOptions = ['Chamomile', 'Ginger', 'Ginseng', 'Turmeric'];
@@ -50,15 +52,11 @@ const Productlisting = () => {
         });
     };
 
-    // Function to clear all filters
-    const clearFilters = () => {
-        setCheckedFilters(
-            {categories: [], price: [], herbalIngredients: [], dietaryPreferences: []}
-        );
-    };
-
     const [activeTab, setActiveTab] = useState('Shop All');
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
 
     const tabs = [
         'Shop All',
@@ -69,6 +67,70 @@ const Productlisting = () => {
         'Plants'
     ];
 
+    // Function to clear all filters
+    const clearFilters = () => {
+        setCheckedFilters(
+            {categories: [], price: [], herbalIngredients: [], dietaryPreferences: []}
+        );
+    };
+
+    const filterProducts = () => {
+        return productsData
+            .products
+            .filter(product => {
+
+                // Tab filter
+                let tabMatch = activeTab === 'Shop All' || product.tab === activeTab;
+
+                // Categories filter
+                let categoryMatch = false;
+                if (checkedFilters.categories.length === 0) {
+                    categoryMatch = true;
+                } else if (product.categories) {
+                    categoryMatch = checkedFilters
+                        .categories
+                        .some(category => product.categories.includes(category));
+                }
+
+                // Price filter
+                let priceMatch = false;
+                if (checkedFilters.price.length === 0) {
+                    priceMatch = true;
+                } else {
+                    // Remove "N" and convert to a number for comparison
+                    const numericPrices = checkedFilters
+                        .price
+                        .map(price => Number(price.replace('N', '').replace(',', '')));
+                    priceMatch = numericPrices.includes(product.price);
+                }
+
+                // Herbal Ingredients filter
+                let herbalMatch = false;
+                if (checkedFilters.herbalIngredients.length === 0) {
+                    herbalMatch = true;
+                } else if (product.herbalIngredients) {
+                    herbalMatch = checkedFilters
+                        .herbalIngredients
+                        .some(ingredient => product.herbalIngredients.includes(ingredient));
+                }
+
+                // Dietary Preferences filter
+                let dietaryMatch = false;
+                if (checkedFilters.dietaryPreferences.length === 0) {
+                    dietaryMatch = true;
+                } else if (product.dietaryPreferences) {
+                    dietaryMatch = checkedFilters
+                        .dietaryPreferences
+                        .some(preference => product.dietaryPreferences.includes(preference));
+                }
+
+                return tabMatch && categoryMatch && priceMatch && herbalMatch && dietaryMatch;
+            });
+    };
+
+    const filteredProducts = filterProducts();
+
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
@@ -97,14 +159,15 @@ const Productlisting = () => {
     }, []);
 
     // Calculate total pages
-    const totalPages = Math.ceil(productsData.products.length / productsPerPage);
+    const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
     // Get current products
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-    const currentProducts = productsData
-        .products
-        .slice(indexOfFirstProduct, indexOfLastProduct);
+    const currentProducts = filteredProducts.slice(
+        indexOfFirstProduct,
+        indexOfLastProduct
+    );
 
     // Change page and scroll to top
     const paginate = (pageNumber) => {
@@ -315,11 +378,11 @@ const Productlisting = () => {
                             tabs.map((tab) => (
                                 <button
                                     key={tab}
-                                    onClick={() => setActiveTab(tab)}
-                                    className={`px-[5vw] py-[1vw] md:px-[3vw] md:py-[0.7vw] text-[3vw] md:text-[0.9vw] flex justify-center items-center rounded-full border font-PublicSans ${
+                                    onClick={() => handleTabClick(tab)}
+                                    className={`px-[5vw] py-[1vw] md:px-[3vw] md:py-[0.7vw] text-[3vw] md:text-[0.9vw] flex justify-center items-center rounded-full border font-PublicSans tab-button ${
                                     activeTab === tab
-                                        ? 'bg-darkGreen text-white border-darkGreen'
-                                        : 'text-lightTextColor border-gray-300'} focus:outline-none transition duration-200`}>
+                                        ? 'bg-darkGreen text-white border-darkGreen active'
+                                        : 'text-lightTextColor border-gray-300 focus:outline-none transition duration-200'}`}>
                                     {tab}
                                 </button>
                             ))
@@ -361,58 +424,72 @@ const Productlisting = () => {
                 <div>
                     {/* Product Grid */}
 
-                    <div
-                        className="grid grid-cols-2 md:grid-cols-3 gap-y-[3vw] gap-x-[1.5vw] mt-[2vw] pb-[2vw] border-b-[0.15vw] border-lightTextColor">
-                        {
-                            currentProducts.map(product => (
-                                <div key={product.id} className="bg-productBg ml-[1vw] p-[2vw] rounded-[1.5vw]">
-                                    <Link to={`/product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
-                                        <img
-                                            src={product.image}
-                                            alt={product.name}
-                                            className="w-full h-[35vw] md:h-[20vw] object-cover rounded-[1vw]"/>
-                                        <h3
-                                            className="mt-[1.2vw] text-[3vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
-                                            {product.name}
-                                        </h3>
-
-                                        <p
-                                            className="mt-[0.2vw] text-[2.2vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">{product.tag}</p>
-                                        <div className="mt-[0.5vw] flex justify-center items-center gap-[0.2vw]">
-                                            <div className="flex justify-center items-center gap-[0.4vw]">
-                                                <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
-                                                <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
-                                                <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
-                                                <AiFillStar
-                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
-                                                <AiOutlineStar
-                                                    className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
-                                            </div>
-                                            <div className='font-OpenSans text-[3vw] md:text-[1vw] font-semibold'>({product.rating})</div>
-                                        </div>
-                                        <p
-                                            className="mt-[0.5vw] text-[4vw] md:text-[1.4vw] text-center font-bold text-darkGreen">{
-                                                new Intl
-                                                    .NumberFormat('en-NG', {
-                                                        style: 'currency',
-                                                        currency: 'NGN',
-                                                        maximumFractionDigits: 0
-                                                    })
-                                                    .format(product.price)
-                                            }</p>
-                                    </Link>
-
-                                    <button
-                                        className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase hover:bg-green-600'>
-                                        Add to cart
-                                    </button>
+                    {
+                        currentProducts.length === 0
+                            ? (
+                                <div
+                                    className="text-center text-[5vw] md:text-[2vw] font-semibold font-PublicSans text-lightTextColor py-[10vw]">
+                                    No products found matching your filters.
                                 </div>
-                            ))
-                        }
-                    </div>
+                            )
+                            : (
+
+                                <div
+                                    className="grid grid-cols-2 md:grid-cols-3 gap-y-[3vw] gap-x-[1.5vw] mt-[2vw] pb-[2vw] border-b-[0.15vw] border-lightTextColor">
+                                    {
+                                        currentProducts.map(product => (
+                                            <div key={product.id} className="bg-productBg ml-[1vw] p-[2vw] rounded-[1.5vw]">
+                                                <Link to={`/product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
+                                                    <img
+                                                        src={product.image}
+                                                        alt={product.name}
+                                                        className="w-full h-[35vw] md:h-[20vw] object-cover rounded-[1vw]"/>
+                                                    <h3
+                                                        className="mt-[1.2vw] text-[3vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
+                                                        {product.name}
+                                                    </h3>
+
+                                                    <p
+                                                        className="mt-[0.2vw] text-[2.2vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">{product.tag}</p>
+                                                    <div className="mt-[0.5vw] flex justify-center items-center gap-[0.2vw]">
+                                                        <div className="flex justify-center items-center gap-[0.4vw]">
+                                                            <AiFillStar
+                                                                className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
+                                                            <AiFillStar
+                                                                className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
+                                                            <AiFillStar
+                                                                className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
+                                                            <AiFillStar
+                                                                className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
+                                                            <AiOutlineStar
+                                                                className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
+                                                        </div>
+                                                        <div className='font-OpenSans text-[3vw] md:text-[1vw] font-semibold'>({product.rating})</div>
+                                                    </div>
+                                                    <p
+                                                        className="mt-[0.5vw] text-[4vw] md:text-[1.4vw] text-center font-bold text-darkGreen">{
+                                                            new Intl
+                                                                .NumberFormat('en-NG', {
+                                                                    style: 'currency',
+                                                                    currency: 'NGN',
+                                                                    maximumFractionDigits: 0
+                                                                })
+                                                                .format(product.price)
+                                                        }</p>
+                                                </Link>
+
+                                                <button
+                                                    onClick={() => addToCart(product)}
+                                                    className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase hover:bg-green-600'>
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+
+                            )
+                    }
 
                     {/* Pagination */}
                     <div className="flex justify-center md:justify-end mt-[2vw]">

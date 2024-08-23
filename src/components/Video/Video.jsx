@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import VideoSrc from '../../assets/video.png'
+import VideoSrc from '../../assets/Video/Introvideo.mp4'
 
 const Video = () => {
     return (
@@ -16,11 +16,12 @@ const Video = () => {
             </div>
 
             {/* Body */}
-            <div className='px-[2vw] mt-[5vw] flex justify-center'>
-                <img
-                    src={VideoSrc}
-                    alt='A video explaining how to order products on our website'
-                    className='w-full sm:w-[90vw] md:w-[80vw] h-auto'/>
+            <div>
+                <video
+                    className='px-[2vw] mt-[5vw] w-full h-[60vw] md:w-[75vw] flex justify-center items-center mx-auto md:h-[55vw] object-cover'
+                    controls="controls">
+                    <source src={VideoSrc} type="video/mp4"/>
+                </video>
             </div>
         </div>
 
