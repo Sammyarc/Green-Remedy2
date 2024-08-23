@@ -6,9 +6,9 @@ import Benefits from '../components/HealthResources/Benefits';
 import Remedies from '../components/HealthResources/Remedies';
 import HerbalRemedies from '../components/HealthResources/HerbalRemedies';
 import Articles from '../components/HealthResources/Articles';
-import BlogPost from '../components/HealthResources/BlogPost';
 import WatchAndLearn from '../components/HealthResources/WatchAndLearn';
 import Faqs from '../components/HealthResources/Faqs';
+import Blog from '../components/Blog/Blog';
 
 const HealthResources = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const HealthResources = () => {
       <Remedies />
       <HerbalRemedies />
       <Articles />
-      <BlogPost />
+      <Blog />
       <WatchAndLearn />
       <Faqs />
     </div>

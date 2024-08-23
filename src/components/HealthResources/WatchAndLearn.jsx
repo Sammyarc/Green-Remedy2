@@ -4,7 +4,7 @@ import PlayButton from './PlayButton';
 
 const WatchAndLearn = () => {
   return (
-    <div className='px-[6vw] lg:px-[12vw] md:mt-[2vw] mx-auto bg-darkGreen text-productBg py-40'>
+    <div className='px-[6vw] mt-20 xl:px-[12vw] md:mt-[10vw] xl:mt-[2vw] mx-auto bg-darkGreen text-productBg py-20'>
       <header className=''>
         <h1 className='font-bold text-3xl text-center font-Lora mb-6'>
           Watch and Learn
@@ -26,7 +26,7 @@ const WatchAndLearn = () => {
           </article>
 
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2'>
-            <PlayButton addClass='w-20 h-12 text-2xl md:w-36 md:h-20 md:text-4xl' />
+            <PlayButton addClass='w-16 h-10 md:w-20 md:h-12 text-2xl md:w-36 md:h-20 md:text-4xl' />
           </div>
         </div>
         <article className='h-24 text-black flex items-center justify-center'>
@@ -36,7 +36,7 @@ const WatchAndLearn = () => {
         </article>
       </aside>
 
-      <section className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 lg:gap-5'>
+      <section className='grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-3 md:gap-6 lg:gap-5'>
         {watchAndLearn.map((item, i) => {
           return (
             <aside key={i} className='rounded-lg bg-[#383838]'>
@@ -50,7 +50,7 @@ const WatchAndLearn = () => {
                 </article>
 
                 <div className='absolute bottom-5 left-1/2 -translate-x-1/2'>
-                  <PlayButton addClass='w-20 h-9 text-2xl rounded-sm' />
+                  <PlayButton addClass='w-14 h-8 xl:w-20 xl:h-9 text-lg xl:text-2xl rounded-sm' />
                 </div>
               </div>
               <article className='flex flex-col items-center justify-center py-3'>

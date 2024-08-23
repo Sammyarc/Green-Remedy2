@@ -7,15 +7,19 @@ const HerbalRemedies = () => {
       <header className='font-Lora font-bold text-3xl text-center w-full text-lightTextColor'>
         Herbal Remedies
       </header>
-      <div className='grid md:grid-cols-2 lg:w-3/5 mx-auto gap-10'>
+      <div className='grid md:grid-cols-2 lg:w-4/5 xl:w-3/5 mx-auto gap-10 md:gap-6 xl:gap-10'>
         {herbalRemedies.map((item) => {
           return (
             <div
               key={item.title}
-              className='flex flex-col gap-4 bg-white rounded-xl'
+              className='flex flex-col justify-between gap-4 bg-white rounded-xl'
             >
               <div className='w-full'>
-                <img src={item.img} alt={item.name} className='rounded-t-xl' />
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className='rounded-t-xl w-full'
+                />
               </div>
               <section className='flex flex-col gap-4 px-6'>
                 <h2 className='font-bold text-xl text-textColor font-Lora'>
@@ -23,7 +27,7 @@ const HerbalRemedies = () => {
                 </h2>
                 <p className='font-OpenSans text-textColor'>{item.desc}</p>
                 <h3 className='text-textColor font-bold text-lg'>Benefit:</h3>
-                <div className='grid md:grid-cols-3 gap-2 text-center'>
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-2 text-center'>
                   {item.benefits.map((benefit) => {
                     return (
                       <span

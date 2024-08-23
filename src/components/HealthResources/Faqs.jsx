@@ -3,7 +3,7 @@ import Accordion from './Accordion';
 
 const Faqs = () => {
   return (
-    <div className='px-[6vw] lg:px-[12vw] md:mt-[2vw] mx-auto text-productBg py-40 lg:pb-0'>
+    <div className='px-[6vw] lg:px-[5vw] xl:px-[12vw] md:mt-[2vw] mx-auto text-productBg py-32 lg:pb-0'>
       <header className='text-lightTextColor'>
         <h1 className='font-bold text-3xl text-center font-Lora mb-6'>
           Frequently asked questions
@@ -15,7 +15,7 @@ const Faqs = () => {
         </p>
       </header>
 
-      <section className='w-full md:w-2/3 mx-auto flex flex-col gap-6'>
+      <section className='w-full md:w-2/3 mx-auto flex flex-col gap-3'>
         {faqs.map((faq, i) => {
           return <Accordion key={i} {...faq} />;
         })}

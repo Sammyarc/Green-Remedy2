@@ -7,18 +7,18 @@ const Accordion = ({ question, answer }) => {
 
   return (
     <div
-      className={`${
-        isOpen ? 'bg-lightGreen text-textColor' : 'bg-darkGreen text-white'
-      } px-10 rounded-lg py-5 flex flex-col gap-8 `}
+      className={`bg-darkGreen text-white px-5 sm:px-10 rounded-lg py-5 flex flex-col gap-8 `}
     >
       <aside
-        className={`flex items-center justify-between cursor-pointer ${
-          isOpen ? 'font-bold' : ''
-        }`}
+        className='flex items-center justify-between cursor-pointer'
         onClick={() => setIsOpen(!isOpen)}
       >
         <h2 className='text-lg'>{question}</h2>
-        {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+        {isOpen ? (
+          <FaChevronUp className='text-xl sm:text-base' />
+        ) : (
+          <FaChevronDown className='text-xl sm:text-base' />
+        )}
       </aside>
       {isOpen && <p>{answer}</p>}
     </div>
