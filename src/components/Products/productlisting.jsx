@@ -218,9 +218,9 @@ const Productlisting = () => {
                             {
                                 isCategoryOpen
                                     ? <FaMinus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                                     : <FaPlus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                             }
                         </div>
                         <h3
@@ -258,9 +258,9 @@ const Productlisting = () => {
                             {
                                 isPriceOpen
                                     ? <FaMinus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                                     : <FaPlus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                             }
                         </div>
                         <h3
@@ -300,9 +300,9 @@ const Productlisting = () => {
                             {
                                 isHerbalIngredientsOpen
                                     ? <FaMinus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                                     : <FaPlus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                             }
                         </div>
                         <h3
@@ -342,9 +342,9 @@ const Productlisting = () => {
                             {
                                 isDietaryPreferencesOpen
                                     ? <FaMinus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                                     : <FaPlus
-                                            className="transform transition-transform duration-300 text-[2.5vw] md:text-[1vw] text-lightTextColor"/>
+                                            className="transform transition-transform duration-300 text-[3.5vw] md:text-[1vw] text-lightTextColor"/>
                             }
                         </div>
                         <h3
