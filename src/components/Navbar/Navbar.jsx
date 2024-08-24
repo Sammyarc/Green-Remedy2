@@ -57,7 +57,7 @@ const Navbar = () => {
                             <input
                                 type="search"
                                 placeholder="Search for herbal remedies"
-                                className="w-[40vw] sm:w-[45vw] md:w-[32vw] h-[8vw] sm:h-[4vw] md:h-[3vw] border-2 border-lightTextColor rounded-full pl-[8vw] pr-3 sm:px-[4vw] md:px-[3vw] text-[3vw] sm:text-[1.5vw] md:text-[1vw] outline-none font-OpenSans text-lightTextColor bg-transparent focus:border-darkGreen placeholder:text-[3vw] sm:placeholder:text-[1.5vw] md:placeholder:text-[1vw]"/>
+                                className="search-input w-[40vw] sm:w-[45vw] md:w-[32vw] h-[8vw] sm:h-[4vw] md:h-[3vw] border-2 border-lightTextColor rounded-full pl-[8vw] sm:px-[4vw] md:px-[3vw] text-[3vw] sm:text-[1.5vw] md:text-[1vw] outline-none font-OpenSans text-lightTextColor bg-transparent focus:border-darkGreen placeholder:text-[3vw] sm:placeholder:text-[1.5vw] md:placeholder:text-[1vw]"/>
                             <img
                                 src={Search}
                                 alt="Search Icon"

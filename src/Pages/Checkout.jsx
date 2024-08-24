@@ -6,39 +6,18 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Productsfeature from '../components/Feature/Productsfeature';
 import Newsletter from '../components/Newsletter/Newsletter';
-import {FaCheck} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 
 const CheckoutForm = () => {
     const {register, handleSubmit, formState: {
             errors
         }} = useForm();
-    const [showOverlay, setShowOverlay] = useState(false);
-
-    useEffect(() => {
-        if (showOverlay) {
-            // Disable scrolling
-            document.body.style.overflow = 'hidden';
-        } else {
-            // Re-enable scrolling
-            document.body.style.overflow = 'auto';
-        }
-
-        // Cleanup function to ensure scrolling is re-enabled if component is unmounted
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
-    }, [showOverlay]);
-
-    const onSubmit = (data) => {
-        // Assuming form validation is successful, you can proceed with further actions
-        console.log(data);
-        // Show overlay and success popup
-        setShowOverlay(true);
-
-    };
 
     const {cart} = useCart();
+
+    const onSubmit = (data) => {
+       console.log(data);
+    };
 
     const calculateTotal = () => {
         return cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -46,40 +25,6 @@ const CheckoutForm = () => {
 
     return (
         <div>
-
-            {/* Overlay and Success Popup */}
-            {
-                showOverlay && (
-                    <div
-                        className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                        <div
-                            className="bg-white w-[100vw] md:w-[80vw] mx-4 py-[8vw] md:px-[5vw] md:py-[5vw] rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
-                            <FaCheck
-                                className="text-white bg-darkGreen w-[10vw] h-[10vw] p-[0.5vw] md:w-[3vw] md:h-[3vw] rounded-full md:p-[0.2vw]"/>
-                            <h2
-                                className="text-[5vw] md:text-[2vw] font-bold font-OpenSans text-lightTextColor mb-4 mt-[3vw]">Thank you!</h2>
-                            <p
-                                className='md:w-[40vw] text-center text-[3.5vw] md:text-[1.2vw] font-OpenSans text-lightTextColor'>Your
-                                order has been confirmed and it is on the way. Check your email for the details</p>
-                            <div className='md:w-[40vw] flex justify-between items-center space-x-[1.5vw]'>
-                                <Link
-                                    to='/'
-                                    onClick={() => window.scrollTo(0, 0)}
-                                    className="mt-4 md:w-[20vw] bg-darkGreen text-white font-OpenSans text-[3.5vw] md:text-[1.1vw] p-3 rounded-full hover:bg-green-700">
-                                    Go to Homepage
-                                </Link>
-
-                                <Link
-                                    to='/orderhistory'
-                                    onClick={() => window.scrollTo(0, 0)}
-                                    className="mt-4 md:w-[20vw] bg-transparent text-darkGreen border-[0.15vw] font-OpenSans text-[3.5vw] md:text-[1.1vw] p-3 rounded-full">
-                                    Check Order Details
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                )
-            }
 
             <header>
                 <Navbar/>
@@ -90,6 +35,24 @@ const CheckoutForm = () => {
                     {/* Form Section */}
                     <div
                         className="md:w-2/3 border-[0.1vw] rounded-[1vw] shadow-lg bg-productBg mt-[6vw] md:mt-[0]">
+                        <aside
+                            className='font-Lora text-[5vw] md:text-[1.5vw] bg-lightTextColor rounded-t-[2vw] md:rounded-t-[1vw] p-4 text-white'>
+                            <table className='w-full'>
+                                <thead className='flex justify-between items-center'>
+                                    <tr className='w-full flex justify-between items-center px-5'>
+                                        <th className='text-[3.5vw] md:text-[1.4vw] font-Lora text-white font-normal'>
+                                            Personal
+                                        </th>
+                                        <th className='text-[3.5vw] md:text-[1.4vw] font-Lora text-white font-normal'>
+                                            Billing
+                                        </th>
+                                        <th className='text-[3.5vw] md:text-[1.4vw] font-Lora text-white font-normal'>
+                                            Confirmation
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </aside>
                         <form onSubmit={handleSubmit(onSubmit)} className="p-4 md:p-8">
                             <div className="grid grid-cols-1 gap-6">
                                 <div>
@@ -134,11 +97,11 @@ const CheckoutForm = () => {
                                     <label
                                         className="block text-lightTextColor font-OpenSans text-[3.5vw] md:text-[1.1vw]">Save As Default Payment Method</label>
                                 </div>
-                                <button
-                                    type="submit"
-                                    className="mt-4 md:w-[20vw] bg-darkGreen text-white font-OpenSans text-[3.5vw] md:text-[1.1vw] p-3 rounded-full hover:bg-green-700">
+                                <Link to='/userinfo'
+                                    onClick={() => window.scrollTo(0, 0)}
+                                    className="mt-4 md:w-[20vw] bg-darkGreen text-white font-OpenSans text-[3.5vw] md:text-[1.1vw] p-3 flex justify-center items-center rounded-full hover:bg-green-700">
                                     Proceed to Next Step
-                                </button>
+                                </Link>
                             </div>
                         </form>
                     </div>

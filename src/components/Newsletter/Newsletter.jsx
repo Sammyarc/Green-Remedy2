@@ -21,11 +21,11 @@ const Newsletter = ({ onSubmit }) => {
 
         <div className="w-full md:h-[380px] flex flex-col md:flex-row overflow-hidden bg-darkGreen md:py-1 my-[10vw]">
           {/* Description */}
-          <div className="flex-1 md:flex-[2] text-white p-6 mb-6 md:mb-0 flex flex-col justify-center text-center items-center">
-            <h2 className="md:text-4xl text-[6vw] font-Lora font-bold mb-4">
+          <div className="flex-1 md:flex-[2] text-white p-[7vw] md:p-[5vw] mb-6 md:mb-0 flex flex-col justify-center text-left items-center">
+            <h2 className="md:text-[2.8vw] text-[6.5vw] font-Lora font-bold mb-2">
               Subscribe to our newsletter
             </h2>
-            <p className="font-Lora">
+            <p className="font-OpenSans text-[3.5vw] md:text-[1.2vw]">
               Discover the latest health and wellness tips, exclusive discounts, and
               updates on our products and services by subscribing to our newsletter.
             </p>
@@ -47,7 +47,7 @@ const Newsletter = ({ onSubmit }) => {
                 />
                 <button
                   type="submit"
-                  className="w-full md:h-[59px] md:w-[300px] py-2 px-4 rounded-md shadow-sm text-sm font-medium text-white bg-darkGreen hover:bg-darkerGreen focus:outline-none focus:ring-2 focus:ring-offset-2 "
+                  className="w-full md:h-[59px] md:w-[300px] py-3 px-4 rounded-md shadow-sm text-sm font-medium text-white bg-darkGreen hover:bg-darkerGreen focus:outline-none focus:ring-2 focus:ring-offset-2 "
                 >
                   Subscribe
                 </button>

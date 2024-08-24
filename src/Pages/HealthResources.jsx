@@ -7,7 +7,7 @@ import Remedies from '../components/HealthResources/Remedies';
 import HerbalRemedies from '../components/HealthResources/HerbalRemedies';
 import Articles from '../components/HealthResources/Articles';
 import WatchAndLearn from '../components/HealthResources/WatchAndLearn';
-import Faqs from '../components/HealthResources/Faqs';
+import AboutFaqs from '../components/FAQs/AboutFaqs.jsx';
 import Blog from '../components/Blog/Blog';
 import Navbar from '../components/Navbar/Navbar';
 import Newsletter from '../components/Newsletter/Newsletter';
@@ -29,7 +29,7 @@ const HealthResources = () => {
       <Articles />
       <Blog />
       <WatchAndLearn />
-      <Faqs />
+      <AboutFaqs />
       <Newsletter />
       <Footer />
     </div>

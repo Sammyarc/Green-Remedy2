@@ -7,10 +7,12 @@ import Newsletter from '../components/Newsletter/Newsletter.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import SimilarProducts from '../components/Products/Similarproducts.jsx';
 import Productsfeature from '../components/Feature/Productsfeature.jsx';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Cart = () => {
     const {cart, removeFromCart, updateQuantity} = useCart();
+
+    const isDisabled = cart.length === 0;
 
     const handleIncrement = (id, currentQuantity) => {
         updateQuantity(id, currentQuantity + 1);
@@ -181,9 +183,21 @@ const Cart = () => {
                         </div>
                         <Link
                             to='/checkout'
-                            onClick={() => window.scrollTo(0, 0)}
-                            className="text-[4vw] md:text-[1vw] text-white font-OpenSans bg-darkGreen flex justify-center items-center py-4 rounded-b-lg hover:bg-green-600">
-                            Proceed To Checkout
+                            onClick={() => {
+                                if (!isDisabled) {
+                                    window.scrollTo(0, 0);
+                                }
+                            }}
+                            className={`text-[4vw] md:text-[1vw] text-white font-OpenSans flex justify-center items-center py-4 rounded-b-lg ${
+                            isDisabled
+                                ? 'bg-gray-400 cursor-not-allowed'
+                                : 'bg-darkGreen hover:bg-green-600'}`}
+                            aria-disabled={isDisabled}>
+                            {
+                                isDisabled
+                                    ? 'No items in cart'
+                                    : 'Proceed To Checkout'
+                            }
                         </Link>
                     </div>
                 </div>

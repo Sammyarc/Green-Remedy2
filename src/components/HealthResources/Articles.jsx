@@ -3,7 +3,7 @@ import { articles } from './data';
 
 const Articles = () => {
   return (
-    <div className='flex flex-col gap-10 mt-20 mb-10 font-Lora px-[6vw] md:px-[5vw] md:pt-[5vw] md:pb-[10vw]'>
+    <div className='flex flex-col gap-10 mt-20 mb-10 font-Lora px-[6vw] md:px-[5vw] md:pt-[5vw] md:pb-[0vw]'>
       <header className='font-bold text-3xl text-center w-full text-textColor mb-8'>
         Explore Our Recent Article
       </header>

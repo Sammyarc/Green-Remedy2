@@ -31,12 +31,12 @@ const FeatureItems = [
 
 const Productsfeature = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 space-y-[1.5vw] md:space-x-[5vw] md:space-y-[0] bg-lightGreen p-[7vw] mt-[10vw]">
+    <div className="grid grid-cols-2 md:grid-cols-4 space-y-[2vw] gap-[2.5vw] md:space-x-[5vw] md:space-y-[0] bg-lightGreen p-[7vw] mt-[10vw]">
     {FeatureItems.map((feature) => (
       <div key={feature.id}>
-        <img src={feature.icon} alt={feature.heading} className="w-[7vw] h-[7vw] md:w-[3vw] md:h-[3vw]" />
-        <h3 className="mt-[1vw] font-PublicSans font-bold text-lightTextColor text-[3.5vw] md:text-[1.5vw]">{feature.heading}</h3>
-        <p className="text-lightTextColor mt-[0.5vw] font-PublicSans text-[2.5vw] md:text-[1vw]">{feature.paragraph}</p>
+        <img src={feature.icon} alt={feature.heading} className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw]" />
+        <h3 className="mt-[2vw] font-PublicSans font-bold text-lightTextColor text-[4vw] md:text-[1.5vw]">{feature.heading}</h3>
+        <p className="text-lightTextColor mt-[0.5vw] font-PublicSans text-[3vw] md:text-[1vw]">{feature.paragraph}</p>
       </div>
     ))}
   </div>

@@ -16,11 +16,11 @@ const Aboutbanner = () => {
             </div>
             <div className='w-full md:w-[40vw]'>
                 <h1
-                    className='text-[5vw] md:text-[3vw] font-Lora font-bold leading-tight text-lightTextColor'>
+                    className='text-[6.5vw] md:text-[3vw] font-Lora font-bold leading-tight text-lightTextColor'>
                     About Us
                 </h1>
                 <p
-                    className='mt-[4vw] sm:mt-[3vw] md:mt-[2vw] text-[3.5vw] xs:text-[3vw] sm:text-[2vw] md:text-[1.2vw] lg:text-[1vw] w-full lg:w-[30vw] text-lightTextColor font-OpenSans'>
+                    className='mt-[4vw] sm:mt-[3vw] md:mt-[2vw] text-[3.5vw] md:text-[1.2vw] lg:text-[1vw] w-full lg:w-[30vw] text-lightTextColor font-OpenSans'>
                     At Green Remedies, we believe in the healing power of nature. Our mission is to
                     bring you the finest traditional herbs, sourced directly from trusted growers.
                     With a commitment to quality, sustainability, and customer satisfaction, we aim
@@ -30,8 +30,8 @@ const Aboutbanner = () => {
                 <Link
                       to='/about' 
                       onClick={() => window.scrollTo(0, 0)}
-                    className='bg-white text-textColor mt-[2vw] xs:w-[25vw] xs:h-[6vw] xs:text-[2.5vw] md:w-[12vw] md:h-[3vw] md:text-[1.2vw] flex justify-center gap-[0.2vw] items-center border border-textColor rounded-full font-bold font-OpenSans'>Learn more
-                    <img src={RightArrow} alt='Arrow Icon' className='xs:w-[3vw] md:w-[1.4vw]'/></Link>
+                    className='bg-white text-textColor mt-[4vw] w-[35vw] h-[10vw] text-[3.5vw] md:mt-[2vw] md:w-[12vw] md:h-[3vw] md:text-[1.2vw] flex justify-center gap-[1vw] md:gap-[0.5vw] items-center border border-textColor rounded-full font-bold font-OpenSans'>Learn more
+                    <img src={RightArrow} alt='Arrow Icon' className='w-[5vw] md:w-[1.4vw]'/></Link>
             </div>
         </div>
 

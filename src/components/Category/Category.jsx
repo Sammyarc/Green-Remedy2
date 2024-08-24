@@ -11,11 +11,11 @@ const Category = () => {
             {/* Header section */}
             <div className="flex flex-col justify-center items-center">
                 <h1
-                    className="font-Lora xs:text-[5.5vw] sm:text-[3vw] md:text-[2.5vw] text-lightTextColor font-bold">
+                    className="font-Lora text-[6.5vw] text-center sm:text-[3vw] md:text-[2.5vw] text-lightTextColor font-bold">
                     Explore Our Herbal Categories
                 </h1>
                 <p
-                    className="text-center w-full xs:w-[80vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] text-[3vw] xs:text-[3vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor font-OpenSans">
+                    className="text-center w-full md:w-[50vw] mt-[2vw] text-[3.5vw] md:text-[1.2vw] text-lightTextColor font-OpenSans">
                     Discover a wide variety of herbal products tailored to support your health and
                     wellness needs. Browse through our categories to find the perfect remedies for
                     your lifestyle.
@@ -24,75 +24,75 @@ const Category = () => {
 
             {/* Body */}
             <div
-                className="grid grid-cols-1 w-[85vw] mx-auto md:grid-cols-3 mt-[5vw] xs:gap-[4vw] md:gap-[2vw]">
+                className="grid grid-cols-1 w-[85vw] mx-auto md:grid-cols-3 mt-[5vw] gap-[4vw] md:gap-[2vw]">
                 <div
-                    className="border-lightGreen border-2 rounded-xlxs:h-[75vw] sm:h-[45vw] md:h-[34.2vw]">
+                    className="border-lightGreen border-2 rounded-xl h-[75vw] md:h-[34.2vw]">
                     <div>
                         <img
                             src={HerbalTea}
                             alt="Herbal-tea image"
-                            className="w-full h-[30vw] xs:h-[50vw] sm:h-[22vw] md:h-[20vw] rounded-t-xl"/>
+                            className="w-full h-[50vw] md:h-[20vw] rounded-t-xl"/>
                     </div>
                     <div
-                        className="py-[5vw] xs:py-[4vw] sm:py-[3vw] md:py-[2vw] px-[4vw] xs:px-[3vw] sm:px-[2vw] md:px-[2vw]">
+                        className="py-[4vw] md:py-[2vw] px-[3vw] sm:px-[2vw]">
                         <h2
-                            className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herbal Teas</h2>
+                            className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herbal Teas</h2>
                         <p
-                            className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] xs:text-[3vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Strengthen your bodys defences with our range of herbal teas.</p>
+                            className="mt-[0.8vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Strengthen your bodys defences with our range of herbal teas.</p>
                     </div>
                 </div>
 
                 <div
-                    className="flex xs:flex-row xs:gap-[2vw] md:flex-col justify-between h-[60vw] xs:h-[50vw] md:h-[34.2vw] md:0">
+                    className="flex xs:flex-row xs:gap-[2vw] md:flex-col justify-between h-[60vw] md:h-[34.2vw] md:0">
                     <div
-                        className="border-lightGreen border-2 rounded-xl h-[28vw] xs:h-[50vw] md:h-[16.5vw]">
+                        className="border-lightGreen border-2 rounded-xl h-[60vw] md:h-[16.5vw]">
                         <div>
                             <img
                                 src={HerbSeeds}
                                 alt="Herbal-Seed image"
-                                className="w-full h-[14vw] xs:h-[25vw] md:h-[7.5vw] rounded-t-xl"/>
+                                className="w-full h-[28vw] md:h-[7.5vw] rounded-t-xl"/>
                         </div>
                         <div
-                            className="py-[3vw] xs:py-[2.5vw] sm:py-[2vw] md:py-3 px-[4vw] xs:px-[3vw] sm:px-[2vw]">
+                            className="py-[2.5vw] md:py-3 px-[3vw] sm:px-[2vw]">
                             <h2
-                                className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herb Seeds and Plants</h2>
+                                className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herb Seeds and Plants</h2>
                             <p
-                                className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Find peace and calm with our stress-relief herbs.</p>
+                                className="mt-[0.8vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] text-lightTextColor font-OpenSans">Find peace and calm with our stress-relief herbs.</p>
                         </div>
                     </div>
 
                     <div
-                        className="border-lightGreen border-2 rounded-xl h-[28vw] xs:h-[50vw] md:h-[16.5vw]">
+                        className="border-lightGreen border-2 rounded-xl h-[60vw] md:h-[16.5vw]">
                         <div>
                             <img
                                 src={HerbalRemedies}
                                 alt="Herbal-Remedies image"
-                                className="w-full h-[14vw] xs:h-[25vw] md:h-[7.5vw] rounded-t-xl"/>
+                                className="w-full h-[28vw] md:h-[7.5vw] rounded-t-xl"/>
                         </div>
                         <div
-                            className="py-[3vw] xs:py-[2.5vw] sm:py-[2vw] md:py-3 px-[4vw] xs:px-[3vw] sm:px-[2vw]">
+                            className="py-[2.5vw] md:py-3 px-[3vw] sm:px-[2vw]">
                             <h2
-                                className="font-Lora font-bold text-[3vw] xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herbal Remedies</h2>
+                                className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herbal Remedies</h2>
                             <p
-                                className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] text-[2.5vw] xs:text-[2.5vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Support your digestive system with our natural remedies.</p>
+                                className="mt-[0.8vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] text-lightTextColor font-OpenSans">Support your digestive system with our natural remedies.</p>
                         </div>
                     </div>
                 </div>
 
                 <div
-                    className="border-lightGreen border-2 rounded-xl h-[60vw] xs:h-[75vw] sm:h-[45vw] md:h-[34.2vw]">
+                    className="border-lightGreen border-2 rounded-xl h-[75vw] md:h-[34.2vw]">
                     <div>
                         <img
                             src={HerbalBath}
                             alt="Herbal-Bath-Products image"
-                            className="w-full h-[30vw] xs:h-[50vw] sm:h-[22vw] md:h-[20vw] rounded-t-xl"/>
+                            className="w-full h-[50vw] md:h-[20vw] rounded-t-xl"/>
                     </div>
                     <div
-                        className="py-[5vw] xs:py-[4vw] sm:py-[3vw] md:py-[2vw] px-[4vw] xs:px-[3vw] sm:px-[2vw] md:px-[2vw]">
+                        className="py-[4vw] md:py-[2vw] px-[3vw] sm:px-[2vw]">
                         <h2
-                            className="font-Lora font-bold xs:text-[3.5vw] sm:text-[2vw] md:text-[1.5vw] text-lightTextColor">Herbal Bath Products</h2>
+                            className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herbal Bath Products</h2>
                         <p
-                            className="mt-[1vw] xs:mt-[0.8vw] sm:mt-[0.6vw] md:mt-[0.5vw] xs:text-[3vw] sm:text-[1.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Enhance your natural beauty with our herbal skin care products.</p>
+                            className="mt-[0.8vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Enhance your natural beauty with our herbal skin care products.</p>
                     </div>
                 </div>
             </div>

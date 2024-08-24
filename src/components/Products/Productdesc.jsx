@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
-import {FaStar} from 'react-icons/fa';
+import {FaStar, FaCheckCircle} from 'react-icons/fa';
 import {HiOutlineHeart} from 'react-icons/hi';
 import {FaMinus, FaPlus} from 'react-icons/fa';
 import Truck from '../../assets/Icons/group.svg';
@@ -9,13 +9,15 @@ import Rotate from '../../assets/Icons/3d-rotate.svg';
 import productsData from '../../assets/products.json';
 import {useCart} from '../../context/CartContext';
 
+
+
 const Productdesc = () => {
-    const {id} = useParams();
+    const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [selectedImage, setSelectedImage] = useState('');
-
-    const {addToCart} = useCart();
+    const { addToCart } = useCart();
     const [quantity, setQuantity] = useState(1);
+    const [showModal, setShowModal] = useState(false); // State to control modal visibility
 
     const handleIncrement = () => {
         setQuantity(prevQuantity => prevQuantity + 1);
@@ -23,27 +25,53 @@ const Productdesc = () => {
 
     const handleDecrement = () => {
         setQuantity(prevQuantity => (
-            prevQuantity > 1
-                ? prevQuantity - 1
-                : 1
+            prevQuantity > 1 ? prevQuantity - 1 : 1
         ));
     };
 
+    const handleAddToCart = () => {
+        addToCart(product, quantity);
+        setShowModal(true); // Show the modal
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false); // Close the modal
+    };
+
     useEffect(() => {
-        const foundProduct = productsData
-            .products
-            .find(p => p.id === parseInt(id));
+        const foundProduct = productsData.products.find(p => p.id === parseInt(id));
         if (foundProduct) {
             setProduct(foundProduct);
             setSelectedImage(foundProduct.additionalImages[0]); // Set the first additional image as default
         }
     }, [id]);
 
-    if (!product) 
-        return <div>Loading...</div>;
+    if (!product) return <div>Loading...</div>;
     
     return (
+        
         <div className='border-t-2 border-gray-300'>
+
+            {/* Modal */}
+            {showModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div className="bg-white w-[90vw] md:w-[40vw] p-[8vw] md:p-[4vw] rounded-lg shadow-lg text-center">
+                        <FaCheckCircle className="text-textColor w-[15vw] md:w-[5vw] h-[15vw] md:h-[5vw] mx-auto" />
+                        <h2 className="text-[5vw] font-Lora md:text-[2vw] font-extrabold text-textColor mt-[4vw] md:mt-[1.5vw]">
+                            Added to Cart
+                        </h2>
+                        <p className="text-[4vw] md:text-[1.2vw] text-textColor mt-[2vw] md:mt-[1vw] font-OpenSans">
+                            You have successfully added <strong>{product.name}</strong> to your cart.
+                        </p>
+                        <button
+                            onClick={handleCloseModal}
+                            className="mt-6 w-full md:w-[20vw] bg-darkGreen text-white font-OpenSans text-[4vw] md:text-[1.1vw] p-3 rounded-full hover:bg-green-700"
+                        >
+                            Continue Shopping
+                        </button>
+                    </div>
+                </div>
+            )}
 
             {/* top description */}
 
@@ -53,7 +81,7 @@ const Productdesc = () => {
                 <div className='flex flex-col-reverse md:flex-row w-full md:w-[50vw]'>
                     {/* Thumbnails */}
                     <div
-                        className='flex flex-row mt-[4vw] space-x-[2vw] md:flex-col md:w-[15vw] md:space-y-[0.3vw] md:space-x-[0] md:mt-[0]'>
+                        className='flex flex-row mt-[4vw] space-x-[2vw] md:flex-col md:w-[15vw] md:space-y-[0.5vw] md:space-x-[0] md:mt-[0]'>
                         {
                             product
                                 .additionalImages
@@ -62,7 +90,7 @@ const Productdesc = () => {
                                         key={index}
                                         src={image}
                                         alt={`Thumbnail ${index + 1}`}
-                                        className='w-full h-[25vw] md:h-auto cursor-pointer rounded-lg'
+                                        className='w-full h-[25vw] md:h-[10vw] cursor-pointer rounded-lg'
                                         onClick={() => setSelectedImage(image)}/>
                                 ))
                         }
@@ -120,9 +148,9 @@ const Productdesc = () => {
                     </div>
 
                     <p
-                        className='mt-[5vw] text-[4vw] md:text-[1vw] font-PublicSans text-textColor'>{product.intro}</p>
+                        className='mt-[5vw] text-[4vw] md:text-[1vw] md:mt-[1vw] font-PublicSans text-textColor'>{product.intro}</p>
 
-                    <ul className='list-disc my-[5vw] pl-[6vw] md:pl-[2vw] space-y-2'>
+                    <ul className='list-disc my-[5vw] pl-[6vw] md:pl-[2vw] md:my-[1vw] space-y-2'>
                         {
                             product
                                 .additionalintro
@@ -137,10 +165,10 @@ const Productdesc = () => {
                     <div className="mt-[5vw] md:mt-[0] flex items-center space-x-2 w-full">
                         {/* Quantity Selector */}
                         <div
-                            className="flex items-center justify-between bg-white border border-gray-300 rounded-full w-[40%] md:w-[30%] px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.1vw]">
+                            className="flex items-center justify-between bg-white border border-gray-300 rounded-full w-[40%] md:w-[30%] px-[1.5vw] py-[1.5vw] md:px-[1vw] md:py-[0.5vw]">
                             <FaMinus
                                 onClick={handleDecrement}
-                                className="text-[5vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
+                                className="text-[5vw] md:text-[1.2vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
                             <input
                                 className="text-[5vw] md:text-[1.2vw] md:px-[0.25vw] font-medium font-OpenSans bg-transparent w-5 outline-none text-textColor"
                                 value={quantity}
@@ -148,13 +176,13 @@ const Productdesc = () => {
                                 min="1"/>
                             <FaPlus
                                 onClick={handleIncrement}
-                                className="text-[5vw] md:text-[3vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
+                                className="text-[5vw] md:text-[1.2vw] font-OpenSans font-bold text-textColor cursor-pointer"/>
                         </div>
 
                         {/* Add to Cart Button */}
                         <button
-                            onClick={() => addToCart(product)}
-                            className="px-[1.5vw] py-[2vw] md:px-[1vw] md:py-[0.8vw] text-white text-[4vw] md:text-[1vw] bg-darkGreen font-OpenSans font-bold rounded-full hover:bg-green-600 w-[60%] md:w-[70%]">
+                            onClick={handleAddToCart}
+                            className="px-[1.5vw] py-[2vw] md:px-[1vw] md:py-[0.7vw] text-white text-[4vw] md:text-[1vw] bg-darkGreen font-OpenSans font-bold rounded-full hover:bg-green-600 w-[60%] md:w-[70%]">
                             Add to Cart
                         </button>
                     </div>
