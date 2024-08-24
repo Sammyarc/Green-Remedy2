@@ -155,12 +155,15 @@
 
 // export default SignInPage;
 
+// eslint-disable-next-line no-unused-vars
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation} from "react-router-dom";
+
 // import { useAuth } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/clerk-react";
-import Logo from "../assets/logo/green remedies llogo-black.png";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
+import Newsletter from "../components/Newsletter/Newsletter";
 
 const Signin = () => {
   // const navigate = useNavigate();
@@ -176,23 +179,23 @@ const Signin = () => {
 
   return (
     <div>
-      <header className="flex flex-col justify-center items-center">
-        <Link to="/">
-          <img
-            src={Logo}
-            alt="Green Remedies Logo"
-            className="xs:w-[27vw] sm:w-[15vw] md:w-[15vw] xs:h-[10vw] sm:h-[5vw] md:h-[5vw]"
-          />
-        </Link>
-      </header>
-      <div className="flex flex-col justify-center items-center">
+      <header className='border-b'>
+        <Navbar />
+     </header>
+     <main>
+     <section className="flex flex-col justify-center items-center my-[5vw]">
         <SignIn
           path="/signin"
           routing="path"
           signUpUrl="/signup"
           fallbackRedirectUrl={location.state?.from?.pathname || "/"}
         />
-      </div>
+      </section>
+      <section>
+        <Newsletter />
+      </section>
+     </main>
+      
       <footer>
         <Footer />
       </footer>

@@ -17,134 +17,80 @@ const Menu = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  //   const location = useLocation();
+  const location = useLocation();
   const { isSignedIn } = useAuth();
   const { user } = useUser();
   const { signOut } = useClerk();
 
-  //   const isAuthRoute = () => {
-  //     return location.pathname === "/signin" || location.pathname === "/signup";
-  //   };
   const isCartRoute = location.pathname === "/cart";
 
-    return (
-        <div className="xs:px-[2.5vw] bg-milkWhite">
-            {/* upper Navbar */}
-            <div className="md:py-[1.5vw] py-4">
-                <div className="flex justify-between items-center">
-                    <div>
-                        <Link to="/">
-                            <img
-                                src={Logo}
-                                alt="Green Remedies Logo"
-                                className="xs:w-[27vw] sm:w-[15vw] md:w-[15vw] xs:h-[10vw] sm:h-[5vw] md:h-[5vw]"/>
-                        </Link>
-                    </div>
-                    {/* search button */}
-                    <div className="block">
-                        <div className="relative">
-                            <input
-                                type="search"
-                                placeholder="Search for herbal remedies"
-                                className="search-input w-[40vw] sm:w-[45vw] md:w-[32vw] h-[8vw] sm:h-[4vw] md:h-[3vw] border-2 border-lightTextColor rounded-full pl-[8vw] sm:px-[4vw] md:px-[3vw] text-[3vw] sm:text-[1.5vw] md:text-[1vw] outline-none font-OpenSans text-lightTextColor bg-transparent focus:border-darkGreen placeholder:text-[3vw] sm:placeholder:text-[1.5vw] md:placeholder:text-[1vw]"/>
-                            <img
-                                src={Search}
-                                alt="Search Icon"
-                                className="absolute top-1/2 -translate-y-1/2 left-[3vw] sm:left-[1.5vw] md:left-[1vw] w-[5vw] sm:w-[2.5vw] md:w-[1.5vw] h-[5vw] sm:h-[2.5vw] md:h-[2vw]"/>
-                        </div>
-                    </div>
+  return (
+    <div className="xs:px-[2.5vw] bg-milkWhite">
+      {/* upper Navbar */}
+      <div className="md:py-[1.5vw] py-4">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <Link to="/">
+            <img
+              src={Logo}
+              alt="Green Remedies Logo"
+              className="xs:w-[27vw] sm:w-[15vw] md:w-[15vw] xs:h-[10vw] sm:h-[5vw] md:h-[5vw]"
+            />
+          </Link>
 
-                    {/* signup and cart button */}
-                    <div className="hidden md:flex md:gap-[3vw] md:items-center">
-                        {/* signup */}
-                        <Link
-                            // to="/signup"
-                            to={isAuthRoute()
-                                ? "/account"
-                                : "/signup"} className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer font-OpenSans">
-                            <div
-                                className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
-                                <img src={Signup} alt="Signup Icon" className="w-[1.7vw]"/>
-                            </div>
-                            <span className="md:text-[1.3vw] text-textColor font-OpenSans">
-                                {/* Sign-in/Sign-up */}
-                                {
-                                    isAuthRoute()
-                                        ? "Account"
-                                        : "Sign-in/Sign-up"
-                                }
-                            </span>
-                        </Link>
-                        {/* cart button */}
-                        <Link
-                            to="/cart"
-                            className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer">
-                            <div
-                                className="md:w-[2.7vw] md:h-[2.7vw] rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
-                                <img src={Cart} alt="Cart Icon" className="w-[1.7vw]"/>
-                            </div>
-                            <span className="md:text-[1.3vw] text-textColor font-OpenSans">Cart</span>
-                        </Link>
-                    </div>
-
-                    {/* Hamburger menu icon */}
-                    <div className="md:hidden flex  items-center">
-                        <button onClick={() => setIsOpen(!isOpen)}>
-                            {
-                                isOpen
-                                    ? (<XIcon className="h-8 w-8 text-darkGreen"/>)
-                                    : (<MenuIcon className="h-8 w-8 text-darkGreen"/>)
-                            }
-                        </button>
-                    </div>
-                </div>
+          {/* Search button */}
+          <div className="block">
+            <div className="relative">
+              <input
+                type="search"
+                placeholder="Search for herbal remedies"
+                className="search-input w-[40vw] sm:w-[45vw] md:w-[32vw] h-[8vw] sm:h-[4vw] md:h-[3vw] border-2 border-lightTextColor rounded-full pl-[8vw] sm:px-[4vw] md:px-[3vw] text-[3vw] sm:text-[1.5vw] md:text-[1vw] outline-none font-OpenSans text-lightTextColor bg-transparent focus:border-darkGreen placeholder:text-[3vw] sm:placeholder:text-[1.5vw] md:placeholder:text-[1vw]"
+              />
+              <img
+                src={Search}
+                alt="Search Icon"
+                className="absolute top-1/2 -translate-y-1/2 left-[3vw] sm:left-[1.5vw] md:left-[1vw] w-[5vw] sm:w-[2.5vw] md:w-[1.5vw] h-[5vw] sm:h-[2.5vw] md:h-[2vw]"
+              />
             </div>
           </div>
 
-          {/* signup and cart button */}
+          {/* Signup and cart button for Desktop */}
           <div className="hidden md:flex md:gap-[3vw] md:items-center">
-            {/* Account/Signup */}
-            <div className="relative">
-              {isSignedIn ? (
-                <div className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer font-OpenSans">
-                  <div className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
-                    <img
-                      src={user.profileImageUrl || SignupIcon}
-                      alt="User Icon"
-                      className="w-[1.7vw] rounded-full"
-                    />
-                  </div>
-                  <div className="md:text-[1.3vw] text-textColor font-OpenSans">
-                    {user.fullName}
-                  </div>
-                  <div className="bg-white shadow-lg rounded-lg">
-                    <button
-                      onClick={() => signOut()}
-                      className="block px-4 py-2 text-sm text-darkGreen hover:bg-gray-100"
-                    >
-                      Sign Out
-                    </button>
-                  </div>
+            {/* Signup/Account */}
+            {isSignedIn ? (
+              <div className="relative md:flex md:gap-[0.5vw] md:items-center cursor-pointer font-OpenSans">
+                <div className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
+                  <img
+                    src={user.profileImageUrl || SignupIcon}
+                    alt="User Icon"
+                    className="w-[1.7vw] rounded-full"
+                  />
                 </div>
-              ) : (
-                <Link
-                  to="/signin"
-                  className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer font-OpenSans"
+                <div className="md:text-[1.3vw] text-textColor font-OpenSans">
+                  {user.fullName}
+                </div>
+                <button
+                  onClick={() => signOut()}
+                  className="block px-4 py-2 text-sm text-darkGreen hover:bg-gray-100"
                 >
-                  <div className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
-                    <img
-                      src={SignupIcon}
-                      alt="Signup Icon"
-                      className="w-[1.7vw]"
-                    />
-                  </div>
-                  <span className="md:text-[1.3vw] text-textColor font-OpenSans">
-                    Sign-in/Sign-up
-                  </span>
-                </Link>
-              )}
-            </div>
-            {/* cart button */}
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <Link
+                to="/signin"
+                className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer font-OpenSans"
+              >
+                <div className="md:w-[2.7vw] md:h-[2.7vw] md:rounded-full bg-darkGreen md:flex md:justify-center md:items-center">
+                  <img src={SignupIcon} alt="Signup Icon" className="w-[1.7vw]" />
+                </div>
+                <span className="md:text-[1.3vw] text-textColor font-OpenSans">
+                  Sign-in/Sign-up
+                </span>
+              </Link>
+            )}
+
+            {/* Cart */}
             <Link
               to={isSignedIn || !isCartRoute ? "/cart" : "/signin"}
               className="md:flex md:gap-[0.5vw] md:items-center cursor-pointer"
@@ -159,7 +105,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger menu icon */}
-          <div className="md:hidden flex  items-center">
+          <div className="md:hidden flex items-center">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? (
                 <XIcon className="h-8 w-8 text-darkGreen" />
@@ -191,6 +137,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+
           {/* Account/Signup for mobile */}
           <li className="my-4 mx-4 md:hidden">
             {isSignedIn ? (
@@ -225,6 +172,7 @@ const Navbar = () => {
               </Link>
             )}
           </li>
+
           {/* Cart link in mobile view */}
           <li className="my-4 mx-4 md:hidden">
             <Link
@@ -232,6 +180,7 @@ const Navbar = () => {
               className="flex items-center text-[4.5vw] text-lightTextColor hover:text-darkGreen transition font-semibold font-OpenSans"
               onClick={() => setIsOpen(false)}
             >
+              <img src={CartIcon} alt="Cart Icon" className="w-6 h-6" />
               Cart
             </Link>
           </li>

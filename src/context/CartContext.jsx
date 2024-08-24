@@ -1,6 +1,4 @@
-
 import { createContext, useContext, useReducer, useEffect } from 'react';
-
 
 // Create the Cart Context
 const CartContext = createContext();
@@ -21,11 +19,10 @@ const generateOrderID = () => {
     return Math.floor(10000 + Math.random() * 9000);
 };
 
-// Update the cartReducer to handle quantity updates
+// Cart reducer to handle different actions
 const cartReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_TO_CART':
-            // Check if the product already exists in the cart
             // eslint-disable-next-line no-case-declarations
             const existingProductIndex = state.cart.findIndex((item) => item.id === action.payload.id);
 
@@ -38,7 +35,6 @@ const cartReducer = (state, action) => {
                 return { ...state, cart: updatedCart };
             }
 
-            // If the product doesn't exist, add it to the cart with a trackingID
             // eslint-disable-next-line no-case-declarations
             const newCartItem = {
                 ...action.payload,
@@ -85,7 +81,7 @@ const cartReducer = (state, action) => {
     }
 };
 
-// Add to Cart function 
+// CartProvider component to provide cart context
 // eslint-disable-next-line react/prop-types
 export const CartProvider = ({ children }) => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
@@ -141,19 +137,5 @@ export const CartProvider = ({ children }) => {
     );
 };
 
-  const updateQuantity = (productId, quantity) => {
-    dispatch({ type: "UPDATE_QUANTITY", payload: { id: productId, quantity } });
-  };
-
-  return (
-    <CartContext.Provider
-      value={{ cart: state.cart, addToCart, removeFromCart, updateQuantity }}
-    >
-      {children}
-    </CartContext.Provider>
-  );
-};
-
 // Custom hook to use the Cart context
-
 export const useCart = () => useContext(CartContext);
