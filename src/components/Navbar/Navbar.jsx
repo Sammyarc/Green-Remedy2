@@ -71,7 +71,7 @@ const Navbar = () => {
                 </div>
                 <button
                   onClick={() => signOut()}
-                  className="block px-4 py-2 text-[1.2vw] text-darkGreen "
+                  className="block px-4 py-2 text-[1.2vw] text-darkGreen hover:underline"
                 >
                   Sign Out
                 </button>
@@ -143,11 +143,13 @@ const Navbar = () => {
             {isSignedIn ? (
               <div className="flex flex-row gap-2 items-center">
                 <div className="flex items-center gap-2">
+                  <div className="w-[8vw] h-[8vw] rounded-full bg-darkGreen flex justify-center items-center">
                   <img
                     src={user.profileImageUrl || SignupIcon}
                     alt="User Icon"
                     className="w-6 h-6 rounded-full"
                   />
+                  </div>
                   <span className="text-[4.5vw] font-semibold text-lightTextColor font-OpenSans">
                     {user.fullName || "Account"}
                   </span>
