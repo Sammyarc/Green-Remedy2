@@ -8,8 +8,9 @@ const HealthHero = () => {
           Welcome to Our Health Resources
         </h1>
         <p
-          className="font-OpenSans text-lg leading-[
-24.51px] text-lightTextColor w-full text-center sm:text-start mb-14 sm:mb-0 sm:w-3/5"
+
+          className='font-OpenSans text-lg leading-[
+24.51px] text-lightTextColor w-full text-center md:text-start mb-14 md:mb-0 md:w-3/5'
         >
           Explore our curated collection of articles, guides, and tips to help
           you live a healthier life.

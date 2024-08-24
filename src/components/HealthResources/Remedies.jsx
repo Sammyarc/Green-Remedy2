@@ -2,17 +2,17 @@ import { remedies } from './data';
 
 const Remedies = () => {
   return (
-    <div className='flex flex-col gap-10 mt-40 px-[6vw] lg:px-0'>
+    <div className='flex flex-col gap-10 mt-28 px-[6vw] xl:px-0'>
       <header className='font-Lora font-bold text-3xl text-center w-full text-lightTextColor'>
         Remedies for Common Health Conditions
       </header>
 
-      <section className='grid md:grid-cols-2 lg:grid-cols-3 gap-y-9 md:gap-x-10 lg:gap-y-28 w-full lg:w-3/4 text-white mx-auto'>
+      <section className='grid sm:grid-cols-2 lg:grid-cols-3 gap-y-4 sm:gap-x-3 md:gap-x-5 xl:gap-y-10 w-full xl:w-3/4 text-white mx-auto'>
         {remedies.map((remedy) => {
           return (
             <div
               key={remedy.title}
-              className='flex flex-col gap-4 px-10 py-12 bg-darkGreen rounded-lg'
+              className='flex flex-col gap-4 p-8 sm:p-5 md:py-8 bg-darkGreen rounded-lg'
             >
               <div>
                 <img src={remedy.img} alt={remedy.title} />

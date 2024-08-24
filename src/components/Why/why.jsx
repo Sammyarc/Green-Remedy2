@@ -33,11 +33,11 @@ const why = () => {
             {/* Header section */}
             <div className='flex flex-col justify-center items-center'>
                 <h1
-                    className='font-Lora text-[7vw] xs:text-[5vw] sm:text-[4vw] md:text-[2.5vw] text-lightTextColor font-bold'>
+                    className='font-Lora text-[6.5vw] md:text-[2.5vw] text-lightTextColor font-bold'>
                     Why Choose Green Remedies
                 </h1>
                 <p
-                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] xs:text-[2.5vw] sm:text-[2vw] md:text-[1.2vw] text-lightTextColor font-OpenSans'>
+                    className='text-center w-full md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1.2vw] text-lightTextColor font-OpenSans'>
                     Our safe and effective herbal remedies are distinguished by sensory evaluation
                     techniques and the Organoleptic Method for quality and potency.
                 </p>
@@ -51,18 +51,18 @@ const why = () => {
                         Grid.map((data) => (
                             <div
                                 key={data.id}
-                                className="bg-darkGreen py-[4vw] xs:px-[4vw] rounded-[1.2vw] xs:w-[80vw] xs:mx-auto md:w-full md:px-[2vw]">
+                                className="bg-darkGreen py-[4vw] xs:px-[4vw] rounded-[1.2vw] w-full md:w-full md:px-[2vw]">
                                 <div
-                                    className='w-[6vw] xs:w-[8vw] sm:w-[7vw] md:w-[5vw] h-[6vw] xs:h-[8vw] sm:h-[7vw] md:h-[5vw] bg-white rounded-full flex flex-col justify-center items-center'>
+                                    className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw] bg-white rounded-full flex flex-col justify-center items-center'>
                                     <img
                                         src={data.image}
-                                        className="w-[3vw] xs:w-[4vw] sm:w-[3.5vw] md:w-[2.5vw] h-[3vw] xs:h-[4vw] sm:h-[3.5vw] md:h-[2.5vw]"
+                                        className="w-[6vw] md:w-[2.5vw] h-[6vw] md:h-[2.5vw]"
                                         alt="Icon"/>
                                 </div>
                                 <h1
-                                    className='mt-[1.3vw] text-white font-Lora font-semibold text-[2vw] xs:text-[3.5vw] sm:text-[2.2vw] md:text-[1.5vw]'>{data.heading}</h1>
+                                    className='mt-[1.3vw] text-white font-Lora font-semibold text-[4vw] md:text-[1.5vw]'>{data.heading}</h1>
                                 <p
-                                    className='mt-[1.3vw] text-white font-OpenSans text-[1vw] xs:text-[2.5vw] sm:text-[1.1vw] md:text-[1vw]'>{data.paragraph}</p>
+                                    className='mt-[1.3vw] text-white font-OpenSans text-[3.3vw] md:text-[1vw]'>{data.paragraph}</p>
                             </div>
                         ))
                     }

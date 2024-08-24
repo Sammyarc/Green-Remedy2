@@ -6,9 +6,18 @@ import {FaMinus, FaPlus} from 'react-icons/fa';
 import {FaChevronDown} from 'react-icons/fa';
 import {AiFillStar, AiOutlineStar} from 'react-icons/ai';
 import {useCart} from '../../context/CartContext';
+import Cartadd from '../Modals/Cartadd';
 
 const Productlisting = () => {
     const {addToCart} = useCart();
+
+    // Modal state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    setIsModalOpen(true);
+  };
 
     // State to track which checkboxes are checked in each filter category
     const [checkedFilters, setCheckedFilters] = useState(
@@ -200,12 +209,12 @@ const Productlisting = () => {
 
                 {/* Categories */}
                 <div
-                    className="py-[2.5vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+                    className="py-[4vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div
                         className="flex gap-2 items-center cursor-pointer"
                         onClick={toggleCategory}>
                         <div
-                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            className='w-[7vw] h-[7vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
                             {
                                 isCategoryOpen
                                     ? <FaMinus
@@ -215,7 +224,7 @@ const Productlisting = () => {
                             }
                         </div>
                         <h3
-                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Categories</h3>
+                            className="text-[4vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Categories</h3>
                     </div>
                     {
                         isCategoryOpen && (
@@ -226,12 +235,12 @@ const Productlisting = () => {
                                             <label className="flex items-center cursor-pointer">
                                                 <input
                                                     type="checkbox"
-                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    className="mr-2 w-[4.5vw] h-[4.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                                     checked={checkedFilters
                                                         .categories
                                                         .includes(option)}
                                                     onChange={() => handleCheckboxChange('categories', option)}/>
-                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                                <span className='font-PublicSans text-[3.5vw] md:text-[0.9vw]'>{option}</span>
                                             </label>
                                         </li>
                                     ))
@@ -242,10 +251,10 @@ const Productlisting = () => {
                 </div>
 
                 {/* Price */}
-                <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+                <div className="py-[4vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div className="flex gap-2 items-center cursor-pointer" onClick={togglePrice}>
                         <div
-                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            className='w-[7vw] h-[7vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
                             {
                                 isPriceOpen
                                     ? <FaMinus
@@ -255,7 +264,7 @@ const Productlisting = () => {
                             }
                         </div>
                         <h3
-                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Price</h3>
+                            className="text-[4vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Price</h3>
                     </div>
                     {
                         isPriceOpen && (
@@ -266,12 +275,12 @@ const Productlisting = () => {
                                             <label className="flex items-center cursor-pointer">
                                                 <input
                                                     type="checkbox"
-                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    className="mr-2 w-[4.5vw] h-[4.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                                     checked={checkedFilters
                                                         .price
                                                         .includes(option)}
                                                     onChange={() => handleCheckboxChange('price', option)}/>
-                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                                <span className='font-PublicSans text-[3.5vw] md:text-[0.9vw]'>{option}</span>
                                             </label>
                                         </li>
                                     ))
@@ -282,12 +291,12 @@ const Productlisting = () => {
                 </div>
 
                 {/* Herbal Ingredients */}
-                <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+                <div className="py-[4vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div
                         className="flex gap-2 items-center cursor-pointer"
                         onClick={toggleHerbalIngredients}>
                         <div
-                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            className='w-[7vw] h-[7vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
                             {
                                 isHerbalIngredientsOpen
                                     ? <FaMinus
@@ -297,7 +306,7 @@ const Productlisting = () => {
                             }
                         </div>
                         <h3
-                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Herbal Ingredients</h3>
+                            className="text-[4vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Herbal Ingredients</h3>
                     </div>
                     {
                         isHerbalIngredientsOpen && (
@@ -308,12 +317,12 @@ const Productlisting = () => {
                                             <label className="flex items-center cursor-pointer">
                                                 <input
                                                     type="checkbox"
-                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    className="mr-2 w-[4.5vw] h-[4.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                                     checked={checkedFilters
                                                         .herbalIngredients
                                                         .includes(option)}
                                                     onChange={() => handleCheckboxChange('herbalIngredients', option)}/>
-                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                                <span className='font-PublicSans text-[3.5vw] md:text-[0.9vw]'>{option}</span>
                                             </label>
                                         </li>
                                     ))
@@ -324,12 +333,12 @@ const Productlisting = () => {
                 </div>
 
                 {/* Dietary Preferences */}
-                <div className="py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
+                <div className="py-[4vw] md:py-[1.3vw] border-b-[0.15vw] border-lightTextColor">
                     <div
                         className="flex gap-2 items-center cursor-pointer"
                         onClick={toggleDietaryPreferences}>
                         <div
-                            className='w-[5vw] h-[5vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
+                            className='w-[7vw] h-[7vw] md:w-[2vw] md:h-[2vw] flex justify-center items-center border-2 border-darkGreen'>
                             {
                                 isDietaryPreferencesOpen
                                     ? <FaMinus
@@ -339,7 +348,7 @@ const Productlisting = () => {
                             }
                         </div>
                         <h3
-                            className="text-[3.5vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Dietary Preferences</h3>
+                            className="text-[4vw] md:text-[1vw] font-bold text-lightTextColor font-OpenSans">Dietary Preferences</h3>
                     </div>
                     {
                         isDietaryPreferencesOpen && (
@@ -350,12 +359,12 @@ const Productlisting = () => {
                                             <label className="flex items-center cursor-pointer">
                                                 <input
                                                     type="checkbox"
-                                                    className="mr-2 w-[3.5vw] h-[3.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
+                                                    className="mr-2 w-[4.5vw] h-[4.5vw] md:w-[1.2vw] md:h-[1.2vw] accent-darkGreen"
                                                     checked={checkedFilters
                                                         .dietaryPreferences
                                                         .includes(option)}
                                                     onChange={() => handleCheckboxChange('dietaryPreferences', option)}/>
-                                                <span className='font-PublicSans text-[3vw] md:text-[0.9vw]'>{option}</span>
+                                                <span className='font-PublicSans text-[3.5vw] md:text-[0.9vw]'>{option}</span>
                                             </label>
                                         </li>
                                     ))
@@ -445,14 +454,14 @@ const Productlisting = () => {
                                                         alt={product.name}
                                                         className="w-full h-[35vw] md:h-[20vw] object-cover rounded-[1vw]"/>
                                                     <h3
-                                                        className="mt-[1.2vw] text-[3vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
+                                                        className="mt-[2vw] text-[3.5vw] md:text-[1.5vw] text-center font-Lora font-bold text-lightTextColor">
                                                         {product.name}
                                                     </h3>
 
                                                     <p
-                                                        className="mt-[0.2vw] text-[2.2vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">{product.tag}</p>
-                                                    <div className="mt-[0.5vw] flex justify-center items-center gap-[0.2vw]">
-                                                        <div className="flex justify-center items-center gap-[0.4vw]">
+                                                        className="mt-[0.2vw] text-[2.5vw] md:text-[1vw] text-center text-lightTextColor font-OpenSans">{product.tag}</p>
+                                                    <div className="mt-[0.5vw] flex justify-center items-center gap-[0.5vw]">
+                                                        <div className="flex justify-center items-center gap-[1vw] md:gap-[0.4vw]">
                                                             <AiFillStar
                                                                 className="transform transition-transform duration-300 text-[4vw] md:text-[1.3vw] text-rating"/>
                                                             <AiFillStar
@@ -479,7 +488,7 @@ const Productlisting = () => {
                                                 </Link>
 
                                                 <button
-                                                    onClick={() => addToCart(product)}
+                                                    onClick={() => handleAddToCart(product)}
                                                     className='w-full h-[8vw] flex justify-center items-center rounded-full mt-2 md:h-[3.5vw] text-white text-[2.5vw] md:text-[1vw] font-bold font-OpenSans bg-darkGreen uppercase hover:bg-green-600'>
                                                     Add to cart
                                                 </button>
@@ -510,6 +519,8 @@ const Productlisting = () => {
                             }
                         </ul>
                     </div>
+
+                    <Cartadd isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
 
             </div>

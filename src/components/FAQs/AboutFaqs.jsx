@@ -58,11 +58,11 @@ const AboutFaqs = () => {
 
         <div className="flex flex-col justify-center items-center">
             <h1
-                className="font-Lora text-[5vw] md:text-[3vw] text-lightTextColor font-bold">
+                className="font-Lora text-[6.5vw] md:text-[3vw] text-lightTextColor font-bold">
                 Frequently asked questions
             </h1>
             <p
-                className="text-center w-[90vw] xs:w-[80vw] md:w-[60vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-lightTextColor font-OpenSans">
+                className="text-center w-full md:w-[60vw] mt-[2vw] text-[3.5vw] md:text-[1.4vw] text-lightTextColor font-OpenSans">
                 Stay up to date with our recent blog posts, featuring insightful articles on health, wellness, and natural remedies for your daily life.
             </p>
         </div>
@@ -74,9 +74,9 @@ const AboutFaqs = () => {
                 faqs.map((faq, index) => (
                     <div key={index} className="bg-white rounded-lg shadow-md">
                         <div
-                            className="flex justify-between items-center px-[3vw] py-[3vw] md:px-[1.5vw] md:py-[1.5vw] cursor-pointer"
+                            className="flex justify-between items-center px-[3vw] py-[5vw] md:px-[1.5vw] md:py-[1.5vw] cursor-pointer"
                             onClick={() => toggleFAQ(index)}>
-                            <h3 className="text-[3vw] md:text-[1.7vw] font-OpenSans font-semibold text-gray-800">{faq.question}</h3>
+                            <h3 className="text-[4vw] md:text-[1.7vw] font-OpenSans font-semibold text-textColor">{faq.question}</h3>
                             <div className='w-[7vw] h-[7vw] md:w-[4vw] md:h-[3.5vw] flex justify-center items-center border border-darkGreen'>
                                 <FaChevronDown
                                     className={`transform transition-transform duration-300 text-[3.5vw] md:text-[2vw] text-textColor ${
@@ -85,7 +85,7 @@ const AboutFaqs = () => {
                         </div>
                         {
                             activeIndex === index && (
-                                <div className="xs:pb-[4vw] xs:px-[3vw] md:px-[1.5vw] md:pb-[1.5vw] text-[2.5vw] md:text-[1.4vw] text-gray-600 font-OpenSans">
+                                <div className="pb-[4vw] px-[3vw] md:px-[1.5vw] md:pb-[1.5vw] text-[3.5vw] md:text-[1.4vw] text-textColor font-OpenSans">
                                     {faq.answer}
                                 </div>
                             )

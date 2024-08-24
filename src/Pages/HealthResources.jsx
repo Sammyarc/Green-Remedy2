@@ -6,9 +6,9 @@ import Benefits from '../components/HealthResources/Benefits';
 import Remedies from '../components/HealthResources/Remedies';
 import HerbalRemedies from '../components/HealthResources/HerbalRemedies';
 import Articles from '../components/HealthResources/Articles';
-import BlogPost from '../components/HealthResources/BlogPost';
 import WatchAndLearn from '../components/HealthResources/WatchAndLearn';
-import Faqs from '../components/HealthResources/Faqs';
+import AboutFaqs from '../components/FAQs/AboutFaqs.jsx';
+import Blog from '../components/Blog/Blog';
 import Navbar from '../components/Navbar/Navbar';
 import Newsletter from '../components/Newsletter/Newsletter';
 import Footer from '../components/Footer/Footer';
@@ -27,9 +27,9 @@ const HealthResources = () => {
       <Remedies />
       <HerbalRemedies />
       <Articles />
-      <BlogPost />
+      <Blog />
       <WatchAndLearn />
-      <Faqs />
+      <AboutFaqs />
       <Newsletter />
       <Footer />
     </div>

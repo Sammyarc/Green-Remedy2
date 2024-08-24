@@ -30,8 +30,8 @@ const Values = () => {
 
         {/* Header section */}
         <div className='flex flex-col justify-center items-center'>
-            <h1 className='font-Lora text-[5vw] md:text-[3vw] text-white font-bold'>Our Values</h1>
-            <p className='text-center w-[80vw] md:w-[50vw] lg:w-[40vw] mt-[2vw] xs:text-[2.5vw] md:text-[1.4vw] text-white font-OpenSans'>
+            <h1 className='font-Lora text-[6.5vw] md:text-[3vw] text-white font-bold'>Our Values</h1>
+            <p className='text-center w-full md:w-[50vw] lg:w-[40vw] mt-[2vw] text-[3.5vw] md:text-[1.4vw] text-white font-OpenSans'>
                 We believe in the power of nature to heal and nurture, and we are dedicated to providing you with the best natural health solutions.
             </p>
         </div>
@@ -43,8 +43,8 @@ const Values = () => {
                     <div
                         key={data.id}
                         className='flex flex-col md:flex-row justify-between items-start sm:items-center gap-[1.5vw] md:gap-[13.5vw] w-[85vw] md:w-[60vw] mx-auto p-[2vw] border-b border-white'>
-                        <h2 className='text-[3.5vw] md:text-[2vw] font-bold font-Lora text-white'>{data.value}</h2>
-                        <p className='mt-[1vw] sm:mt-0 text-[2vw] md:text-[1vw] font-OpenSans text-white w-full md:w-[23vw]'>{data.text}</p>
+                        <h2 className='text-[4.5vw] md:text-[2vw] font-bold font-Lora text-white'>{data.value}</h2>
+                        <p className='mt-[0.5vw] text-[3.5vw] md:text-[1vw] font-OpenSans text-white w-full md:w-[23vw]'>{data.text}</p>
                     </div>
                 ))}
             </div>
