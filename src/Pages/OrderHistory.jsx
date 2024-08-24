@@ -103,17 +103,17 @@ const OrderHistory = () => {
                     </div>
 
                     {/* Mobile Layout */}
-                    <div className="w-full md:hidden bg-white shadow-lg rounded-lg mt-[5vw]">
+                    <div className="w-full md:hidden mt-[5vw]">
                         {
                             orders.length === 0
                                 ? (
                                     <p
-                                        className='flex justify-center items-center text-[5vw] md:text-[1.5vw] my-[3vw] text-textColor font-PublicSans'>
+                                        className='flex justify-center items-center text-[5vw] md:text-[1.5vw] my-[10vw] text-textColor font-PublicSans'>
                                         No orders have been placed yet.
                                     </p>
                                 )
                                 : orders.map((order, orderIndex) => (
-                                    <div key={orderIndex} className="border-b border-gray-300 mb-4 px-4 py-2">
+                                    <div key={orderIndex} className="border-b bg-white shadow-lg rounded-lg border-gray-300 mb-4 px-4 py-2">
                                         <div className="flex flex-col space-y-2">
                                             {
                                                 order
