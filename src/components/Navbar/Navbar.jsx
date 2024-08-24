@@ -71,7 +71,7 @@ const Navbar = () => {
                 </div>
                 <button
                   onClick={() => signOut()}
-                  className="block px-4 py-2 text-sm text-darkGreen hover:bg-gray-100"
+                  className="block px-4 py-2 text-[1.2vw] text-darkGreen "
                 >
                   Sign Out
                 </button>
@@ -141,14 +141,14 @@ const Navbar = () => {
           {/* Account/Signup for mobile */}
           <li className="my-4 mx-4 md:hidden">
             {isSignedIn ? (
-              <div className="flex flex-col items-start">
-                <div className="flex items-center gap-2 mb-2">
+              <div className="flex flex-row gap-2 items-center">
+                <div className="flex items-center gap-2">
                   <img
                     src={user.profileImageUrl || SignupIcon}
                     alt="User Icon"
                     className="w-6 h-6 rounded-full"
                   />
-                  <span className="text-[4.5vw] text-lightTextColor font-OpenSans">
+                  <span className="text-[4.5vw] font-semibold text-lightTextColor font-OpenSans">
                     {user.fullName || "Account"}
                   </span>
                 </div>
@@ -180,7 +180,6 @@ const Navbar = () => {
               className="flex items-center text-[4.5vw] text-lightTextColor hover:text-darkGreen transition font-semibold font-OpenSans"
               onClick={() => setIsOpen(false)}
             >
-              <img src={CartIcon} alt="Cart Icon" className="w-6 h-6" />
               Cart
             </Link>
           </li>
