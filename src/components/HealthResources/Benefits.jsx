@@ -1,4 +1,4 @@
-import { benefits } from './data';
+import { benefits } from "./data";
 
 const Benefits = () => {
   return (
@@ -11,6 +11,7 @@ const Benefits = () => {
           return (
             <p
               key={benfit}
+
               className='py-6 rounded-md bg-darkGreen text-white text-center w-full '
             >
               {benfit}

@@ -1,4 +1,6 @@
+
 import { createContext, useContext, useReducer, useEffect } from 'react';
+
 
 // Create the Cart Context
 const CartContext = createContext();
@@ -139,5 +141,19 @@ export const CartProvider = ({ children }) => {
     );
 };
 
+  const updateQuantity = (productId, quantity) => {
+    dispatch({ type: "UPDATE_QUANTITY", payload: { id: productId, quantity } });
+  };
+
+  return (
+    <CartContext.Provider
+      value={{ cart: state.cart, addToCart, removeFromCart, updateQuantity }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
+
 // Custom hook to use the Cart context
+
 export const useCart = () => useContext(CartContext);

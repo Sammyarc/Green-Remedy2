@@ -1,16 +1,27 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import {FaMinus, FaPlus, FaTimes} from 'react-icons/fa';
-import {useCart} from '../context/CartContext.jsx';
-import Navbar from '../components/Navbar/Navbar.jsx';
-import Newsletter from '../components/Newsletter/Newsletter.jsx';
-import Footer from '../components/Footer/Footer.jsx';
+import React from "react";
+import { FaMinus, FaPlus, FaTimes } from "react-icons/fa";
+import { useCart } from "../context/CartContext.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import Newsletter from "../components/Newsletter/Newsletter.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 import SimilarProducts from '../components/Products/Similarproducts.jsx';
 import Productsfeature from '../components/Feature/Productsfeature.jsx';
-import {Link} from 'react-router-dom';
+import { useNavigate, Link } from "react-router-dom";
+import { useAuth } from "@clerk/clerk-react";
+
 
 const Cart = () => {
-    const {cart, removeFromCart, updateQuantity} = useCart();
+  const navigate = useNavigate();
+  const { isSignedIn } = useAuth();
+  const { cart, removeFromCart, updateQuantity } = useCart();
+
+
+  React.useEffect(() => {
+    if (!isSignedIn) {
+      navigate("/signin");
+    }
+  }, [isSignedIn, navigate]);
 
     const isDisabled = cart.length === 0;
 
@@ -18,15 +29,21 @@ const Cart = () => {
         updateQuantity(id, currentQuantity + 1);
     };
 
-    const handleDecrement = (id, currentQuantity) => {
-        if (currentQuantity > 1) {
-            updateQuantity(id, currentQuantity - 1);
-        }
-    };
+  const handleIncrement = (id, currentQuantity) => {
+    updateQuantity(id, currentQuantity + 1);
+  };
 
-    const calculateTotal = () => {
-        return cart.reduce((total, item) => total + item.price * item.quantity, 0);
-    };
+  const handleDecrement = (id, currentQuantity) => {
+    if (currentQuantity > 1) {
+      updateQuantity(id, currentQuantity - 1);
+    }
+  };
+
+
+  const calculateTotal = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+
 
     return (
         <div>
@@ -217,11 +234,6 @@ const Cart = () => {
                     <Newsletter/>
                 </section>
             </main>
-
-            <footer>
-                <Footer/>
-            </footer>
-        </div>
     );
 };
 
