@@ -3,6 +3,7 @@ import React from 'react'
 import Blog1 from '../../assets/blog1.png'
 import Blog2 from '../../assets/blog2.png'
 import RightArrow from '../../assets/Icons/Right arrow2.svg'
+import {Link} from 'react-router-dom';
 
 const blogItems = [
     {
@@ -68,9 +69,8 @@ const Blog = () => {
                                     className='mt-[5vw] xs:mt-[4vw] sm:mt-[3vw] md:mt-[2.5vw] font-OpenSans text-[3.5vw] md:text-[1.2vw] text-textColor w-full md:w-[25vw]'>{data.paragraph}</p>
                                 <div
                                     className='mt-[5vw] xs:mt-[4vw] sm:mt-[3vw] md:mt-[2.5vw] flex items-center justify-between'>
-                                    <a
-                                        href='#'
-                                        className='w-[30vw] md:w-[12.5vw] h-[9vw] md:h-[4.5vw] text-[3.5vw] md:text-[1.3vw] rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-xl bg-darkGreen flex items-center justify-center text-white'>{data.link}</a>
+                                    <div
+                                        className='w-[30vw] md:w-[12.5vw] h-[9vw] md:h-[4.5vw] text-[3.5vw] md:text-[1.3vw] rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-xl bg-darkGreen flex items-center justify-center text-white'>{data.link}</div>
                                     <p
                                         className='font-OpenSans text-textColor text-[3.5vw] md:text-[1.2vw]'>{data.read}</p>
                                 </div>
@@ -84,15 +84,15 @@ const Blog = () => {
 
             <div
                 className='flex justify-center mt-[6vw] xs:mt-[5vw] sm:mt-[4vw] md:mt-[3vw]'>
-                <a
-                    href='#'
+
+                <Link to='/health-resources' onClick={() => window.scrollTo(0, 0)}
                     className='text-darkGreen w-[50vw] md:w-[24vw] h-[10vw] md:h-[5vw] text-[3.5vw] md:text-[1.5vw] flex justify-center gap-[1vw] items-center border border-darkGreen rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-2xl font-bold font-OpenSans'>
                     Explore more blog posts
                     <img
                         src={RightArrow}
                         alt='Arrow Icon'
                         className='w-[5vw] xs:w-[4vw] sm:w-[3vw] md:w-[2vw]'/>
-                </a>
+                </Link>
             </div>
 
         </div>

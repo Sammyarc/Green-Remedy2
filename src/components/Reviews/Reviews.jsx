@@ -14,63 +14,57 @@ const reviewItems = [
     {
         id: 1,
         image: Quotes,
-        paragraph: "OHHHH Thank God !!!! Finally there is someone making it for me to use on my pr" +
-                "ojects. Love ya",
+        paragraph: "Green Remedies has been a game-changer for me. Their website makes it so easy to find the herbal supplements I need, and the results have been amazing!",
         starfilled: Starfilled,
         starempty: Starempty,
         review: Review1,
-        name: "John Williams",
-        title: "CEO medHub"
+        name: "Adebayo Olamide",
+        title: "Entrepreneur"
     }, {
         id: 2,
         image: Quotes,
-        paragraph: "OHHHH Thank God !!!! Finally there is someone making it for me to use on my pr" +
-                "ojects. Love ya",
+        paragraph: "As someone who values natural healing, Green Remedies is my go-to online shop. Their platform is user-friendly, and I always find the herbal products that keep me healthy.",
         starfilled: Starfilled,
         starempty: Starempty,
         review: Review2,
-        name: "John Williams",
-        title: "CEO medHub"
+        name: "Chioma Okeke",
+        title: "Teacher"
     }, {
         id: 3,
         image: Quotes,
-        paragraph: "OHHHH Thank God !!!! Finally there is someone making it for me to use on my pr" +
-                "ojects. Love ya",
+        paragraph: "I recommend Green Remedies to all my clients. The site offers a great selection of herbal teas and supplements that support a healthy lifestyle naturally and effectively.",
         starfilled: Starfilled,
         starempty: Starempty,
         review: Review3,
-        name: "John Williams",
-        title: "CEO medHub"
+        name: "Tunde Adeyemi",
+        title: "Fitness Coach"
     }, {
         id: 4,
         image: Quotes,
-        paragraph: "OHHHH Thank God !!!! Finally there is someone making it for me to use on my pr" +
-                "ojects. Love ya",
+        paragraph: "Green Remedies has restored my faith in traditional medicine. Their eCommerce site offers affordable and highly effective herbal products, delivered right to my door.",
         starfilled: Starfilled,
         starempty: Starempty,
         review: Review4,
-        name: "John Williams",
-        title: "CEO medHub"
+        name: "Fatima Abubakar",
+        title: "Civil Servant"
     }, {
         id: 5,
         image: Quotes,
-        paragraph: "OHHHH Thank God !!!! Finally there is someone making it for me to use on my pr" +
-                "ojects. Love ya",
+        paragraph: "I’ve been using Green Remedies for my family’s health needs, and I couldn’t be happier. Their online store is easy to navigate, and their natural products truly work wonders.",
         starfilled: Starfilled,
         starempty: Starempty,
         review: Review5,
-        name: "John Williams",
-        title: "CEO medHub"
+        name: "Ngozi Umeh",
+        title: "Mother"
     }, {
         id: 6,
         image: Quotes,
-        paragraph: "OHHHH Thank God !!!! Finally there is someone making it for me to use on my pr" +
-                "ojects. Love ya",
+        paragraph: "Green Remedies has provided me with natural solutions for stress and anxiety. I appreciate how convenient their website is, making it simple to order the herbal remedies I need.",
         starfilled: Starfilled,
         starempty: Starempty,
         review: Review6,
-        name: "John Williams",
-        title: "CEO medHub"
+        name: "Babatunde Ogunleye",
+        title: "Engineer"
     }
 ]
 
@@ -117,7 +111,7 @@ const Reviews = () => {
                                     <div
                                         className='mt-[4vw] xs:mt-[3vw] sm:mt-[2.5vw] md:mt-[2vw] flex items-center gap-[4vw] xs:gap-[3vw] sm:gap-[2vw] md:gap-[1.5vw]'>
                                         <div
-                                            className="w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw] rounded-full border-[0.8vw] xs:border-[0.5vw] sm:border-[0.4vw] md:border-[0.3vw] border-darkGreen">
+                                            className="w-[15vw] md:w-[5vw] h-[12vw] md:h-[5vw] rounded-full border-[0.8vw] xs:border-[0.5vw] sm:border-[0.4vw] md:border-[0.3vw] border-darkGreen">
                                             <img src={data.review} className="w-full h-full object-cover rounded-full"/>
                                         </div>
                                         <div>

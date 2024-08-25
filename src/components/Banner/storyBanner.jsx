@@ -13,7 +13,7 @@ const StoryBanner = () => {
             Our Story
         </h1>
         <p className='mt-[2vw] text-[3.5vw] md:text-[1.3vw] text-white font-OpenSans'>
-            Founded in 2009, Green Remedies started with a passion for natural health solutions. Our journey began with a simple goal: to make traditional herbal remedies accessible to everyone. From humble beginnings, we&apos;ve grown into a trusted name in the herbal products industry, known for our commitment to quality and customer satisfaction.
+            Founded in 2024, Green Remedies started with a passion for natural health solutions. Our journey began with a simple goal: to make traditional herbal remedies accessible to everyone. From humble beginnings, we&apos;ve grown into a trusted name in the herbal products industry, known for our commitment to quality and customer satisfaction.
         </p>
     </div>
 </div>

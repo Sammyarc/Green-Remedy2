@@ -79,12 +79,11 @@ const Product = () => {
                   (4.7)
                 </p>
               </div>
-              <a
-                href='#'
+              <Link to='/products' onClick={() => window.scrollTo(0, 0)}
                 className='w-full bg-darkGreen h-[10vw] md:h-[3.2vw] rounded-md flex items-center justify-center text-white font-OpenSans font-bold mt-[3vw] md:mt-[1.5vw] text-[3.5vw] md:text-[1.1vw]'
               >
-                Add to cart
-              </a>
+                View Products
+              </Link>
             </div>
           </div>
 
@@ -136,12 +135,11 @@ const Product = () => {
                   (4.7)
                 </p>
               </div>
-              <a
-                href='#'
+              <Link to='/products' onClick={() => window.scrollTo(0, 0)}
                 className='w-full bg-white h-[10vw] md:h-[3.2vw] rounded-md flex items-center justify-center text-darkGreen font-OpenSans font-bold mt-[3vw] md:mt-[1.5vw] text-[3.5vw] md:text-[1.1vw]'
               >
-                Add to cart
-              </a>
+                View Products
+              </Link>
             </div>
           </div>
 
@@ -193,12 +191,11 @@ const Product = () => {
                   (4.7)
                 </p>
               </div>
-              <a
-                href='#'
+              <Link to='/products' onClick={() => window.scrollTo(0, 0)}
                 className='w-full bg-darkGreen h-[10vw] md:h-[3.2vw] rounded-md flex items-center justify-center text-white font-OpenSans font-bold mt-[3vw] md:mt-[1.5vw] text-[3.5vw] md:text-[1.1vw]'
               >
-                Add to cart
-              </a>
+                View Products
+              </Link>
             </div>
           </div>
         </div>

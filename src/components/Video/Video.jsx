@@ -18,7 +18,7 @@ const Video = () => {
             {/* Body */}
             <div>
                 <video
-                    className='px-[2vw] mt-[5vw] w-full h-[60vw] md:w-[75vw] flex justify-center items-center mx-auto md:h-[55vw] object-cover'
+                    className='px-[2vw] mt-[5vw] w-full h-[60vw] md:w-[70vw] flex justify-center items-center mx-auto md:h-[50vw] object-cover'
                     controls="controls">
                     <source src={VideoSrc} type="video/mp4"/>
                 </video>

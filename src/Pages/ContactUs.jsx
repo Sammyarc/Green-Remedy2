@@ -146,7 +146,7 @@ const ContactUs = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-milkWhite border border-white rounded-full text-white text-sm p-2 focus:outline
+                      className="bg-milkWhite border border-white rounded-full text-textColor text-sm p-2 focus:outline
                 "
                       placeholder="Enter name"
                     />
@@ -166,7 +166,7 @@ const ContactUs = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-milkWhite border border-white rounded-full text-white text-sm p-2 focus:outline
+                      className="bg-milkWhite border border-white rounded-full text-textColor text-sm p-2 focus:outline
                 "
                       placeholder="Enter email"
                     />
@@ -184,7 +184,7 @@ const ContactUs = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      className="bg-milkWhite border border-white rounded-2xl text-black text-sm p-2 focus:outline resize-none"
+                      className="bg-milkWhite border border-white rounded-2xl text-textColor text-sm p-2 focus:outline resize-none"
                       placeholder="Enter message here..."
                       rows="8"
                     />

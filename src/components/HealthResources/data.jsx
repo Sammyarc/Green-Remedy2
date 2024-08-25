@@ -32,32 +32,32 @@ export const remedies = [
   {
     img: remedyImg1,
     title: 'Insomnia',
-    desc: 'Lorem ipsum dolor sit amet. 33 autem ullam id soluta eius ut consectetur nemo ut laudantium voluptatem qui itaque facilis est ',
+    desc: 'Struggling with sleepless nights? Herbal remedies like valerian root, chamomile, and ashwagandha can help promote relaxation and improve sleep quality naturally.',
   },
   {
     img: remedyImg2,
     title: 'Digestion Issue',
-    desc: 'Lorem ipsum dolor sit amet. 33 autem ullam id soluta eius ut consectetur nemo ut laudantium voluptatem qui itaque facilis est ',
+    desc: 'Improve your digestive health with natural aids such as ginger, peppermint, and fennel. These herbs can soothe the stomach, reduce bloating, and enhance digestion.',
   },
   {
     img: remedyImg3,
     title: 'Joint pain and Inflammation',
-    desc: 'Lorem ipsum dolor sit amet. 33 autem ullam id soluta eius ut consectetur nemo ut laudantium voluptatem qui itaque facilis est ',
+    desc: 'Combat joint pain and inflammation with turmeric, boswellia, and willow bark. These potent herbs are known for their anti-inflammatory properties and pain relief.',
   },
   {
     img: remedyImg4,
     title: 'Skin Condition',
-    desc: 'Lorem ipsum dolor sit amet. 33 autem ullam id soluta eius ut consectetur nemo ut laudantium voluptatem qui itaque facilis est ',
+    desc: 'For clearer, healthier skin, consider remedies like aloe vera, neem, and tea tree oil. These natural ingredients can help reduce acne, soothe irritation, and promote healing.',
   },
   {
     img: remedyImg5,
     title: 'Mental Clarity',
-    desc: 'Lorem ipsum dolor sit amet. 33 autem ullam id soluta eius ut consectetur nemo ut laudantium voluptatem qui itaque facilis est ',
+    desc: 'Enhance your cognitive function and mental clarity with herbs like ginkgo biloba, rosemary, and brahmi. These natural brain boosters support memory and focus.',
   },
   {
     img: remedyImg6,
     title: 'Infection',
-    desc: 'Lorem ipsum dolor sit amet. 33 autem ullam id soluta eius ut consectetur nemo ut laudantium voluptatem qui itaque facilis est ',
+    desc: 'Fight infections naturally with powerful herbal remedies like garlic, echinacea, and goldenseal. These herbs boost your immune system and help the body ward off harmful pathogens.',
   },
 ];
 

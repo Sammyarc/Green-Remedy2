@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import hero from '../../assets/Hero-image.png';
+import {Link} from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -17,11 +18,10 @@ const Hero = () => {
                     your well-being. Explore our collection and find the perfect natural solution
                     for your health needs.
                 </p>
-                <a
-                    href="#"
+                <Link to='/products' onClick={() => window.scrollTo(0, 0)}
                     className="font-OpenSans bg-milkWhite text-lightTextColor mt-6 w-[40vw] md:w-[12.5vw] h-[10vw] md:h-[4vw] text-[3.5vw]  md:text-[1.1vw] flex justify-center items-center rounded-xl md:rounded-3xl font-bold">
                     Explore our herbs
-                </a>
+                </Link>
             </div>
             <div className="w-full md:w-[40vw]">
                 <img src={hero} alt="An image of different herbs" className="w-full h-auto"/>
