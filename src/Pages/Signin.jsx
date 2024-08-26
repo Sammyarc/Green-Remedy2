@@ -157,7 +157,7 @@
 
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // import { useAuth } from "@clerk/clerk-react";
 import { SignIn } from "@clerk/clerk-react";
@@ -179,23 +179,23 @@ const Signin = () => {
 
   return (
     <div>
-      <header className='border-b'>
+      <header className="border-b">
         <Navbar />
-     </header>
-     <main>
-     <section className="flex flex-col justify-center items-center my-[5vw]">
-        <SignIn
-          path="/signin"
-          routing="path"
-          signUpUrl="/signup"
-          fallbackRedirectUrl={location.state?.from?.pathname || "/"}
-        />
-      </section>
-      <section>
-        <Newsletter />
-      </section>
-     </main>
-      
+      </header>
+      <main>
+        <section className="flex flex-col justify-center items-center my-[5vw]">
+          <SignIn
+            path="/signin"
+            routing="path"
+            signUpUrl="/signup"
+            fallbackRedirectUrl={location.state?.from?.pathname || "/"}
+          />
+        </section>
+        <section>
+          <Newsletter />
+        </section>
+      </main>
+
       <footer>
         <Footer />
       </footer>
