@@ -64,7 +64,7 @@ import Checkout from "./Pages/Checkout.jsx";
 import OrderHistory from "./Pages/OrderHistory.jsx";
 import UserInfo from "./Pages/UserInfo.jsx";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute.jsx";
-import SignUpPage from "./Pages/Signup.jsx";
+// import SignUpPage from "./Pages/Signup.jsx";
 
 const App = () => {
   return (
@@ -75,7 +75,7 @@ const App = () => {
         <Route path="/health-resources" element={<HealthResources />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/signup/*" element={<SignUpPage />} />
+        {/* <Route path="/signup/*" element={<SignUpPage />} /> */}
         <Route path="/signin" element={<Signin />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />

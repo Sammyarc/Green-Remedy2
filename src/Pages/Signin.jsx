@@ -187,7 +187,7 @@ const Signin = () => {
           <SignIn
             path="/signin"
             routing="path"
-            signUpUrl="/signup"
+            // signUpUrl="/signup"
             fallbackRedirectUrl={location.state?.from?.pathname || "/"}
           />
         </section>
