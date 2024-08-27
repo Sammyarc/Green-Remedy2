@@ -185,8 +185,8 @@ const Signin = () => {
       <main>
         <section className="flex flex-col justify-center items-center my-[5vw]">
           <SignIn
-            path="/signin"
-            routing="path"
+            // path="/signin"
+            // routing="path"
             // signUpUrl="/signup"
             fallbackRedirectUrl={location.state?.from?.pathname || "/"}
           />
@@ -204,3 +204,49 @@ const Signin = () => {
 };
 
 export default Signin;
+
+// import React from "react";
+// import { useLocation, useNavigate } from "react-router-dom";
+// import { SignIn } from "@clerk/clerk-react";
+// import Footer from "../components/Footer/Footer";
+// import Navbar from "../components/Navbar/Navbar";
+// import Newsletter from "../components/Newsletter/Newsletter";
+
+// const Signin = () => {
+//   const navigate = useNavigate();
+//   const location = useLocation();
+
+//   React.useEffect(() => {
+//     const handleBackNavigation = () => {
+//       // If the user navigates away, go to the home page
+//       navigate("/", { replace: true });
+//     };
+
+//     window.addEventListener("popstate", handleBackNavigation);
+
+//     return () => {
+//       window.removeEventListener("popstate", handleBackNavigation);
+//     };
+//   }, [navigate]);
+
+//   return (
+//     <div>
+//       <header className="border-b">
+//         <Navbar />
+//       </header>
+//       <main>
+//         <section className="flex flex-col justify-center items-center my-[5vw]">
+//           <SignIn fallbackRedirectUrl={location.state?.from?.pathname || "/"} />
+//         </section>
+//         <section>
+//           <Newsletter />
+//         </section>
+//       </main>
+//       <footer>
+//         <Footer />
+//       </footer>
+//     </div>
+//   );
+// };
+
+// export default Signin;
