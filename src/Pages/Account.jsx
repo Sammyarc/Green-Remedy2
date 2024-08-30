@@ -197,7 +197,7 @@ const Account = () => {
                             <div className="flex">
                                 <button
                                     type="submit"
-                                    className="mt-6 w-full md:w-auto inline-flex justify-center rounded-full border border-transparent bg-primary px-6 py-3 text-[3.5vw] md:text-[1vw] font-medium text-white bg-darkGreen hover:bg-green-700">
+                                    className="mt-6 w-full md:w-auto inline-flex justify-center rounded-full border border-transparent bg-primary px-6 py-3 text-[4vw] md:text-[1vw] font-medium font-OpenSans text-white bg-darkGreen hover:bg-green-700">
                                     Save Changes
                                 </button>
                             </div>

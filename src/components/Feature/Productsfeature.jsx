@@ -10,7 +10,7 @@ const FeatureItems = [
         id: 1,
         icon: Package,
         heading: "Free Shipping",
-        paragraph: "Free shipping for order above N20,000",
+        paragraph: "Free shipping for order above ₦20,000",
     }, {
         id: 2,
         icon: Currency,
