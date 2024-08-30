@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: 'Ruth Shekinah',
     role: 'Designer',
-    imageUrl: 'public/assets/Team/Ruth Shekinah.png',
+    imageUrl: '/assets/Team/Ruth Shekinah.png',
     linkedIn: 'https://www.linkedin.com/in/paulshekinah/',
   },
   {
