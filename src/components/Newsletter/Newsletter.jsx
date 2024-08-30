@@ -47,7 +47,7 @@ const Newsletter = ({ onSubmit }) => {
                 />
                 <button
                   type="submit"
-                  className="w-full md:h-[59px] md:w-[300px] py-3 px-4 rounded-md shadow-sm text-sm font-medium text-white bg-darkGreen hover:bg-darkerGreen focus:outline-none focus:ring-2 focus:ring-offset-2 "
+                  className="w-full md:h-[59px] md:w-[300px] py-3 px-4 rounded-md shadow-sm text-sm font-medium text-white bg-darkGreen hover:bg-darkerGreen"
                 >
                   Subscribe
                 </button>

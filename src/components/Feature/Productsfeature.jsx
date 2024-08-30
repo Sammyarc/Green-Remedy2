@@ -31,7 +31,7 @@ const FeatureItems = [
 
 const Productsfeature = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 space-y-[2vw] gap-[2.5vw] md:space-x-[5vw] md:space-y-[0] bg-lightGreen p-[7vw] mt-[10vw]">
+    <div className="grid grid-cols-2 md:grid-cols-4 space-y-[2vw] gap-[2.5vw] md:space-x-[4vw] md:space-y-[0] bg-lightGreen p-[7vw] mt-[10vw]">
     {FeatureItems.map((feature) => (
       <div key={feature.id}>
         <img src={feature.icon} alt={feature.heading} className="w-[9vw] h-[9vw] md:w-[3vw] md:h-[3vw]" />

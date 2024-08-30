@@ -9,8 +9,8 @@ const Hero = () => {
             className="flex flex-col md:flex-row md:justify-between md:gap-[2vw] items-center px-4 pt-8 pb-12 md:px-[5vw] md:pt-[5vw] md:pb-[10vw] bg-darkGreen">
             <div className="w-full md:w-[30vw] mb-8 md:mb-0">
                 <h1
-                    className="text-[7.5vw] sm:text-[4vw] md:text-[3vw] font-Lora font-bold leading-tight text-milkWhite">
-                    Embrace Nature&apos;s Healing Power
+                    className="text-[7.5vw] md:text-[3vw] font-Lora font-bold leading-tight text-milkWhite">
+                    Embrace Nature&apos;s <br />Healing Power
                 </h1>
                 <p
                     className="mt-4 text-[3.5vw] md:text-[1vw] text-milkWhite font-OpenSans">

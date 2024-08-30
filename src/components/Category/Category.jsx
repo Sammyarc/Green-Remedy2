@@ -38,7 +38,7 @@ const Category = () => {
                         <h2
                             className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herbal Teas</h2>
                         <p
-                            className="mt-[0.8vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Strengthen your bodys defences with our range of herbal teas.</p>
+                            className="mt-[0.8vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] text-lightTextColor font-semibold font-OpenSans">Strengthen your bodys defences <br /> with our range of herbal teas.</p>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ const Category = () => {
                             <h2
                                 className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herb Seeds and Plants</h2>
                             <p
-                                className="mt-[0.8vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] text-lightTextColor font-OpenSans">Find peace and calm with our stress-relief herbs.</p>
+                                className="mt-[0.8vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] text-lightTextColor font-semibold font-OpenSans">Find peace and calm <br /> with our stress-relief herbs.</p>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ const Category = () => {
                             <h2
                                 className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herbal Remedies</h2>
                             <p
-                                className="mt-[0.8vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] text-lightTextColor font-OpenSans">Support your digestive system with our natural remedies.</p>
+                                className="mt-[0.8vw] md:mt-[0.5vw] text-[3vw] md:text-[1vw] text-lightTextColor font-semibold font-OpenSans">Support your digestive system <br /> with our natural remedies.</p>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const Category = () => {
                         <h2
                             className="font-Lora font-bold text-[4vw] md:text-[1.5vw] text-lightTextColor">Herbal Bath Products</h2>
                         <p
-                            className="mt-[0.8vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] text-lightTextColor font-OpenSans">Enhance your natural beauty with our herbal skin care products.</p>
+                            className="mt-[0.8vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1vw] text-lightTextColor font-semibold font-OpenSans">Enhance your natural beauty <br /> with our herbal skin care products.</p>
                     </div>
                 </div>
             </div>

@@ -50,7 +50,7 @@ const Product = () => {
                 Boost your health with our organic turmeric plant.
               </p>
               <p className='mt-[1.5vw] md:mt-[1vw] font-OpenSans font-extrabold text-[4.5vw] md:text-[1.5vw] text-textColor'>
-                N5,000
+              ₦15,000
               </p>
               <div className='flex items-center gap-[2vw] md:gap-[1vw] md:mt-[1vw]'>
                 <div className='flex items-center justify-between gap-[2vw] md:gap-[0.4vw]'>
@@ -92,13 +92,13 @@ const Product = () => {
             <div className='relative'>
               <img
                 src={Second}
-                className='w-full rounded-[3.5vw] md:rounded-[1.2vw] translate-y-[3.5vw] md:translate-y-[1vw] h-[50vw] md:h-[15vw]'
+                className='w-full rounded-[3.5vw] md:rounded-[1.2vw] translate-y-[3.5vw] md:translate-y-[2.5vw] h-[50vw] md:h-[15vw]'
               />
-              <p className='absolute bg-darkGreen py-[1vw] px-[2vw] md:py-[0.2vw] md:px-[0.7vw] text-[3.5vw] md:text-[1vw] top-[8vw] md:top-[3vw] font-OpenSans font-semibold text-white'>
+              <p className='absolute bg-darkGreen py-[1vw] px-[2vw] md:py-[0.2vw] md:px-[0.7vw] text-[3.5vw] md:text-[1vw] top-[8vw] md:top-[4vw] font-OpenSans font-semibold text-white'>
                 New arrival
               </p>
             </div>
-            <div className='bg-darkGreen p-[6vw] md:p-[2vw] rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-b-[1.2vw] shadow-lg'>
+            <div className='bg-darkGreen p-[6vw] pt-[7.5vw] md:p-[2vw] md:pt-[3.5vw] rounded-[3vw] xs:rounded-[2.5vw] sm:rounded-[2vw] md:rounded-b-[1.2vw] shadow-lg'>
               <h2 className='text-white font-Lora font-semibold text-[5.5vw] md:text-[2vw] leading-[6vw] md:leading-[2.5vw]'>
                 Organic Turmeric Herbs
               </h2>
@@ -106,7 +106,7 @@ const Product = () => {
                 Boost your health with our organic turmeric herbs.
               </p>
               <p className='mt-[1.5vw] md:mt-[1vw] font-OpenSans font-extrabold text-[4.5vw] md:text-[1.5vw] text-white'>
-                N5,000
+              ₦15,000
               </p>
               <div className='flex items-center gap-[2vw] md:gap-[1vw] md:mt-[1vw]'>
                 <div className='flex items-center justify-between gap-[2vw] md:gap-[0.4vw]'>
@@ -162,7 +162,7 @@ const Product = () => {
                 Boost your health with our organic turmeric capsules.
               </p>
               <p className='mt-[1.5vw] md:mt-[1vw] font-OpenSans font-extrabold text-[4.5vw] md:text-[1.5vw] text-textColor'>
-                N5,000
+              ₦15,000
               </p>
               <div className='flex items-center gap-[2vw] md:gap-[1vw] md:mt-[1vw]'>
                 <div className='flex items-center justify-between gap-[2vw] md:gap-[0.4vw]'>

@@ -66,7 +66,7 @@ const Account = [
     {
         id: 1,
         name: "My Account",
-        link: "/",
+        link: "/account",
     },
     {
         id: 2,
@@ -84,27 +84,27 @@ const Footer = () => {
     return (
         <div className='bg-darkGreen'>
             {/* Footer top */}
-            <div className='px-[5vw] py-[5vw] flex flex-col md:flex-row justify-between'>
+            <div className='px-[5vw] py-[9vw] md:py-[5vw] flex flex-col md:flex-row justify-between'>
                 <div className='w-full md:w-1/4'>
                     <Link to='/'>
                         <img src={Logo} alt="Green Remedies Logo" className='xs:w-[40vw] md:w-[15vw]' />
                     </Link>
-                    <p className='text-milkWhite font-OpenSans xs:text-[3.5vw] md:text-[1vw] mt-[2vw] md:mt-[1vw]'>
+                    <p className='text-milkWhite font-OpenSans xs:text-[3.5vw] md:text-[1vw] mt-[3.5vw] md:mt-[1vw]'>
                         Green Remedies offers a curated selection of high-quality traditional herbs to enhance your well-being naturally. Trust in our expertise and commitment to purity.
                     </p>
-                    <div className='flex items-center mt-[3vw] xs:mt-[3vw] md:mt-[1.3vw] gap-[2vw] xs:gap-[1.5vw] sm:gap-[1vw]'>
-                        <a href='#' aria-label='Instagram Profile Link' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
+                    <div className='flex items-center mt-[5vw] md:mt-[1.3vw] gap-[2vw] xs:gap-[1.5vw] sm:gap-[1vw]'>
+                        <Link to='/' onClick={() => window.scrollTo(0, 0)} aria-label='Instagram Profile Link' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
                             <img src={Instagram} alt='Instagram' className='xs:w-[5vw] md:w-[1.5vw]' />
-                        </a>
-                        <a href='#' aria-label='Facebook Profile Link' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
+                        </Link>
+                        <Link to='/' onClick={() => window.scrollTo(0, 0)} aria-label='Facebook Profile Link' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
                             <img src={Facebook} alt='Facebook' className='xs:w-[5vw] md:w-[1.5vw]' />
-                        </a>
-                        <a href='#' aria-label='Twitter Profile Link' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
+                        </Link>
+                        <Link to='/' onClick={() => window.scrollTo(0, 0)} aria-label='Twitter Profile Link' className='xs:w-[10vw] md:w-[3vw] xs:h-[10vw] md:h-[3vw] flex justify-center items-center bg-milkWhite rounded-xl'>
                             <img src={Twitter} alt='Twitter' className='xs:w-[5vw] md:w-[1.5vw]' />
-                        </a>
+                        </Link>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 sm:flex sm:flex-row justify-between gap-[3.5vw] sm:gap-[1.4vw] w-full md:w-3/5 mt-[5vw] md:mt-0'>
+                <div className='grid grid-cols-2 sm:flex sm:flex-row justify-between gap-[3.5vw] sm:gap-[1.4vw] w-full md:w-3/5 mt-[7vw] md:mt-0'>
                     <div>
                         <h2 className='font-Lora font-semibold text-white text-[4vw] xs:text-[4vw] sm:text-[2.5vw] md:text-[1.4vw]'>Quick Links</h2>
                         <ul className='xs:mt-[1.5vw] sm:mt-[0.1vw] md:mt-[0.5vw]'>

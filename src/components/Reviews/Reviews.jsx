@@ -3,12 +3,12 @@ import React from 'react'
 import Quotes from '../../assets/Icons/quotes.svg'
 import Starfilled from '../../assets/Icons/star-filled.svg'
 import Starempty from '../../assets/Icons/star-empty.svg'
-import Review1 from '../../assets/jake-nackos-IF9TK5Uy-KI-unsplash (2).jpg'
-import Review2 from '../../assets/michael-dam-mEZ3PoFGs_k-unsplash (2).jpg'
-import Review3 from '../../assets/oluwaferanmi-caleb-Q1QRTSeZIxI-unsplash (2).jpg'
-import Review4 from '../../assets/pexels-photo-1222271.jpeg'
-import Review5 from '../../assets/christopher-campbell-rDEOVtE7vOs-unsplash (2).jpg'
-import Review6 from '../../assets/cody-scott-milewski-vXgV5XUlTog-unsplash (2).jpg'
+import Review1 from '../../assets/Review1.jpg'
+import Review2 from '../../assets/Review2.jpg'
+import Review3 from '../../assets/Review3.jpg'
+import Review4 from '../../assets/Review4.jpg'
+import Review5 from '../../assets/Review5.jpg'
+import Review6 from '../../assets/Review6.jpg'
 
 const reviewItems = [
     {
@@ -87,19 +87,19 @@ const Reviews = () => {
 
             <div className="mt-[8vw] xs:mt-[6vw] sm:mt-[5vw] md:mt-[4vw]">
                 <div
-                    className="grid grid-cols-1 md:grid-cols-3 gap-[6vw] xs:gap-[4vw] sm:gap-[3vw] md:gap-[2vw]">
+                    className="grid grid-cols-1 md:grid-cols-3 gap-[6vw] xs:gap-[6vw] md:gap-[2vw]">
                     {
                         reviewItems.map((data) => (
                             <div
                                 key={data.id}
-                                className="bg-white py-[4vw] xs:py-[3vw] sm:py-[2.5vw] md:py-[2vw] px-[4vw] xs:px-[3vw] sm:px-[2.5vw] md:px-[1.5vw] rounded-bl-[10vw] xs:rounded-bl-[8vw] sm:rounded-bl-[7vw] md:rounded-bl-[6vw] rounded-br-xl rounded-tr-xl rounded-tl-xl">
+                                className="bg-white py-[4vw] md:py-[2vw] px-[4vw] xs:px-[3vw] sm:px-[2.5vw] md:px-[1.5vw] rounded-bl-[10vw] xs:rounded-bl-[8vw] sm:rounded-bl-[7vw] md:rounded-bl-[6vw] rounded-br-xl rounded-tr-xl rounded-tl-xl">
                                 <img
                                     src={data.image}
                                     className="w-[5vw] md:w-[2vw] h-[5vw] md:h-[2vw]"></img>
                                 <div
                                     className='px-[3vw] xs:px-[2.5vw] sm:px-[2vw] md:px-[1.5vw] mt-[6vw] xs:mt-[5vw] sm:mt-[4vw] md:mt-[2vw]'>
                                     <p
-                                        className='font-OpenSans text-[3vw] md:text-[1.2vw] font-medium w-full md:w-[20vw]'>{data.paragraph}</p>
+                                        className='font-OpenSans text-[3.5vw] md:text-[1.2vw] md:h-[10vw] font-medium w-full md:w-[20vw]'>{data.paragraph}</p>
                                     <div
                                         className='flex items-center gap-[2vw] md:gap-[0.7vw] mt-[4vw] sm:mt-[3vw] md:mt-[2vw]'>
                                         <img src={Starfilled} className='w-[4vw] md:w-[1.5vw]'/>
@@ -111,14 +111,14 @@ const Reviews = () => {
                                     <div
                                         className='mt-[4vw] xs:mt-[3vw] sm:mt-[2.5vw] md:mt-[2vw] flex items-center gap-[4vw] xs:gap-[3vw] sm:gap-[2vw] md:gap-[1.5vw]'>
                                         <div
-                                            className="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw] rounded-full border-[0.8vw] xs:border-[0.5vw] sm:border-[0.4vw] md:border-[0.3vw] border-darkGreen">
+                                            className="w-[13vw] md:w-[5vw] h-[13vw] md:h-[5vw] rounded-full border-[0.8vw] xs:border-[0.5vw] sm:border-[0.4vw] md:border-[0.3vw] border-darkGreen">
                                             <img src={data.review} className="w-full h-full object-cover rounded-full"/>
                                         </div>
                                         <div>
                                             <p
-                                                className='font-OpenSans text-[3vw] md:text-[1.2vw] font-bold text-textColor'>{data.name}</p>
+                                                className='font-OpenSans text-[3.5vw] md:text-[1.2vw] font-bold text-textColor'>{data.name}</p>
                                             <p
-                                                className='font-OpenSans text-[2.5vw] md:text-[0.9vw] font-bold text-textColor'>{data.title}</p>
+                                                className='font-OpenSans text-[3vw] md:text-[0.9vw] font-bold text-textColor'>{data.title}</p>
                                         </div>
                                     </div>
                                 </div>
