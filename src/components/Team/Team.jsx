@@ -56,7 +56,7 @@ const TeamSection = () => {
   return (
     <section className="mb-[5vw]">
       <h2 className="text-center text-[6.5vw] md:text-[3vw] font-bold mb-8 font-Lora uppercase text-textColor">Meet The Team</h2>
-      <div className="px-10 md:px-4">
+      <div className="px-10 md:container md:mx-auto md:px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {teamMembers.map((member, index) => (
             <a
