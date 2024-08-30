@@ -77,7 +77,7 @@ const Reviews = () => {
                 <h1
                     className='font-Lora text-[6.5vw] md:text-[2.5vw] text-white font-bold text-center'>What Our Customers Say</h1>
                 <p
-                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1.2vw] text-white font-OpenSans'>Read
+                    className='text-center w-full xs:w-[90vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1.2vw] text-white font-OpenSans'>Read
                     the experiences and success stories of those who have benefited from our
                     traditional herbs.
                 </p>
@@ -87,7 +87,7 @@ const Reviews = () => {
 
             <div className="mt-[8vw] xs:mt-[6vw] sm:mt-[5vw] md:mt-[4vw]">
                 <div
-                    className="grid grid-cols-2 md:grid-cols-3 gap-[6vw] xs:gap-[4vw] sm:gap-[3vw] md:gap-[2vw]">
+                    className="grid grid-cols-1 md:grid-cols-3 gap-[6vw] xs:gap-[4vw] sm:gap-[3vw] md:gap-[2vw]">
                     {
                         reviewItems.map((data) => (
                             <div
@@ -111,7 +111,7 @@ const Reviews = () => {
                                     <div
                                         className='mt-[4vw] xs:mt-[3vw] sm:mt-[2.5vw] md:mt-[2vw] flex items-center gap-[4vw] xs:gap-[3vw] sm:gap-[2vw] md:gap-[1.5vw]'>
                                         <div
-                                            className="w-[15vw] md:w-[5vw] h-[12vw] md:h-[5vw] rounded-full border-[0.8vw] xs:border-[0.5vw] sm:border-[0.4vw] md:border-[0.3vw] border-darkGreen">
+                                            className="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw] rounded-full border-[0.8vw] xs:border-[0.5vw] sm:border-[0.4vw] md:border-[0.3vw] border-darkGreen">
                                             <img src={data.review} className="w-full h-full object-cover rounded-full"/>
                                         </div>
                                         <div>

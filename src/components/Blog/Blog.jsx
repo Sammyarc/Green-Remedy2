@@ -42,7 +42,7 @@ const Blog = () => {
                 <h1
                     className='font-Lora text-[6.5vw] md:text-[2.5vw] text-lightTextColor font-bold text-center'>Recent Blog Post</h1>
                 <p
-                    className='text-center w-full xs:w-[90vw] sm:w-[60vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1.2vw] text-lightTextColor font-OpenSans'>Stay
+                    className='text-center w-full xs:w-[90vw] md:w-[50vw] mt-[2vw] xs:mt-[1.5vw] sm:mt-[1vw] md:mt-[0.5vw] text-[3.5vw] md:text-[1.2vw] text-lightTextColor font-OpenSans'>Stay
                     up to date with our recent blog posts, featuring insightful articles on health,
                     wellness, and natural remedies for your daily life.
                 </p>
@@ -52,7 +52,7 @@ const Blog = () => {
 
             <div className="mt-[8vw] xs:mt-[6vw] sm:mt-[5vw] md:mt-[4vw]">
                 <div
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[6vw] xs:gap-[4vw] sm:gap-[3vw] md:gap-[1.5vw]">
+                    className="grid grid-cols-1 md:grid-cols-3 gap-[6vw] xs:gap-[4vw] sm:gap-[3vw] md:gap-[1.5vw]">
                     {
                         blogItems.map((data) => (
                             <div

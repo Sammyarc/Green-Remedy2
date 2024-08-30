@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar.jsx';
 import Newsletter from '../components/Newsletter/Newsletter.jsx';
 import Footer from '../components/Footer/Footer.jsx';
+import TeamSection from '../components/Team/Team.jsx';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const AboutUs = () => {
       <AboutHero />
       <Feature />
       <Missionbanner />
+      <TeamSection />
       <StoryBanner />
       <Video />
       <Values />
