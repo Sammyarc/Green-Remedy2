@@ -79,14 +79,14 @@ const App = () => {
         {/* <Route path="/signup/*" element={<SignUpPage />} /> */}
         <Route path="/signin/*" element={<Signin />} />
         <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/orderhistory" element={<OrderHistory />} />
         <Route path="/userinfo" element={<UserInfo />} />
         <Route
-          path="/cart"
+          path="/checkout"
           element={
             <ProtectedRoute>
-              <Cart />
+              <Checkout />
             </ProtectedRoute>
           }
         />

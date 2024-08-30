@@ -7,20 +7,11 @@ import Newsletter from "../components/Newsletter/Newsletter.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import SimilarProducts from '../components/Products/Similarproducts.jsx';
 import Productsfeature from '../components/Feature/Productsfeature.jsx';
-import {useNavigate, Link} from "react-router-dom";
-import {useAuth} from "@clerk/clerk-react";
+import {Link} from "react-router-dom";
+
 
 const Cart = () => {
-    const navigate = useNavigate();
-    const {isSignedIn} = useAuth();
     const {cart, removeFromCart, updateQuantity} = useCart();
-
-    React.useEffect(() => {
-        if (!isSignedIn) {
-            navigate("/signin");
-        }
-    }, [isSignedIn, navigate]);
-
     const isDisabled = cart.length === 0;
 
     const handleIncrement = (id, currentQuantity) => {

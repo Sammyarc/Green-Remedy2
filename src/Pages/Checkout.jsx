@@ -6,9 +6,20 @@ import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Productsfeature from '../components/Feature/Productsfeature';
 import Newsletter from '../components/Newsletter/Newsletter';
-import {Link} from 'react-router-dom';
+import {useNavigate, Link} from "react-router-dom";
+import {useAuth} from "@clerk/clerk-react";
 
 const CheckoutForm = () => {
+    const navigate = useNavigate();
+    const {isSignedIn} = useAuth();
+
+    React.useEffect(() => {
+        if (!isSignedIn) {
+            navigate("/signin");
+        }
+    }, [isSignedIn, navigate]);
+
+    
     const {register, handleSubmit, formState: {
             errors
         }} = useForm();
